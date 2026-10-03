@@ -12,3 +12,5 @@ CLAUDE.md
 
 # Source photography (not served; derived into public/images via `npm run images`)
 assets/
+.vercel
+.env*

@@ -1,0 +1,12 @@
+# Raw source photography — derived into public/images via `npm run images`.
+# The committed public/images/*.webp are what the site actually serves.
+assets
+
+node_modules
+.next
+out
+*.tsbuildinfo
+
+# Local-only
+CLAUDE.md
+.claude
