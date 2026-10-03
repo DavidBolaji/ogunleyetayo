@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+.env*.local
+next-env.d.ts
+.DS_Store
+*.tsbuildinfo
+
+# Claude Code
+CLAUDE.md
+.claude/
+
+# Source photography (not served; derived into public/images via `npm run images`)
+assets/

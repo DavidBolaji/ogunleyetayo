@@ -1,0 +1,230 @@
+@import "tailwindcss";
+
+@source "../../src";
+
+/* ------------------------------------------------------------------
+   Brand token layer.
+
+   Every colour a component uses is semantic (`surface`, `accent`,
+   `ink`...) and resolved at runtime from CSS variables. A section can
+   therefore adopt a different brand identity simply by carrying a
+   `data-brand` attribute — no component needs to know which brands
+   exist. New brands are added here alone.
+------------------------------------------------------------------ */
+
+:root,
+[data-brand="ebahi"] {
+  --c-canvas: #fbf7f3;
+  --c-surface: #ffffff;
+  --c-sand: #f1e7dc;
+  --c-deep: #2a1030;
+  --c-deep-soft: #43204c;
+  --c-ink: #191217;
+  --c-muted: #6f6169;
+  --c-line: #e3d8cd;
+  --c-accent: #c98f1e;
+  --c-accent-soft: #f6e9cf;
+  --c-accent-ink: #7a5407;
+  --c-on-deep: #f6ecdb;
+  --c-on-deep-muted: #c3aec6;
+}
+
+[data-brand="silentshout"] {
+  --c-canvas: #f6f7fb;
+  --c-surface: #ffffff;
+  --c-sand: #e7ecf8;
+  --c-deep: #11265f;
+  --c-deep-soft: #1c3b8c;
+  --c-ink: #10152a;
+  --c-muted: #5c6580;
+  --c-line: #d3dbee;
+  --c-accent: #c4551f;
+  --c-accent-soft: #fbe6da;
+  --c-accent-ink: #8f3a12;
+  --c-on-deep: #eef2fd;
+  --c-on-deep-muted: #a9b8dd;
+}
+
+[data-brand="edwoltz"] {
+  --c-canvas: #faf7f4;
+  --c-surface: #ffffff;
+  --c-sand: #efe6dc;
+  --c-deep: #14100e;
+  --c-deep-soft: #3b2a20;
+  --c-ink: #14100e;
+  --c-muted: #6d5f54;
+  --c-line: #e0d5c9;
+  --c-accent: #d98324;
+  --c-accent-soft: #fbead6;
+  --c-accent-ink: #92530d;
+  --c-on-deep: #f7f0e8;
+  --c-on-deep-muted: #b6a696;
+}
+
+@theme inline {
+  --color-canvas: var(--c-canvas);
+  --color-surface: var(--c-surface);
+  --color-sand: var(--c-sand);
+  --color-deep: var(--c-deep);
+  --color-deep-soft: var(--c-deep-soft);
+  --color-ink: var(--c-ink);
+  --color-muted: var(--c-muted);
+  --color-line: var(--c-line);
+  --color-accent: var(--c-accent);
+  --color-accent-soft: var(--c-accent-soft);
+  --color-accent-ink: var(--c-accent-ink);
+  --color-on-deep: var(--c-on-deep);
+  --color-on-deep-muted: var(--c-on-deep-muted);
+
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+
+  --spacing-gutter: clamp(1.25rem, 5vw, 4rem);
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  * {
+    border-color: var(--c-line);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--c-canvas);
+    color: var(--c-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv05";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--c-deep);
+    color: var(--c-on-deep);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--c-accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  /* An editorial all-caps micro-label used above headings. */
+  .eyebrow {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+  }
+
+  /* Paper grain — keeps large flat fields from reading as flat digital blocks. */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.22'/%3E%3C/svg%3E");
+  }
+
+  .rule {
+    height: 1px;
+    background: linear-gradient(90deg, var(--c-line), transparent);
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+
+  .hanging-quote {
+    text-indent: -0.4em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes marquee-track {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+.marquee-track {
+  animation-name: marquee-track;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+/* ------------------------------------------------------------------
+   Hero entrance.
+
+   Driven by CSS rather than JavaScript: the hero is the largest
+   contentful paint, so it must be painted by the browser without
+   waiting for hydration.
+------------------------------------------------------------------ */
+
+@keyframes hero-rise {
+  from { opacity: 0; transform: translate3d(0, 2rem, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes hero-settle {
+  from { opacity: 0; transform: scale(1.04); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.hero-rise,
+.hero-settle {
+  opacity: 0;
+  animation-duration: 0.9s;
+  animation-timing-function: var(--ease-out-soft);
+  animation-fill-mode: forwards;
+}
+
+.hero-rise { animation-name: hero-rise; }
+.hero-settle { animation-name: hero-settle; animation-duration: 1.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-rise,
+  .hero-settle {
+    opacity: 1;
+    animation: none;
+    transform: none;
+  }
+}
