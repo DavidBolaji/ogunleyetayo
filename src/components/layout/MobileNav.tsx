@@ -64,7 +64,10 @@ export function MobileNav() {
             transition={{ duration: 0.25 }}
             className="fixed inset-0 z-50 bg-deep text-on-deep"
           >
-            <nav aria-label="Mobile" className="flex h-full flex-col overflow-y-auto px-gutter pb-12 pt-28">
+            <nav
+              aria-label="Mobile"
+              className="flex h-full flex-col overflow-y-auto overscroll-contain px-gutter pb-12 pt-28"
+            >
               <ul className="flex flex-col">
                 {items.map((item, index) => (
                   <motion.li

@@ -34,12 +34,27 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-500 ease-[var(--ease-out-soft)]",
-        lifted
-          ? "border-b border-line/70 bg-canvas/85 py-3 backdrop-blur-xl"
-          : "border-b border-transparent bg-transparent py-5",
+        "fixed inset-x-0 top-0 z-50 transition-[padding] duration-500 ease-[var(--ease-out-soft)]",
+        lifted ? "py-3" : "py-5",
       )}
     >
+      {/*
+        The lifted bar is painted on its own layer rather than on <header>.
+        `backdrop-filter` turns an element into the containing block for its
+        fixed-position descendants, so blurring the header itself would trap
+        MobileNav's `fixed inset-0` overlay inside this thin bar as soon as
+        the page is scrolled. Keep filters off the header.
+      */}
+      <div
+        aria-hidden
+        className={cn(
+          "absolute inset-0 -z-10 border-b transition-all duration-500 ease-[var(--ease-out-soft)]",
+          lifted
+            ? "border-line/70 bg-canvas/85 backdrop-blur-xl"
+            : "border-transparent bg-transparent",
+        )}
+      />
+
       <div className="mx-auto flex w-full max-w-[92rem] items-center justify-between gap-6 px-gutter">
         <Wordmark />
 
