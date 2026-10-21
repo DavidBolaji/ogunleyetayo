@@ -1,5 +1,8 @@
 import type { Book } from "./types";
 
+/** Every title is sold through one storefront. */
+const SELAR = "https://selar.com/m/ebahitayo";
+
 export const booksIntro = {
   heading: "Words I've written",
   opening:
@@ -14,7 +17,7 @@ export const books: readonly Book[] = [
     description:
       "Letters to the person holding the microphone — on calling, preparation, correction, team life and the private work that makes public worship honest.",
     themes: ["Worship", "Ministry", "Formation"],
-    action: { label: "Read more", href: "/contact" },
+    action: { label: "Get the book", href: SELAR, external: true },
     accentIndex: 0,
   },
   {
@@ -24,7 +27,7 @@ export const books: readonly Book[] = [
     description:
       "For anyone whose prayer life has become a guilty subject. A return to prayer as something sustained rather than something survived.",
     themes: ["Prayer", "Devotion", "Discipline"],
-    action: { label: "Read more", href: "/contact" },
+    action: { label: "Get the book", href: SELAR, external: true },
     accentIndex: 1,
   },
   {
@@ -34,7 +37,7 @@ export const books: readonly Book[] = [
     description:
       "Practical structures for consistent prayer — frameworks, rhythms and prompts for individuals, families and ministry teams.",
     themes: ["Prayer", "Systems", "Practice"],
-    action: { label: "Download", href: "/contact" },
+    action: { label: "Get the resource", href: SELAR, external: true },
     accentIndex: 2,
   },
   {
@@ -44,7 +47,7 @@ export const books: readonly Book[] = [
     description:
       "A collection of psalms written in real seasons — praise, lament, waiting and thanksgiving, kept in the language they arrived in.",
     themes: ["Psalms", "Worship", "Writing"],
-    action: { label: "Read more", href: "/contact" },
+    action: { label: "Get the book", href: SELAR, external: true },
     accentIndex: 3,
   },
 ];
@@ -62,5 +65,5 @@ export const journalCategories = [
 export const journalIntro = {
   heading: "Journal",
   opening: "Notes from the work — written as it happens, not after it is tidy.",
-  note: "The journal opens alongside the Emiore release. Join the letter and you will be the first to read it.",
+  note: "The journal opens alongside the Emi O ri release. Join the letter and you will be the first to read it.",
 } as const;
