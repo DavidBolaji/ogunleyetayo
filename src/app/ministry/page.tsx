@@ -8,10 +8,19 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Figure } from "@/components/ui/Figure";
 import { ActionLink } from "@/components/ui/ActionLink";
-import { silentshout, silentshoutProgrammes, summit } from "@/content/silentshout";
+import { Gallery } from "@/components/sections/Gallery";
+import {
+  fiveAmTribe,
+  silentshout,
+  silentshoutArms,
+  silentshoutProgrammes,
+  summit,
+  weEvangelise,
+  wush,
+} from "@/content/silentshout";
 
 export const metadata: Metadata = {
-  title: "SilentShout School of Music Ministry",
+  title: "SilentShout Global Network",
   description: silentshout.statement,
 };
 
@@ -26,8 +35,9 @@ export default function MinistryPage() {
         media={{ src: "portrait-white-standing", alt: "Ebahi standing in white", focus: "50% 22%" }}
       >
         <div className="flex flex-wrap gap-3">
-          <ActionLink label="About the school" href="#about" variant="accent" size="lg" />
-          <ActionLink label="The Summit" href="/ministry/summit" variant="outlineLight" size="lg" />
+          <ActionLink label="The network" href="#network" variant="accent" size="lg" />
+          <ActionLink label="WUSH" href="#wush" variant="outlineLight" size="lg" />
+          <ActionLink label="The 5AM Tribe" href="#tribe" variant="outlineLight" size="lg" />
         </div>
       </PageHero>
 
@@ -67,16 +77,26 @@ export default function MinistryPage() {
         </div>
       </Section>
 
-      <Section tone="surface" size="lg" width="wide">
+      <Section id="network" tone="surface" size="lg" width="wide">
+        <SectionHeading
+          eyebrow="The network"
+          title={silentshout.headline}
+          lede={silentshout.statement}
+          className="mb-14 sm:mb-20"
+        />
+        <ProgrammeList programmes={silentshoutArms} />
+      </Section>
+
+      <Section tone="canvas" size="lg" width="wide">
         <SectionHeading
           eyebrow="What we cultivate"
           title="Four things we refuse to teach separately."
           className="mb-12"
         />
-        <PillarGrid pillars={silentshout.pillars} columns={4} tone="surface" />
+        <PillarGrid pillars={silentshout.pillars} columns={4} />
       </Section>
 
-      <Section tone="canvas" size="lg" width="wide">
+      <Section id="school" tone="surface" size="lg" width="wide">
         <SectionHeading
           eyebrow="Training & resources"
           title="How SilentShout works"
@@ -85,12 +105,62 @@ export default function MinistryPage() {
         <ProgrammeList programmes={silentshoutProgrammes} />
       </Section>
 
-      {/* Summit feature */}
+      {/* WUSH — the umbrella. The Summit below sits inside it, which is
+          why the two dark bands run together as one chapter. */}
+      <Section id="wush" tone="deep" size="lg" width="wide" grain>
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-20">
+          <div>
+            <Reveal>
+              <p className="eyebrow text-accent">{wush.expansion}</p>
+            </Reveal>
+            <Reveal delay={0.06}>
+              <h2 className="mt-6 text-[clamp(3rem,9vw,7rem)] uppercase leading-[0.85] tracking-[-0.04em]">
+                {wush.name}
+              </h2>
+            </Reveal>
+            <Reveal delay={0.12}>
+              <p className="mt-7 max-w-xl text-lg leading-relaxed text-on-deep-muted">
+                {wush.statement}
+              </p>
+            </Reveal>
+          </div>
+
+          <div className="space-y-5 text-base leading-relaxed text-on-deep-muted lg:pt-6">
+            {wush.body.map((paragraph, index) => (
+              <Reveal key={paragraph} delay={0.16 + index * 0.06}>
+                <p>{paragraph}</p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+
+        <Reveal delay={0.24}>
+          <div className="mt-16 border-t border-on-deep/15 pt-8">
+            <p className="eyebrow text-accent">{wush.editionsLabel}</p>
+            <ol className="mt-6 flex flex-wrap items-baseline gap-x-10 gap-y-3 sm:gap-x-16">
+              {wush.editions.map((year) => (
+                <li
+                  key={year}
+                  className="font-display text-[clamp(2.25rem,7vw,5rem)] leading-none tabular-nums tracking-[-0.03em]"
+                >
+                  {year}
+                </li>
+              ))}
+            </ol>
+          </div>
+        </Reveal>
+
+        <div className="mt-14">
+          <Gallery items={wush.gallery} ratio="wide" />
+        </div>
+      </Section>
+
+      {/* The Summit — one strand inside WUSH */}
       <Section tone="deep" size="lg" width="wide" grain>
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center lg:gap-16">
           <div>
             <Reveal>
-              <p className="eyebrow text-accent">Featured gathering</p>
+              <p className="eyebrow text-accent">Inside WUSH</p>
             </Reveal>
             <Reveal delay={0.06}>
               <h2 className="mt-6 text-[clamp(2rem,5.5vw,4rem)] uppercase leading-[0.95]">
@@ -119,6 +189,81 @@ export default function MinistryPage() {
               sizes="(max-width: 1024px) 100vw, 40vw"
             />
           </Reveal>
+        </div>
+      </Section>
+
+      {/* The 5AM Tribe — a formation pillar, so it gets its own room */}
+      <Section id="tribe" tone="canvas" size="lg" width="wide">
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-20">
+          <div>
+            <SectionHeading
+              eyebrow={`Founded ${fiveAmTribe.founded}`}
+              title={fiveAmTribe.name}
+              size="lg"
+            />
+            <Reveal delay={0.12}>
+              <p className="mt-7 max-w-md font-display text-xl italic leading-snug text-accent-ink sm:text-2xl">
+                {fiveAmTribe.promise}
+              </p>
+            </Reveal>
+            <Reveal delay={0.2}>
+              <div className="mt-9">
+                <ActionLink {...fiveAmTribe.action} variant="solid" size="lg" />
+              </div>
+            </Reveal>
+          </div>
+
+          <div>
+            <div className="space-y-5 text-base leading-relaxed text-ink/75 sm:text-lg">
+              {fiveAmTribe.body.map((paragraph, index) => (
+                <Reveal key={paragraph} delay={0.1 + index * 0.06}>
+                  <p>{paragraph}</p>
+                </Reveal>
+              ))}
+            </div>
+            <PillarGrid pillars={fiveAmTribe.rhythm} columns={2} className="mt-10" />
+          </div>
+        </div>
+      </Section>
+
+      {/* We Evangelise — the outreach arm */}
+      <Section tone="sand" size="lg" width="wide" grain>
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-20">
+          <div>
+            <SectionHeading eyebrow="Outreach" title={weEvangelise.name} />
+            <Reveal delay={0.12}>
+              <p className="mt-6 font-display text-xl italic text-accent-ink">
+                {weEvangelise.promise}
+              </p>
+            </Reveal>
+            <div className="mt-8 space-y-5 text-base leading-relaxed text-ink/75">
+              {weEvangelise.body.map((paragraph, index) => (
+                <Reveal key={paragraph} delay={0.16 + index * 0.06}>
+                  <p>{paragraph}</p>
+                </Reveal>
+              ))}
+            </div>
+            <Reveal delay={0.3}>
+              <div className="mt-9">
+                <ActionLink {...weEvangelise.action} variant="outline" size="lg" />
+              </div>
+            </Reveal>
+          </div>
+
+          <ul className="grid gap-px self-start border border-line bg-line sm:grid-cols-3 lg:mt-4">
+            {weEvangelise.stats.map((stat, index) => (
+              <li key={stat.label} className="bg-canvas p-8">
+                <Reveal delay={index * 0.06} from="none">
+                  <p className="font-display text-[clamp(2.5rem,6vw,4rem)] leading-none tabular-nums text-accent-ink">
+                    {stat.value}
+                  </p>
+                  <p className="mt-4 text-xs uppercase leading-relaxed tracking-[0.14em] text-muted">
+                    {stat.label}
+                  </p>
+                </Reveal>
+              </li>
+            ))}
+          </ul>
         </div>
       </Section>
 
