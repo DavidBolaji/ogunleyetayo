@@ -3,17 +3,17 @@ import type { EnquiryRoute, NavItem, SocialLink } from "./types";
 export const site = {
   name: "Ebahi Tayo-Ogunleye",
   shortName: "Ebahi Tayo",
-  descriptor: "Music Minister · Teacher · Mentor · Author · Creative Entrepreneur",
+  descriptor: "Gospel Music Minister · Worship Leader · Author · Entrepreneur · Leadership Mentor",
   thread: ["Faith", "Formation", "Creativity", "Impact"] as const,
   tagline: "Faith. Creativity. Impact.",
   positioning:
-    "Ebahi Tayo-Ogunleye is a music minister, teacher, mentor, author and creative entrepreneur passionate about raising people who are spiritually grounded, creatively expressive and practically impactful.",
+    "Ebahi Tayo-Ogunleye is a gospel music minister, worship leader, author, entrepreneur and leadership mentor who believes deeply in the power of God to transform ordinary lives into remarkable stories of purpose.",
   url: "https://ebahitayo.com",
   email: "hello@ebahitayo.com",
   phone: "+234 000 000 0000",
   whatsapp: "https://wa.me/2340000000000",
   location: "Lagos, Nigeria",
-  church: "Harvest House Nation, The Life Center Campus",
+  church: "Harvesthouse Christian Center, the Life Center Campus",
 } as const;
 
 export const navigation: readonly NavItem[] = [

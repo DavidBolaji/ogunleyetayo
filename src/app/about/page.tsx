@@ -8,7 +8,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { ParallaxFigure } from "@/components/ui/ParallaxFigure";
-import { gallery, storyIntro, timeline } from "@/content/profile";
+import { fullBio, gallery, mission, storyIntro, timeline } from "@/content/profile";
 import { site } from "@/content/site";
 
 export const metadata: Metadata = {
@@ -53,29 +53,35 @@ export default function AboutPage() {
             />
 
             <div className="mt-10 space-y-5 text-base leading-relaxed text-ink/75">
-              <Reveal delay={0.1}>
-                <p>
-                  The music minister who leads worship on Sunday is the same person who teaches a
-                  ninety-day framework on Tuesday and revamps a wig on Thursday. The standards do not
-                  change between rooms.
-                </p>
-              </Reveal>
-              <Reveal delay={0.16}>
-                <p>
-                  What I want for the people I serve is simple: that they would be spiritually
-                  grounded enough to carry what they have been given, creatively free enough to make
-                  something of their own, and practical enough to actually finish it.
-                </p>
-              </Reveal>
-              <Reveal delay={0.22}>
-                <p>
-                  Everything on this site — the school, the classroom, the books, the business — is
-                  an attempt at that one thing.
-                </p>
-              </Reveal>
+              {fullBio.slice(0, 3).map((paragraph, index) => (
+                <Reveal key={paragraph} delay={0.1 + index * 0.06}>
+                  <p>{paragraph}</p>
+                </Reveal>
+              ))}
             </div>
           </div>
         </div>
+      </Section>
+
+      <Section tone="canvas" size="md" width="default">
+        <div className="space-y-5 text-base leading-relaxed text-ink/75 sm:text-lg">
+          {fullBio.slice(3).map((paragraph, index) => (
+            <Reveal key={paragraph} delay={0.08 + index * 0.05}>
+              <p>{paragraph}</p>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal delay={0.3}>
+          <blockquote className="mt-14 border-l-2 border-accent pl-6">
+            <p className="font-display text-[clamp(1.35rem,3vw,2rem)] italic leading-snug text-ink">
+              “{mission}”
+            </p>
+            <footer className="mt-4 text-xs uppercase tracking-[0.2em] text-muted">
+              Her constant prayer and core mission
+            </footer>
+          </blockquote>
+        </Reveal>
       </Section>
 
       <Section tone="surface" size="lg" width="default">
