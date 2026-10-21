@@ -10,16 +10,18 @@ export const musicIntro = {
 } as const;
 
 export const featuredProject = {
-  title: "Emiore",
+  title: "Emi O ri",
+  /** Yoruba — the title is the testimony. */
+  meaning: "Still in Wonder",
   quote: "I have not seen this kind of God before.",
   recordedNote: "Live recorded in Lagos, 2024.",
   releaseDate: "November 2, 2026",
   description:
-    "A live recording born out of a season of seeing God do what only God does. Emiore is testimony before it is music — a room full of people who ran out of adequate words and sang anyway.",
+    "A live recording born out of a season of seeing God do what only God does. Emi O ri is testimony before it is music — a room full of people who ran out of adequate words and sang anyway.",
   media: {
-    src: "garden-swing-reach",
-    alt: "Ebahi reaching upward on a garden swing",
-    focus: "50% 35%",
+    src: "music-1",
+    alt: "Ebahi in the studio, keyboards and a microphone behind her",
+    focus: "50% 30%",
   } satisfies Media,
   actions: [
     { label: "Listen now", href: "#listen" },
@@ -30,7 +32,7 @@ export const featuredProject = {
 
 export const releases: readonly Release[] = [
   {
-    title: "Emiore",
+    title: "Emi O ri",
     subtitle: "Live in Lagos",
     kind: "live",
     year: "2026",
@@ -47,7 +49,7 @@ export const releases: readonly Release[] = [
   },
   {
     title: "Selected worship sessions",
-    subtitle: "Harvest House Nation",
+    subtitle: "Harvesthouse Christian Center",
     kind: "video",
     year: "2019 — present",
     note: "Congregational worship, recorded live",

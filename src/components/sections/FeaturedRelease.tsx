@@ -29,8 +29,14 @@ export function FeaturedRelease({ variant = "compact" }: FeaturedReleaseProps) {
             </h2>
           </Reveal>
 
-          <Reveal delay={0.12}>
-            <p className="mt-7 max-w-md font-display text-xl italic leading-snug text-on-deep/90 sm:text-2xl">
+          <Reveal delay={0.1}>
+            <p className="mt-4 font-display text-lg italic text-accent sm:text-xl">
+              {featuredProject.meaning}
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.14}>
+            <p className="mt-6 max-w-md font-display text-xl italic leading-snug text-on-deep/90 sm:text-2xl">
               “{featuredProject.quote}”
             </p>
           </Reveal>
@@ -75,7 +81,7 @@ export function FeaturedRelease({ variant = "compact" }: FeaturedReleaseProps) {
             media={featuredProject.media}
             className="aspect-[4/5] w-full"
             sizes="(max-width: 1024px) 100vw, 42vw"
-            strength={10}
+            strength={8}
           />
         </Reveal>
       </div>

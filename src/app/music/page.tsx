@@ -12,7 +12,7 @@ import { musicArchiveNote, musicIntro, releases } from "@/content/music";
 export const metadata: Metadata = {
   title: "Music",
   description:
-    "Music by Ebahi Tayo-Ogunleye — worship leadership, original songs, live recordings and the Emiore project.",
+    "Music by Ebahi Tayo-Ogunleye — worship leadership, original songs, live recordings and the Emi O ri project.",
 };
 
 export default function MusicPage() {
@@ -22,7 +22,11 @@ export default function MusicPage() {
         eyebrow={musicIntro.heading}
         title={musicIntro.opening}
         lede={musicIntro.body[0]}
-        media={{ src: "garden-swing-laugh", alt: "Ebahi laughing on a garden swing", focus: "50% 30%" }}
+        media={{
+          src: "music-2",
+          alt: "An outdoor worship session set up among the trees — keyboard, microphone and open air",
+          focus: "50% 45%",
+        }}
       >
         <ActionLink label="Hear the featured project" href="#featured" variant="solid" size="lg" />
       </PageHero>
@@ -81,7 +85,7 @@ export default function MusicPage() {
 
           {/* Ready-made embed slots — drop in a YouTube or Spotify iframe per release. */}
           <div className="grid gap-4 sm:grid-cols-2">
-            {["Emiore — live", "Worship session"].map((label) => (
+            {["Emi O ri — live", "Worship session"].map((label) => (
               <Reveal key={label}>
                 <div className="flex aspect-video items-center justify-center border border-dashed border-line bg-surface/60 p-6 text-center">
                   <div>

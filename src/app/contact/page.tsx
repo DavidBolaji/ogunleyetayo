@@ -116,7 +116,7 @@ export default function ContactPage() {
           </Reveal>
           <Reveal delay={0.14}>
             <p className="mt-5 text-base leading-relaxed text-on-deep-muted">
-              New music, teaching, resources and dates — including the Emiore release.
+              New music, teaching, resources and dates — including the Emi O ri release.
             </p>
           </Reveal>
           <Reveal delay={0.2}>
