@@ -6,6 +6,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Figure } from "@/components/ui/Figure";
+import { Gallery } from "@/components/sections/Gallery";
 import { ActionLink } from "@/components/ui/ActionLink";
 import { edwoltz, environment } from "@/content/edwoltz";
 
@@ -22,9 +23,12 @@ export default function EdwoltzPage() {
         title={edwoltz.headline}
         lede={edwoltz.positioning}
         tone="deep"
-        media={{ ...edwoltz.media, focus: "50% 25%" }}
+        media={{ ...edwoltz.media, focus: "50% 30%" }}
       >
-        <ActionLink {...edwoltz.cta} variant="accent" size="lg" />
+        <div className="flex flex-wrap gap-3">
+          <ActionLink {...edwoltz.cta} variant="accent" size="lg" />
+          <ActionLink {...edwoltz.youtube} variant="outlineLight" size="lg" />
+        </div>
       </PageHero>
 
       <Section tone="canvas" size="lg" width="wide">
@@ -43,8 +47,8 @@ export default function EdwoltzPage() {
           <Reveal from="left">
             <Figure
               media={{
-                src: "editorial-veil-motion",
-                alt: "Editorial portrait in motion",
+                src: "hair-pink-cape",
+                alt: "Ebahi in a pink patchwork cape, natural hair worn out",
                 focus: "50% 25%",
               }}
               ratio="portrait"
@@ -57,6 +61,11 @@ export default function EdwoltzPage() {
       <Section tone="surface" size="lg" width="wide">
         <SectionHeading eyebrow="What Edwoltz does" title="Services & education" className="mb-12" />
         <PillarGrid pillars={edwoltz.services} columns={4} tone="surface" />
+      </Section>
+
+      <Section tone="canvas" size="lg" width="wide">
+        <SectionHeading eyebrow="The work" title="Hair, up close." className="mb-12" />
+        <Gallery items={edwoltz.gallery} />
       </Section>
 
       <Section tone="deep" size="lg" width="wide" grain>

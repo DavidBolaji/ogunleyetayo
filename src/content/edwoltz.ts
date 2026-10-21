@@ -1,4 +1,4 @@
-import type { Media } from "./types";
+import type { Action, Media } from "./types";
 
 export const edwoltz = {
   name: "Edwoltz Hair City",
@@ -14,11 +14,26 @@ export const edwoltz = {
     { title: "Hair education", body: "Training for stylists and clients — technique, product knowledge and care." },
     { title: "YouTube education", body: "Open, free teaching on hair care, revamping and industry practice." },
   ],
-  cta: { label: "Visit Edwoltz Hair City", href: "https://www.youtube.com/@edwoltzhaircity" },
+  cta: {
+    label: "Visit Edwoltz Hair City",
+    href: "https://edwoltzhaircity.com/",
+    external: true,
+  } satisfies Action,
+  youtube: {
+    label: "Watch on YouTube",
+    href: "https://www.youtube.com/@edwoltzhaircity",
+    external: true,
+  } satisfies Action,
+  gallery: [
+    { src: "hair-wig-stand", alt: "Ebahi beside a finished wig on a stand in the Edwoltz studio", focus: "50% 35%" },
+    { src: "hair-curls-overhead", alt: "Natural curls photographed from above", focus: "50% 40%" },
+    { src: "hair-pink-cape", alt: "Ebahi in a pink patchwork cape, natural hair worn out", focus: "50% 30%" },
+    { src: "hair-profile-laughing", alt: "Ebahi laughing in profile, hair worn loose", focus: "50% 30%" },
+  ] satisfies readonly Media[],
   media: {
-    src: "editorial-veil-close",
-    alt: "Editorial beauty portrait",
-    focus: "50% 28%",
+    src: "hair-city",
+    alt: "Ebahi laughing, natural hair worn out, in a pink jacket",
+    focus: "50% 30%",
   } satisfies Media,
 } as const;
 
@@ -37,6 +52,10 @@ export const environment = {
     "Salon practices that reduce waste",
     "Educating clients without shaming them",
   ],
-  cta: { label: "Explore the hair & environment project", href: "https://www.youtube.com/@edwoltzhaircity" },
+  cta: {
+    label: "Explore the hair & environment project",
+    href: "https://www.youtube.com/@edwoltzhaircity",
+    external: true,
+  } satisfies Action,
   media: { src: "garden-forest-wide", alt: "Ebahi walking through a forest", focus: "50% 45%" } satisfies Media,
 } as const;
