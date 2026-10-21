@@ -11,6 +11,10 @@
  * Filenames become the `Media.src` keys used by the content layer, so
  * name source files semantically (portrait-open-hands.jpg), or add an
  * entry to RENAMES below for files that arrive with camera names.
+ *
+ * Sub-folders are walked too, and a folder groups its images under a
+ * shared prefix: assets/images/wush/foo.jpg → wush-foo. A RENAMES entry
+ * always wins and is used verbatim.
  */
 import { mkdir, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -53,6 +57,16 @@ const RENAMES = {
   "TSA05817": "garden-trees",
   "TSA05827": "garden-path",
   "TSA05836": "garden-forest-wide",
+  // WUSH — Worship Until Something Happens (assets/images/wush)
+  "WhatsApp Image 2026-10-12 at 12.35.08 PM": "wush-certificates",
+  "WhatsApp Image 2026-10-12 at 12.35.09 PM": "wush-team-banner",
+  "WhatsApp Image 2026-10-12 at 12.35.10 PM": "wush-podium-group",
+  "WhatsApp Image 2026-10-12 at 12.35.12 PM": "wush-delegates-banner",
+  // Edwoltz Hair City (assets/images/hair)
+  "IMG_5071.JPG (1)": "hair-curls-overhead",
+  "IMG_5072.JPG (1)": "hair-profile-laughing",
+  "IMG_5073.JPG (1)": "hair-pink-cape",
+  "IMG_5075.JPG (1)": "hair-wig-stand",
 };
 
 const SUPPORTED = new Set([".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff"]);
@@ -63,14 +77,27 @@ const slugify = (value) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
+/** Every supported image under dir, as paths relative to SOURCE_DIR. */
+async function collect(dir) {
+  const entries = await readdir(dir, { withFileTypes: true });
+  const found = [];
+
+  for (const entry of entries) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      found.push(...(await collect(full)));
+    } else if (entry.isFile() && SUPPORTED.has(path.extname(entry.name).toLowerCase())) {
+      found.push(path.relative(SOURCE_DIR, full));
+    }
+  }
+
+  return found;
+}
+
 async function main() {
   await mkdir(OUTPUT_DIR, { recursive: true });
 
-  const entries = await readdir(SOURCE_DIR, { withFileTypes: true });
-  const images = entries
-    .filter((entry) => entry.isFile() && SUPPORTED.has(path.extname(entry.name).toLowerCase()))
-    .map((entry) => entry.name)
-    .sort();
+  const images = (await collect(SOURCE_DIR)).sort();
 
   if (images.length === 0) {
     console.warn(`No source images found in ${SOURCE_DIR}`);
@@ -81,7 +108,9 @@ async function main() {
 
   for (const filename of images) {
     const stem = path.basename(filename, path.extname(filename));
-    const name = RENAMES[stem] ?? slugify(stem);
+    const folder = slugify(path.dirname(filename));
+    // A sub-folder namespaces its images; an explicit rename overrides it.
+    const name = RENAMES[stem] ?? [folder, slugify(stem)].filter(Boolean).join("-");
     const source = path.join(SOURCE_DIR, filename);
 
     const pipeline = sharp(source)
