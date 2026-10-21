@@ -71,6 +71,20 @@ export interface TimelineEntry {
   readonly body: string;
 }
 
+/** One blog post. Publishing is a data edit — add an entry to posts.ts. */
+export interface Post {
+  readonly slug: string;
+  readonly title: string;
+  readonly excerpt: string;
+  /** ISO date — rendered through toLocaleDateString, sorted on directly. */
+  readonly date: string;
+  readonly category: string;
+  readonly readingTime: string;
+  /** Paragraphs. A string starting with "## " renders as a subheading. */
+  readonly body: readonly string[];
+  readonly media?: Media;
+}
+
 export interface Recognition {
   readonly title: string;
   readonly source: string;

@@ -51,19 +51,3 @@ export const books: readonly Book[] = [
     accentIndex: 3,
   },
 ];
-
-export const journalCategories = [
-  "Faith",
-  "Music Ministry",
-  "Leadership",
-  "Creativity",
-  "Purpose",
-  "Life",
-  "Entrepreneurship",
-] as const;
-
-export const journalIntro = {
-  heading: "Journal",
-  opening: "Notes from the work — written as it happens, not after it is tidy.",
-  note: "The journal opens alongside the Emi O ri release. Join the letter and you will be the first to read it.",
-} as const;

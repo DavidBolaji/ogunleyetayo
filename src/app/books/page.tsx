@@ -7,7 +7,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { ActionLink } from "@/components/ui/ActionLink";
 import { NewsletterForm } from "@/components/forms/NewsletterForm";
-import { books, booksIntro, journalCategories } from "@/content/books";
+import { books, booksIntro } from "@/content/books";
+import { blogCategories } from "@/content/posts";
 
 export const metadata: Metadata = {
   title: "Books & Resources",
@@ -23,9 +24,9 @@ export default function BooksPage() {
         title={booksIntro.heading}
         lede={booksIntro.opening}
         media={{
-          src: "editorial-veil-seated",
-          alt: "Ebahi seated, editorial portrait",
-          focus: "50% 22%",
+          src: "writing",
+          alt: "Ebahi writing in a journal at her desk",
+          focus: "50% 25%",
         }}
       />
 
@@ -36,18 +37,18 @@ export default function BooksPage() {
       <Section tone="sand" size="md" width="wide" grain>
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-center lg:gap-16">
           <SectionHeading
-            eyebrow="Journal"
-            title="Notes from the work, as it happens."
+            eyebrow="Blog"
+            title="Short reads, published as the work happens."
             lede="A writing space for faith, music ministry, leadership, creativity, purpose, life and enterprise."
           >
             <div className="mt-2">
-              <ActionLink label="Visit the journal" href="/journal" variant="link" />
+              <ActionLink label="Read the blog" href="/blog" variant="link" />
             </div>
           </SectionHeading>
 
           <Reveal delay={0.1}>
             <ul className="flex flex-wrap gap-2">
-              {journalCategories.map((category) => (
+              {blogCategories.map((category) => (
                 <li
                   key={category}
                   className="rounded-full border border-line bg-surface px-4 py-2 text-[0.72rem] uppercase tracking-[0.14em] text-muted"
