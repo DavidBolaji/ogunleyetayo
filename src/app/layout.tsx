@@ -61,9 +61,22 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+/**
+ * "unified"  — one purple-and-gold palette everywhere; sub-brands speak
+ *              in purple type (current).
+ * "brands"   — restores the original per-brand palettes: royal-blue
+ *              SilentShout, black-and-brown Edwoltz.
+ */
+const SITE_PALETTE: "unified" | "brands" = "unified";
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-brand="ebahi" className={`${display.variable} ${sans.variable}`}>
+    <html
+      lang="en"
+      data-brand="ebahi"
+      data-palette={SITE_PALETTE}
+      className={`${display.variable} ${sans.variable}`}
+    >
       <head>
         <noscript>
           {/* Scroll reveals never fire without JS — show the content instead. */}

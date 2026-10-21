@@ -27,9 +27,46 @@
   --c-accent-ink: #7a5407;
   --c-on-deep: #f6ecdb;
   --c-on-deep-muted: #c3aec6;
+  /* Display type is purple everywhere — the one constant of the brand. */
+  --c-heading-light: #43204c;
+  --c-heading: var(--c-heading-light);
 }
 
-[data-brand="silentshout"] {
+/* ------------------------------------------------------------------
+   UNIFIED MODE (current).
+
+   One palette across the whole site, so the personal brand stays
+   consistent. A sub-brand is no longer painted onto the page — it is
+   spoken in purple type. Blocks still carry `data-brand`, so switching
+   back is one attribute away.
+------------------------------------------------------------------ */
+
+/* Headings carry the brand now — gold stays the accent, so buttons and
+   links keep the contrast they were designed with. The colour follows the
+   ground a heading sits on, including light cells nested inside dark
+   sections, so it is resolved per surface rather than once at the root. */
+.bg-deep,
+.bg-deep-soft,
+.text-on-deep {
+  --c-heading: var(--c-on-deep);
+}
+
+.bg-canvas,
+.bg-surface,
+.bg-sand {
+  --c-heading: var(--c-heading-light);
+}
+
+/* ------------------------------------------------------------------
+   BACKUP: the original per-brand palettes.
+
+   Kept verbatim and currently inert. To restore the old look — blue
+   SilentShout, black-and-brown Edwoltz — set SITE_PALETTE to "brands"
+   in src/app/layout.tsx. Nothing else changes.
+------------------------------------------------------------------ */
+
+[data-palette="brands"] [data-brand="silentshout"] {
+  --c-heading-light: #10152a;
   --c-canvas: #f6f7fb;
   --c-surface: #ffffff;
   --c-sand: #e7ecf8;
@@ -45,7 +82,8 @@
   --c-on-deep-muted: #a9b8dd;
 }
 
-[data-brand="edwoltz"] {
+[data-palette="brands"] [data-brand="edwoltz"] {
+  --c-heading-light: #14100e;
   --c-canvas: #faf7f4;
   --c-surface: #ffffff;
   --c-sand: #efe6dc;
@@ -116,6 +154,7 @@
   }
 
   h1, h2, h3, h4 {
+    color: var(--c-heading);
     font-family: var(--font-display);
     font-weight: 400;
     letter-spacing: -0.02em;
