@@ -12,9 +12,11 @@ const ratios = {
   auto: "",
 } as const;
 
+export type FigureRatio = keyof typeof ratios;
+
 interface FigureProps {
   media: Media;
-  ratio?: keyof typeof ratios;
+  ratio?: FigureRatio;
   sizes?: string;
   priority?: boolean;
   className?: string;
