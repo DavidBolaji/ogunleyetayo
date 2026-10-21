@@ -1,7 +1,6 @@
 import { ActionLink } from "@/components/ui/ActionLink";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Figure } from "@/components/ui/Figure";
-import { ParallaxFigure } from "@/components/ui/ParallaxFigure";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
 import { profile } from "@/content/profile";
@@ -12,12 +11,15 @@ export function MeetEbahi() {
       <div className="grid gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-20">
         <div className="relative">
           <Reveal from="right">
-            <ParallaxFigure
+            {/* Static frame at the file's own 4:5 ratio - the parallax
+                overscan would crop the crown of a portrait this tight. */}
+            <Figure
               media={{
-                src: "garden-portrait-hat",
-                alt: "Ebahi smiling in a wide-brimmed hat",
-                focus: "50% 30%",
+                src: "portrait-burgundy-close",
+                alt: "Ebahi in a burgundy waistcoat, hand resting under her chin",
+                focus: "50% 20%",
               }}
+              ratio="auto"
               className="aspect-[4/5] w-full"
               sizes="(max-width: 1024px) 100vw, 40vw"
             />
