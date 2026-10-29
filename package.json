@@ -7,17 +7,23 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "images": "node scripts/optimize-images.mjs"
+    "images": "node scripts/optimize-images.mjs",
+    "db:seed": "tsc scripts/seed-db.ts --outDir .seed --module commonjs --target es2022 --moduleResolution node --esModuleInterop --skipLibCheck --strict && node .seed/scripts/seed-db.js",
+    "admin:password": "node scripts/admin-password.mjs",
+    "db:pull": "tsc scripts/db-sync.ts --outDir .seed --module commonjs --target es2022 --moduleResolution node --esModuleInterop --skipLibCheck --strict && node .seed/scripts/db-sync.js pull",
+    "db:push": "tsc scripts/db-sync.ts --outDir .seed --module commonjs --target es2022 --moduleResolution node --esModuleInterop --skipLibCheck --strict && node .seed/scripts/db-sync.js push"
   },
   "engines": {
     "node": ">=18.18"
   },
   "dependencies": {
+    "@vercel/blob": "^2.8.2",
     "motion": "^11.18.2",
     "next": "^15.5.26",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
