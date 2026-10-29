@@ -1,9 +1,13 @@
 import type { MetadataRoute } from "next";
-import { site } from "@/content/site";
+import { getSettings } from "@/lib/content";
 
-export default function robots(): MetadataRoute.Robots {
+export default async function robots(): Promise<MetadataRoute.Robots> {
+  const settings = await getSettings();
+  const base = settings.site.url.replace(/\/$/, "");
+
   return {
-    rules: [{ userAgent: "*", allow: "/" }],
-    sitemap: `${site.url}/sitemap.xml`,
+    // The dashboard and the media route are never for crawlers.
+    rules: [{ userAgent: "*", allow: "/", disallow: ["/admin", "/api/"] }],
+    sitemap: `${base}/sitemap.xml`,
   };
 }

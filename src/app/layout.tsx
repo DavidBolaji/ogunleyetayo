@@ -1,83 +1,68 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Manrope } from "next/font/google";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { StructuredData } from "@/components/StructuredData";
 import { MotionProvider } from "@/components/MotionProvider";
-import { site } from "@/content/site";
+import { getNavigation, getSettings, getTheme } from "@/lib/content";
+import { themeCss, themeFontClassNames } from "@/lib/theme";
 import "@/styles/globals.css";
 
-const display = Fraunces({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-fraunces",
-  axes: ["SOFT", "WONK"],
-});
-
-const sans = Manrope({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-manrope",
-});
-
-export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
-  title: {
-    default: `${site.name} — ${site.tagline}`,
-    template: `%s — ${site.name}`,
-  },
-  description: site.positioning,
-  keywords: [
-    "Ebahi Tayo-Ogunleye",
-    "music minister",
-    "worship leader",
-    "SilentShout",
-    "Young Music Ministers Summit",
-    "Edwoltz Hair City",
-    "VisionCraft Academy",
-    "Christian author",
-  ],
-  authors: [{ name: site.name }],
-  openGraph: {
-    type: "website",
-    locale: "en_NG",
-    url: site.url,
-    siteName: site.name,
-    title: `${site.name} — ${site.tagline}`,
-    description: site.positioning,
-    images: [{ url: "/images/portrait-open-hands.webp", width: 1600, height: 2000, alt: site.name }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `${site.name} — ${site.tagline}`,
-    description: site.positioning,
-  },
-  robots: { index: true, follow: true },
-};
-
-export const viewport: Viewport = {
-  themeColor: "#2a1030",
-  width: "device-width",
-  initialScale: 1,
-};
-
 /**
- * "unified"  — one purple-and-gold palette everywhere; sub-brands speak
- *              in purple type (current).
- * "brands"   — restores the original per-brand palettes: royal-blue
- *              SilentShout, black-and-brown Edwoltz.
+ * Metadata defaults come from the settings document, so the site's
+ * name, description, social card and theme colour are editable without
+ * a deploy.
  */
-const SITE_PALETTE: "unified" | "brands" = "unified";
+export async function generateMetadata(): Promise<Metadata> {
+  const settings = await getSettings();
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return {
+    metadataBase: new URL(settings.site.url),
+    title: {
+      default: `${settings.site.name} — ${settings.site.tagline}`,
+      // Stored with a `%s` placeholder, e.g. "%s — Ebahi Tayo-Ogunleye".
+      template: settings.seo.titleTemplate.includes("%s")
+        ? settings.seo.titleTemplate
+        : `%s — ${settings.site.name}`,
+    },
+    description: settings.site.positioning,
+    keywords: settings.seo.keywords,
+    authors: [{ name: settings.site.name }],
+    robots: { index: true, follow: true },
+  };
+}
+
+export async function generateViewport(): Promise<Viewport> {
+  const settings = await getSettings();
+
+  return {
+    themeColor: settings.seo.themeColor,
+    width: "device-width",
+    initialScale: 1,
+  };
+}
+
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const [theme, settings, navigation] = await Promise.all([
+    getTheme(),
+    getSettings(),
+    getNavigation(),
+  ]);
+
   return (
     <html
       lang="en"
-      data-brand="ebahi"
-      data-palette={SITE_PALETTE}
-      className={`${display.variable} ${sans.variable}`}
+      data-brand={theme.basePalette}
+      data-palette={theme.activeMode}
+      className={themeFontClassNames(theme)}
     >
       <head>
+        {/*
+          The palette layer is generated from the theme document rather
+          than hardcoded in CSS. It is inlined because it is a few
+          hundred bytes, it must not flash, and it changes whenever the
+          theme is edited — all of which rule out a cached file.
+        */}
+        <style id="theme-tokens">{themeCss(theme)}</style>
         <noscript>
           {/* Scroll reveals never fire without JS — show the content instead. */}
           <style>{".reveal{opacity:1!important;transform:none!important}"}</style>
@@ -92,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <StructuredData />
         <MotionProvider>
-          <SiteHeader />
+          <SiteHeader navigation={navigation.header} settings={settings} />
           <main id="main">{children}</main>
           <SiteFooter />
         </MotionProvider>

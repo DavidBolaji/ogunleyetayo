@@ -4,20 +4,28 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/cn";
-import { navigation } from "@/content/site";
-import type { NavItem } from "@/content/types";
 import { Wordmark } from "./Wordmark";
 import { MobileNav } from "./MobileNav";
+import type { NavItem, Settings } from "@/content/types";
 
 const isActive = (pathname: string, item: NavItem): boolean => {
   if (item.href === "/") return pathname === "/";
-  if (item.children) {
-    return item.children.some((child) => pathname.startsWith(child.href));
+  if (item.children.length > 0) {
+    return item.children.some((child) => pathname.startsWith(child.href.split("#")[0]));
   }
-  return pathname.startsWith(item.href);
+  return pathname.startsWith(item.href.split("#")[0]);
 };
 
-export function SiteHeader() {
+interface SiteHeaderProps {
+  navigation: readonly NavItem[];
+  settings: Settings;
+}
+
+/**
+ * The primary navigation, driven by the navigation document — so the
+ * menu, its order and its dropdown groups are all dashboard edits.
+ */
+export function SiteHeader({ navigation, settings }: SiteHeaderProps) {
   const pathname = usePathname();
   const [lifted, setLifted] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
@@ -30,6 +38,8 @@ export function SiteHeader() {
   }, []);
 
   useEffect(() => setOpenMenu(null), [pathname]);
+
+  const items = navigation.filter((item) => item.visible);
 
   return (
     <header
@@ -56,19 +66,22 @@ export function SiteHeader() {
       />
 
       <div className="mx-auto flex w-full max-w-[92rem] items-center justify-between gap-6 px-gutter">
-        <Wordmark />
+        <Wordmark name={settings.site.name} shortName={settings.site.shortName} tagline={settings.site.wordmarkTagline} />
 
         <nav aria-label="Primary" className="hidden lg:block">
           <ul className="flex items-center gap-1">
-            {navigation.map((item) => {
+            {items.map((item) => {
               const active = isActive(pathname, item);
+              const children = item.children.filter((child) => child.visible);
 
-              if (!item.children) {
+              if (children.length === 0) {
                 return (
-                  <li key={item.href}>
+                  <li key={item.id}>
                     <Link
                       href={item.href}
                       aria-current={active ? "page" : undefined}
+                      target={item.external ? "_blank" : undefined}
+                      rel={item.external ? "noreferrer noopener" : undefined}
                       className={cn(
                         "relative rounded-full px-3.5 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.16em] transition-colors",
                         active ? "text-accent-ink" : "text-ink/65 hover:text-ink",
@@ -86,20 +99,20 @@ export function SiteHeader() {
                 );
               }
 
-              const open = openMenu === item.label;
+              const open = openMenu === item.id;
 
               return (
                 <li
-                  key={item.label}
+                  key={item.id}
                   className="relative"
-                  onMouseEnter={() => setOpenMenu(item.label)}
+                  onMouseEnter={() => setOpenMenu(item.id)}
                   onMouseLeave={() => setOpenMenu(null)}
                 >
                   <button
                     type="button"
                     aria-expanded={open}
                     aria-haspopup="true"
-                    onClick={() => setOpenMenu(open ? null : item.label)}
+                    onClick={() => setOpenMenu(open ? null : item.id)}
                     className={cn(
                       "flex items-center gap-1.5 rounded-full px-3.5 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.16em] transition-colors",
                       active || open ? "text-accent-ink" : "text-ink/65 hover:text-ink",
@@ -123,14 +136,19 @@ export function SiteHeader() {
                     )}
                   >
                     <ul className="overflow-hidden rounded-2xl border border-line bg-surface p-2 shadow-[0_24px_60px_-28px_rgba(42,16,48,0.45)]">
-                      {item.children?.map((child) => (
-                        <li key={child.href}>
+                      {children.map((child) => (
+                        <li key={child.id}>
                           <Link
                             href={child.href}
+                            target={child.external ? "_blank" : undefined}
+                            rel={child.external ? "noreferrer noopener" : undefined}
                             className="flex items-center justify-between rounded-xl px-4 py-3 text-sm text-ink/80 transition-colors hover:bg-sand hover:text-ink"
                           >
                             {child.label}
-                            <span aria-hidden className="text-accent opacity-0 transition-opacity [li:hover_&]:opacity-100">
+                            <span
+                              aria-hidden
+                              className="text-accent opacity-0 transition-opacity [li:hover_&]:opacity-100"
+                            >
                               →
                             </span>
                           </Link>
@@ -144,7 +162,7 @@ export function SiteHeader() {
           </ul>
         </nav>
 
-        <MobileNav />
+        <MobileNav items={items} socials={settings.socials} />
       </div>
     </header>
   );

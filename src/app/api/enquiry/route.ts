@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { getSettings } from "@/lib/content";
 
 interface EnquiryPayload {
   intent?: string;
@@ -84,10 +85,12 @@ export async function POST(request: Request) {
     });
   }
 
+  const settings = await getSettings();
+
   return NextResponse.json({
     message:
       intent === "newsletter"
         ? "You're on the list. Watch your inbox."
-        : "Thank you — your message is in. You'll hear back shortly.",
+        : settings.enquiry.successMessage,
   });
 }
