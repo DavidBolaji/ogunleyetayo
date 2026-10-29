@@ -10,3 +10,11 @@ out
 # Local-only
 CLAUDE.md
 .claude
+
+# Secrets. Production values come from the project's environment
+# variables, never from a file in the bundle.
+.env
+.env.*
+
+# Build output of the database scripts.
+.seed
