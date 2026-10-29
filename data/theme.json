@@ -1,0 +1,93 @@
+{
+  "basePalette": "ebahi",
+  "activeMode": "unified",
+  "palettes": [
+    {
+      "id": "ebahi",
+      "label": "Ebahi — purple & gold",
+      "tokens": {
+        "canvas": "#fbf7f3",
+        "surface": "#ffffff",
+        "sand": "#f1e7dc",
+        "deep": "#2a1030",
+        "deepSoft": "#43204c",
+        "ink": "#191217",
+        "muted": "#6f6169",
+        "line": "#e3d8cd",
+        "accent": "#c98f1e",
+        "accentSoft": "#f6e9cf",
+        "accentInk": "#7a5407",
+        "onDeep": "#f6ecdb",
+        "onDeepMuted": "#c3aec6",
+        "headingLight": "#43204c"
+      }
+    },
+    {
+      "id": "silentshout",
+      "label": "SilentShout — royal blue & burnt orange",
+      "tokens": {
+        "canvas": "#f6f7fb",
+        "surface": "#ffffff",
+        "sand": "#e7ecf8",
+        "deep": "#11265f",
+        "deepSoft": "#1c3b8c",
+        "ink": "#10152a",
+        "muted": "#5c6580",
+        "line": "#d3dbee",
+        "accent": "#c4551f",
+        "accentSoft": "#fbe6da",
+        "accentInk": "#8f3a12",
+        "onDeep": "#eef2fd",
+        "onDeepMuted": "#a9b8dd",
+        "headingLight": "#10152a"
+      }
+    },
+    {
+      "id": "edwoltz",
+      "label": "Edwoltz — black, brown & orange-gold",
+      "tokens": {
+        "canvas": "#faf7f4",
+        "surface": "#ffffff",
+        "sand": "#efe6dc",
+        "deep": "#14100e",
+        "deepSoft": "#3b2a20",
+        "ink": "#14100e",
+        "muted": "#6d5f54",
+        "line": "#e0d5c9",
+        "accent": "#d98324",
+        "accentSoft": "#fbead6",
+        "accentInk": "#92530d",
+        "onDeep": "#f7f0e8",
+        "onDeepMuted": "#b6a696",
+        "headingLight": "#14100e"
+      }
+    }
+  ],
+  "modes": [
+    {
+      "id": "unified",
+      "label": "Unified — one palette, brand in the type",
+      "description": "One purple-and-gold palette across the whole site, so the personal brand stays consistent. A sub-brand is spoken in purple display type rather than painted onto the page.",
+      "suppress": [
+        "silentshout",
+        "edwoltz"
+      ]
+    },
+    {
+      "id": "brands",
+      "label": "Per-brand palettes",
+      "description": "Restores the original sub-brand palettes: royal-blue SilentShout and black-and-brown Edwoltz. Every block already carries its palette, so nothing else changes.",
+      "suppress": []
+    }
+  ],
+  "fonts": {
+    "display": "fraunces",
+    "sans": "manrope"
+  },
+  "typography": {
+    "scale": 1,
+    "headingTracking": "-0.02em",
+    "headingWeight": 400,
+    "bodySize": "1rem"
+  }
+}

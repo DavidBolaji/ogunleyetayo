@@ -14,3 +14,6 @@ CLAUDE.md
 assets/
 .vercel
 .env*
+
+# Seed build output (scripts/seed-db.ts)
+.seed

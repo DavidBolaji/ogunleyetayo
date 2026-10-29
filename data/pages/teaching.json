@@ -1,0 +1,291 @@
+{
+  "id": "teaching",
+  "slug": "teaching",
+  "title": "Teaching & Coaching",
+  "status": "published",
+  "order": 3,
+  "seo": {
+    "description": "Learn with Ebahi — VisionCraft Academy, the Coaching Hub and The Power of 90 Days framework for vision, strategy and execution.",
+    "keywords": [],
+    "noIndex": false
+  },
+  "blocks": [
+    {
+      "id": "pageHero-3",
+      "type": "pageHero",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Learn with Ebahi",
+        "title": "I teach because information becomes powerful when it produces transformation.",
+        "lede": "Most people do not need more ideas. They need a structure that turns the ideas they already have into something that actually happens.",
+        "media": {
+          "src": "portrait-burgundy-full",
+          "alt": "Ebahi in a burgundy jacket, full length",
+          "focus": "50% 22%"
+        },
+        "tone": "canvas",
+        "actions": [],
+        "titleType": {
+          "min": 2.5,
+          "vw": 7,
+          "max": 5.5,
+          "leading": 0.92,
+          "tracking": "-0.03em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "split-5",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "deep",
+        "size": "lg",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "prose",
+            "eyebrow": "Signature framework",
+            "title": "The Power of\n*90 Days*",
+            "titleType": {
+              "min": 2,
+              "vw": 5.5,
+              "max": 4,
+              "leading": 0.95,
+              "tracking": "",
+              "case": "upper",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "lede": "A teaching framework around vision, strategy and execution.",
+            "ledeSize": "md",
+            "ledeMaxWidth": "md",
+            "paragraphs": [
+              "A year is too long to stay accountable to and a week is too short to change anything. Ninety days is the unit where vision meets evidence.",
+              "The framework moves through four movements — see it, shape it, schedule it, ship it — and ends with something you can point at."
+            ],
+            "bodySize": "sm",
+            "bodyTone": "strong",
+            "actions": [],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "pillars",
+            "items": [
+              {
+                "label": "01",
+                "title": "See it",
+                "body": "Get honest about the vision, and specific about what it looks like finished."
+              },
+              {
+                "label": "02",
+                "title": "Shape it",
+                "body": "Turn the vision into a strategy with constraints, priorities and trade-offs."
+              },
+              {
+                "label": "03",
+                "title": "Schedule it",
+                "body": "Break ninety days into weeks that carry real, dated commitments."
+              },
+              {
+                "label": "04",
+                "title": "Ship it",
+                "body": "Execute, review honestly, and carry the momentum into the next ninety."
+              }
+            ],
+            "columns": 2,
+            "numbered": true,
+            "cellTone": "deep",
+            "intro": [],
+            "selfStart": true
+          }
+        ],
+        "ratio": "0.9/1.1",
+        "verticalAlign": "start",
+        "gap": "lg",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    },
+    {
+      "id": "programmeList-1",
+      "type": "programmeList",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "heading": {
+          "eyebrow": "Programmes",
+          "title": "Where the teaching lives",
+          "lede": "That is what this work is for — frameworks, accountability and teaching that end in execution.",
+          "align": "left",
+          "size": "md",
+          "gap": "xl"
+        },
+        "collection": "teaching-programmes"
+      }
+    },
+    {
+      "id": "stack-3",
+      "type": "stack",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "md",
+        "width": "default",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "items": [
+          {
+            "kind": "prose",
+            "eyebrow": "Coming to this page",
+            "title": "Built to grow with the work.",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "lede": "Registration, waitlists, downloads and booking are being added as each programme opens.",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "pillars",
+            "items": [
+              {
+                "title": "Register for programmes"
+              },
+              {
+                "title": "Join waitlists"
+              },
+              {
+                "title": "Download resources"
+              },
+              {
+                "title": "Access teaching materials"
+              },
+              {
+                "title": "Book coaching & mentoring"
+              }
+            ],
+            "columns": 3,
+            "numbered": true,
+            "cellTone": "sand",
+            "intro": [],
+            "selfStart": false
+          }
+        ],
+        "maxWidth": "none",
+        "centered": false,
+        "gap": "md"
+      }
+    },
+    {
+      "id": "engageBanner-4",
+      "type": "engageBanner",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "md",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Start here",
+        "title": "Ninety days from now, something should be different.",
+        "actions": [
+          {
+            "label": "Enquire about coaching",
+            "href": "/contact"
+          },
+          {
+            "label": "Invite Ebahi to teach",
+            "href": "/work-with-me"
+          }
+        ],
+        "titleType": {
+          "min": 1.875,
+          "vw": 4.5,
+          "max": 3.25,
+          "leading": 1.05,
+          "tracking": "",
+          "case": "normal",
+          "italic": false
+        }
+      }
+    }
+  ],
+  "inSitemap": true,
+  "system": false,
+  "updatedAt": "2026-10-28T00:00:00.000Z"
+}

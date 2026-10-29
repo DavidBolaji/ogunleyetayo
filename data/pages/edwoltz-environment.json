@@ -1,0 +1,276 @@
+{
+  "id": "edwoltz-environment",
+  "slug": "edwoltz/environment",
+  "title": "Hair & Environment",
+  "status": "published",
+  "order": 11,
+  "seo": {
+    "description": "Ebahi brings together her experience as a hair professional and her environmental science background to explore conversations around hair waste, sustainability and responsible beauty practices.",
+    "keywords": [],
+    "noIndex": false
+  },
+  "palette": "edwoltz",
+  "blocks": [
+    {
+      "id": "pageHero-11",
+      "type": "pageHero",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Hair & environment project",
+        "title": "Beauty, business & the environment",
+        "lede": "Ebahi brings together her experience as a hair professional and her environmental science background to explore conversations around hair waste, sustainability and responsible beauty practices.",
+        "tone": "deep",
+        "actions": [],
+        "titleType": {
+          "min": 2.5,
+          "vw": 7,
+          "max": 5.5,
+          "leading": 0.92,
+          "tracking": "-0.03em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "split-16",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "prose",
+            "eyebrow": "Why this project",
+            "title": "Two lives, one question.",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [
+              "The beauty industry produces a great deal of waste and talks about it very little. Synthetic hair, packaging, product containers and discarded wigs all go somewhere.",
+              "With a master's in Environmental Chemistry & Pollution Control and years inside the industry, this project sits exactly where those two lives meet — practical, non-preachy conversations about what our industry leaves behind."
+            ],
+            "bodySize": "lg",
+            "bodyTone": "body",
+            "quote": {
+              "text": "**B.Sc. Chemistry**~ — University of Ibadan~\n**M.Sc. Environmental Chemistry & Pollution Control**~ — University of Ibadan~",
+              "style": "rule",
+              "type": {
+                "min": 0.875,
+                "vw": 0,
+                "max": 0.875,
+                "leading": 1.7,
+                "tracking": "",
+                "case": "normal",
+                "italic": false
+              },
+              "face": "sans",
+              "tone": "body",
+              "quoted": false
+            },
+            "actions": [],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "media",
+            "items": [
+              {
+                "src": "garden-path",
+                "alt": "Ebahi walking a garden path",
+                "focus": "50% 40%"
+              }
+            ],
+            "layout": "single",
+            "ratio": "portrait",
+            "aspect": "4/5",
+            "parallax": true,
+            "scrim": "none",
+            "reveal": "left",
+            "sizes": "(max-width: 1024px) 100vw, 40vw",
+            "priority": false,
+            "hideOnMobile": false,
+            "gapTop": "none"
+          }
+        ],
+        "ratio": "1.05/0.95",
+        "verticalAlign": "start",
+        "gap": "lg",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    },
+    {
+      "id": "stack-14",
+      "type": "stack",
+      "visible": true,
+      "style": {
+        "tone": "surface",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "items": [
+          {
+            "kind": "prose",
+            "eyebrow": "The conversations",
+            "title": "What we talk about",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "indexList",
+            "items": [
+              {
+                "title": "Hair waste & where it goes"
+              },
+              {
+                "title": "Revamping as a sustainability practice"
+              },
+              {
+                "title": "Responsible product & packaging choices"
+              },
+              {
+                "title": "Salon practices that reduce waste"
+              },
+              {
+                "title": "Educating clients without shaming them"
+              }
+            ],
+            "numbered": true,
+            "type": {
+              "min": 1.25,
+              "vw": 2.6,
+              "max": 2,
+              "leading": 1.25,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "action": {
+              "label": "Explore the hair & environment project",
+              "href": "https://www.youtube.com/@edwoltzhaircity",
+              "external": true,
+              "variant": "outline",
+              "size": "lg"
+            }
+          }
+        ],
+        "maxWidth": "none",
+        "centered": false,
+        "gap": "lg"
+      }
+    },
+    {
+      "id": "engageBanner-9",
+      "type": "engageBanner",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "md",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Speak on this",
+        "title": "Invite Ebahi to speak on beauty, business and sustainability.",
+        "actions": [
+          {
+            "label": "Invite Ebahi",
+            "href": "/work-with-me"
+          },
+          {
+            "label": "Back to Edwoltz",
+            "href": "/edwoltz"
+          }
+        ],
+        "titleType": {
+          "min": 1.875,
+          "vw": 4.5,
+          "max": 3.25,
+          "leading": 1.05,
+          "tracking": "",
+          "case": "normal",
+          "italic": false
+        }
+      }
+    }
+  ],
+  "inSitemap": true,
+  "system": false,
+  "updatedAt": "2026-10-28T00:00:00.000Z"
+}

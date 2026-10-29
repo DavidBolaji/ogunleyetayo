@@ -1,0 +1,71 @@
+{
+  "site": {
+    "name": "Ebahi Tayo-Ogunleye",
+    "shortName": "Ebahi Tayo",
+    "descriptor": "Gospel Music Minister \u00b7 Worship Leader \u00b7 Author \u00b7 Entrepreneur \u00b7 Leadership Mentor",
+    "tagline": "Faith. Creativity. Impact.",
+    "positioning": "Ebahi Tayo-Ogunleye is a gospel music minister, worship leader, author, entrepreneur and leadership mentor who believes deeply in the power of God to transform ordinary lives into remarkable stories of purpose.",
+    "url": "https://ebahitayoogunleye.com",
+    "email": "hello@ebahitayo.com",
+    "phone": "+234 000 000 0000",
+    "whatsapp": "https://wa.me/2340000000000",
+    "location": "Lagos, Nigeria",
+    "church": "Harvesthouse Christian Center, the Life Center Campus",
+    "wordmarkTagline": "Faith \u00b7 Creativity \u00b7 Impact"
+  },
+  "seo": {
+    "titleTemplate": "%s \u2014 Ebahi Tayo-Ogunleye",
+    "keywords": [
+      "Ebahi Tayo-Ogunleye",
+      "music minister",
+      "worship leader",
+      "SilentShout",
+      "Young Music Ministers Summit",
+      "Edwoltz Hair City",
+      "VisionCraft Academy",
+      "Christian author"
+    ],
+    "ogImage": "portrait-open-hands",
+    "themeColor": "#2a1030",
+    "locale": "en_NG"
+  },
+  "socials": [
+    {
+      "id": "instagram",
+      "platform": "Instagram",
+      "handle": "@ebahitayo",
+      "href": "https://instagram.com/ebahitayo"
+    },
+    {
+      "id": "youtube",
+      "platform": "YouTube",
+      "handle": "Ebahi Tayo-Ogunleye",
+      "href": "https://youtube.com/@ebahitayo"
+    },
+    {
+      "id": "tiktok",
+      "platform": "TikTok",
+      "handle": "@ebahitayo",
+      "href": "https://tiktok.com/@ebahitayo"
+    }
+  ],
+  "footer": {
+    "eyebrow": "Stay close to the work",
+    "title": "A letter for people building something that outlives them.",
+    "body": "New music, teaching, resources and dates \u2014 sent occasionally, never carelessly.",
+    "navLabel": "Navigate",
+    "exploreLabel": "Explore my work",
+    "exploreCollection": "expressions",
+    "connectLabel": "Connect with Ebahi",
+    "rights": "All Rights Reserved."
+  },
+  "enquiry": {
+    "routesCollection": "enquiry-routes",
+    "successMessage": "Thank you \u2014 your message is in. You'll hear back shortly."
+  },
+  "blog": {
+    "postsCollection": "posts",
+    "postFooterNote": "If this was useful, the letter carries the next one straight to you.",
+    "backLabel": "\u2190 All posts"
+  }
+}

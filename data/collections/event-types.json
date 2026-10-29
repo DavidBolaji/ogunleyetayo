@@ -1,0 +1,41 @@
+{
+  "name": "event-types",
+  "label": "Event types (speaking form)",
+  "kind": "tag",
+  "description": "Options in the Work With Me enquiry form.",
+  "system": false,
+  "items": [
+    {
+      "id": "church-service",
+      "value": "Church service"
+    },
+    {
+      "id": "conference",
+      "value": "Conference"
+    },
+    {
+      "id": "workshop-masterclass",
+      "value": "Workshop / masterclass"
+    },
+    {
+      "id": "school-campus-event",
+      "value": "School / campus event"
+    },
+    {
+      "id": "women-s-gathering",
+      "value": "Women's gathering"
+    },
+    {
+      "id": "corporate-session",
+      "value": "Corporate session"
+    },
+    {
+      "id": "podcast-interview",
+      "value": "Podcast / interview"
+    },
+    {
+      "id": "other",
+      "value": "Other"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "id": "contact",
+  "slug": "contact",
+  "title": "Contact",
+  "status": "published",
+  "order": 7,
+  "seo": {
+    "description": "Get in touch with Ebahi Tayo-Ogunleye — separate routes for music and SilentShout, speaking and teaching, and Edwoltz Hair City enquiries.",
+    "keywords": [],
+    "noIndex": false
+  },
+  "blocks": [
+    {
+      "id": "pageHero-7",
+      "type": "pageHero",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Contact",
+        "title": "Let's connect",
+        "lede": "Three very different conversations happen here, so they each have their own door. Choose the one that fits and you will reach the right desk.",
+        "tone": "canvas",
+        "actions": [],
+        "titleType": {
+          "min": 2.5,
+          "vw": 7,
+          "max": 5.5,
+          "leading": 0.92,
+          "tracking": "-0.03em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "enquiryRoutes-1",
+      "type": "enquiryRoutes",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "collection": "enquiry-routes",
+        "columns": 3
+      }
+    },
+    {
+      "id": "split-8",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "surface",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "group",
+            "layout": "stack",
+            "items": [
+              {
+                "kind": "prose",
+                "eyebrow": "Send a message",
+                "title": "Or write once, here.",
+                "titleType": {
+                  "min": 1.875,
+                  "vw": 4.2,
+                  "max": 3.25,
+                  "leading": 1.05,
+                  "tracking": "",
+                  "case": "normal",
+                  "italic": false
+                },
+                "titleTag": "h2",
+                "noteType": {
+                  "min": 1.25,
+                  "vw": 1.6,
+                  "max": 1.5,
+                  "leading": 1.375,
+                  "tracking": "",
+                  "case": "normal",
+                  "italic": true
+                },
+                "noteMaxWidth": "none",
+                "lede": "Everything sent through this form is read and routed to the right inbox.",
+                "ledeMaxWidth": "2xl",
+                "paragraphs": [],
+                "bodySize": "md",
+                "bodyTone": "body",
+                "actions": [],
+                "chips": [],
+                "maxWidth": "none",
+                "offsetTop": "none"
+              },
+              {
+                "kind": "contactDetails",
+                "items": [
+                  {
+                    "label": "Email",
+                    "value": "{site.email}",
+                    "href": "mailto:{site.email}"
+                  },
+                  {
+                    "label": "Phone / WhatsApp",
+                    "value": "{site.phone}",
+                    "href": "{site.whatsapp}"
+                  },
+                  {
+                    "label": "Based in",
+                    "value": "{site.location}",
+                    "href": ""
+                  }
+                ],
+                "socialsLabel": "Social"
+              }
+            ],
+            "ratio": "1/1",
+            "gap": "md",
+            "verticalAlign": "start",
+            "breakpoint": "lg"
+          },
+          {
+            "kind": "enquiryForm",
+            "intent": "general",
+            "framed": true,
+            "frameTone": "canvas"
+          }
+        ],
+        "ratio": "0.75/1.25",
+        "verticalAlign": "start",
+        "gap": "lg",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    },
+    {
+      "id": "stack-7",
+      "type": "stack",
+      "visible": true,
+      "style": {
+        "tone": "deep",
+        "size": "md",
+        "width": "default",
+        "grain": true,
+        "align": "left",
+        "anchor": "newsletter",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "items": [
+          {
+            "kind": "prose",
+            "eyebrow": "Stay close",
+            "title": "Follow the journey.",
+            "titleType": {
+              "min": 1.75,
+              "vw": 4.5,
+              "max": 3,
+              "leading": 1.15,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "lede": "New music, teaching, resources and dates — including the Emi O ri release.",
+            "ledeSize": "md",
+            "ledeMaxWidth": "none",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "align": "center",
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "newsletter",
+            "tone": "deep",
+            "maxWidth": "md"
+          }
+        ],
+        "maxWidth": "2xl",
+        "centered": true,
+        "gap": "md"
+      }
+    }
+  ],
+  "inSitemap": true,
+  "system": false,
+  "updatedAt": "2026-10-28T00:00:00.000Z"
+}

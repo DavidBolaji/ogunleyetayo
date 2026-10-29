@@ -1,0 +1,142 @@
+{
+  "header": [
+    {
+      "id": "home",
+      "label": "Home",
+      "href": "/",
+      "external": false,
+      "visible": true,
+      "children": []
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "href": "/about",
+      "external": false,
+      "visible": true,
+      "children": []
+    },
+    {
+      "id": "music",
+      "label": "Music",
+      "href": "/music",
+      "external": false,
+      "visible": true,
+      "children": []
+    },
+    {
+      "id": "ministry",
+      "label": "Ministry",
+      "href": "/ministry",
+      "external": false,
+      "visible": true,
+      "children": []
+    },
+    {
+      "id": "teaching",
+      "label": "Teaching",
+      "href": "/teaching",
+      "external": false,
+      "visible": true,
+      "children": []
+    },
+    {
+      "id": "books",
+      "label": "Books",
+      "href": "/books",
+      "external": false,
+      "visible": true,
+      "children": []
+    },
+    {
+      "id": "blog",
+      "label": "Blog",
+      "href": "/blog",
+      "external": false,
+      "visible": true,
+      "children": []
+    },
+    {
+      "id": "work-with-me",
+      "label": "Work With Me",
+      "href": "/work-with-me",
+      "external": false,
+      "visible": true,
+      "children": []
+    },
+    {
+      "id": "more",
+      "label": "More",
+      "href": "/more",
+      "external": false,
+      "visible": true,
+      "children": [
+        {
+          "id": "silentshout-network",
+          "label": "SilentShout Network",
+          "href": "/ministry",
+          "external": false,
+          "visible": true,
+          "children": []
+        },
+        {
+          "id": "wush",
+          "label": "WUSH",
+          "href": "/ministry#wush",
+          "external": false,
+          "visible": true,
+          "children": []
+        },
+        {
+          "id": "the-5am-tribe",
+          "label": "The 5AM Tribe",
+          "href": "/ministry#tribe",
+          "external": false,
+          "visible": true,
+          "children": []
+        },
+        {
+          "id": "young-music-ministers-summit",
+          "label": "Young Music Ministers Summit",
+          "href": "/ministry/summit",
+          "external": false,
+          "visible": true,
+          "children": []
+        },
+        {
+          "id": "edwoltz-hair-city",
+          "label": "Edwoltz Hair City",
+          "href": "/edwoltz",
+          "external": false,
+          "visible": true,
+          "children": []
+        },
+        {
+          "id": "hair-environment",
+          "label": "Hair & Environment",
+          "href": "/edwoltz/environment",
+          "external": false,
+          "visible": true,
+          "children": []
+        },
+        {
+          "id": "resources",
+          "label": "Resources",
+          "href": "/books#resources",
+          "external": false,
+          "visible": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "href": "/contact",
+      "external": false,
+      "visible": true,
+      "children": []
+    }
+  ],
+  "footer": []
+}

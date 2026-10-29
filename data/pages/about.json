@@ -1,0 +1,373 @@
+{
+  "id": "about",
+  "slug": "about",
+  "title": "My Story",
+  "status": "published",
+  "order": 1,
+  "seo": {
+    "description": "The woman behind the work — Ebahi Tayo-Ogunleye's journey through music ministry, teaching, authorship and enterprise.",
+    "keywords": [],
+    "noIndex": false
+  },
+  "blocks": [
+    {
+      "id": "pageHero-1",
+      "type": "pageHero",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "My story",
+        "title": "The woman behind the work",
+        "lede": "Every part of my work comes from the same place: a conviction that what God gives us is meant to be discovered, stewarded and then spent on people.",
+        "media": {
+          "src": "editorial-veil-leaning",
+          "alt": "Ebahi seated in an editorial portrait",
+          "focus": "50% 25%"
+        },
+        "tone": "canvas",
+        "actions": [],
+        "titleType": {
+          "min": 2.5,
+          "vw": 7,
+          "max": 5.5,
+          "leading": 0.92,
+          "tracking": "-0.03em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "split-3",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "media",
+            "items": [
+              {
+                "src": "portrait-burgundy-close",
+                "alt": "Portrait of Ebahi in burgundy",
+                "focus": "50% 20%"
+              }
+            ],
+            "layout": "single",
+            "ratio": "portrait",
+            "aspect": "4/5",
+            "parallax": true,
+            "scrim": "none",
+            "reveal": "right",
+            "sizes": "(max-width: 1024px) 100vw, 38vw",
+            "priority": false,
+            "hideOnMobile": false,
+            "gapTop": "none"
+          },
+          {
+            "kind": "prose",
+            "eyebrow": "In her words",
+            "title": "I have never had a separate self for each room.",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "lede": "I have spent more than two decades learning that in rooms with choirs, classrooms, salons, boardrooms and prayer closets — and the thread has never changed.",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [
+              "Ebahi Tayo-Ogunleye is a gospel music minister, worship leader, author, entrepreneur, and leadership mentor who believes deeply in the power of God to transform ordinary lives into remarkable stories of purpose.",
+              "Aware of her own insignificance without Him, her life and work are built on a simple, heart-warming truth: that when we fix our eyes on God, He enables us to do far more than we could ever accomplish on our own.",
+              "With over two decades of ministry experience, Ebahi serves as the Music Director of Harvesthouse Christian Center, the Life Center Campus, and is the visionary behind the SilentShout Movement, WUSH (Worship Until Something Happens), the SilentShout School of Music Ministry, and VisionCraft Academy. Through these platforms, she mentors worship leaders, minstrels, musicians and creatives to grow in spiritual maturity, authentic leadership and practical excellence."
+            ],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "sm"
+          }
+        ],
+        "ratio": "0.85/1.15",
+        "verticalAlign": "start",
+        "gap": "lg",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    },
+    {
+      "id": "stack-2",
+      "type": "stack",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "items": [
+          {
+            "kind": "prose",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [
+              "At the heart of her ministry is a passion for community transformation and Kingdom outreach. Collaborating with non-profit and faith-based mission organisations, SilentShout has been reaching the unreached. Since 2020, her team has brought the Gospel, relief and practical skill acquisition programmes to seven rural communities across Ibadan, with plans underway to serve two more rural communities this year.",
+              "Driven by a desire to create safe, sacred spaces for spiritual growth, Ebahi also founded The 5AM Tribe in 2023. Inspired by the life of Jesus, who consistently sought His Father in the early morning, the Tribe gathers every morning to invest an intentional hour in prayer and seek God's presence. What started as a simple commitment to prayer has grown into a thriving community where men and women find refuge, strength and intimacy with God.",
+              "Beyond ministry, Ebahi is the author of several impactful books — including Dear Worship Leader: 40 Heartsets to Improve Your Worship Leading, Prayed Up, Simple Praying Systems, and Psalms of Ebahi — and is a recording artist with three music projects.",
+              "As an entrepreneur, she leads Edwoltz Hair City, a beauty and hair-care brand dedicated to restoring confidence, providing professional training and empowering others to build sustainable businesses rooted in integrity.",
+              "Above all her accomplishments, Ebahi remains grateful for the grace that anchors her life. She is happily married to her best friend, Tayo Ogunleye, and together they are blessed with two wonderful daughters."
+            ],
+            "bodySize": "lg",
+            "bodyTone": "body",
+            "quote": {
+              "text": "To see Christ glorified, worshippers matured, leaders equipped, and lives transformed for lasting Kingdom impact.",
+              "caption": "Her constant prayer and core mission",
+              "style": "rule",
+              "type": {
+                "min": 1.35,
+                "vw": 3,
+                "max": 2,
+                "leading": 1.25,
+                "tracking": "",
+                "case": "normal",
+                "italic": true
+              },
+              "face": "display",
+              "tone": "heading",
+              "quoted": true
+            },
+            "actions": [],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          }
+        ],
+        "maxWidth": "none",
+        "centered": false,
+        "gap": "md"
+      }
+    },
+    {
+      "id": "timeline-1",
+      "type": "timeline",
+      "visible": true,
+      "style": {
+        "tone": "surface",
+        "size": "lg",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "heading": {
+          "eyebrow": "The journey",
+          "title": "From a childhood ear to a ministry, a school and a business.",
+          "align": "left",
+          "size": "lg",
+          "gap": "lg"
+        },
+        "collection": "timeline"
+      }
+    },
+    {
+      "id": "recognitionStrip-2",
+      "type": "recognitionStrip",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "heading": {
+          "eyebrow": "Selected recognition",
+          "align": "left",
+          "size": "md",
+          "gap": "lg"
+        },
+        "note": "Noted briefly, because the work matters more than the shelf it sits on.",
+        "collection": "recognitions",
+        "credentialsCollection": "credentials"
+      }
+    },
+    {
+      "id": "gallery-1",
+      "type": "gallery",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "lg",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "heading": {
+          "eyebrow": "Portrait gallery",
+          "title": "Selected portraits",
+          "lede": "Photography for press, event programmes and features. Available on request.",
+          "align": "left",
+          "size": "md",
+          "gap": "lg"
+        },
+        "items": [
+          {
+            "src": "editorial-veil-close",
+            "alt": "Editorial portrait with veiled hat and pearls"
+          },
+          {
+            "src": "garden-swing-laugh",
+            "alt": "Ebahi laughing on a garden swing"
+          },
+          {
+            "src": "portrait-burgundy-full",
+            "alt": "Ebahi in a burgundy jacket, full length"
+          },
+          {
+            "src": "editorial-veil-twirl",
+            "alt": "Ebahi turning, tulle skirt in motion"
+          },
+          {
+            "src": "portrait-prayer",
+            "alt": "Ebahi with hands clasped in prayer"
+          },
+          {
+            "src": "garden-portrait-hat",
+            "alt": "Ebahi smiling in a wide-brimmed hat"
+          },
+          {
+            "src": "editorial-monochrome",
+            "alt": "Monochrome studio portrait"
+          },
+          {
+            "src": "portrait-seated-profile",
+            "alt": "Ebahi seated in white, in profile"
+          },
+          {
+            "src": "garden-twirl",
+            "alt": "Ebahi turning in a garden"
+          },
+          {
+            "src": "editorial-veil-chest",
+            "alt": "Editorial portrait, hand at her chest"
+          },
+          {
+            "src": "garden-trees",
+            "alt": "Ebahi among the trees"
+          }
+        ]
+      }
+    },
+    {
+      "id": "engageBanner-2",
+      "type": "engageBanner",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "md",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Work together",
+        "title": "If any of this is the conversation your room needs, let's talk.",
+        "body": "Based in {site.location}, serving churches, organisations and creative communities.",
+        "actions": [
+          {
+            "label": "Invite Ebahi to speak",
+            "href": "/work-with-me"
+          },
+          {
+            "label": "Explore my music",
+            "href": "/music"
+          }
+        ],
+        "titleType": {
+          "min": 1.875,
+          "vw": 4.5,
+          "max": 3.25,
+          "leading": 1.05,
+          "tracking": "",
+          "case": "normal",
+          "italic": false
+        }
+      }
+    }
+  ],
+  "inSitemap": true,
+  "system": false,
+  "updatedAt": "2026-10-28T09:46:07.358Z"
+}

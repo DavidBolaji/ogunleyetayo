@@ -1,0 +1,252 @@
+{
+  "id": "books",
+  "slug": "books",
+  "title": "Books & Resources",
+  "status": "published",
+  "order": 4,
+  "seo": {
+    "description": "Dear Worship Leader, Prayed Up, Simple Praying Systems and Psalms of Ebahi — books and resources by Ebahi Tayo-Ogunleye.",
+    "keywords": [],
+    "noIndex": false
+  },
+  "blocks": [
+    {
+      "id": "pageHero-4",
+      "type": "pageHero",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Books & resources",
+        "title": "Words I've written",
+        "lede": "Writing is where the things I teach get tested. If an idea cannot survive being written down plainly, it is not ready to be taught.",
+        "media": {
+          "src": "writing",
+          "alt": "Ebahi writing in a journal at her desk",
+          "focus": "50% 25%"
+        },
+        "tone": "canvas",
+        "actions": [],
+        "titleType": {
+          "min": 2.5,
+          "vw": 7,
+          "max": 5.5,
+          "leading": 0.92,
+          "tracking": "-0.03em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "bookShelf-1",
+      "type": "bookShelf",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "anchor": "resources",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "collection": "books"
+      }
+    },
+    {
+      "id": "split-6",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "md",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "prose",
+            "eyebrow": "Blog",
+            "title": "Short reads, published as the work happens.",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "lede": "A writing space for faith, music ministry, leadership, creativity, purpose, life and enterprise.",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [
+              {
+                "label": "Read the blog",
+                "href": "/blog",
+                "variant": "link"
+              }
+            ],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "chips",
+            "items": [
+              "Faith",
+              "Music Ministry",
+              "Leadership",
+              "Creativity",
+              "Purpose",
+              "Life",
+              "Entrepreneurship"
+            ],
+            "size": "sm",
+            "variant": "filled",
+            "interactive": false
+          }
+        ],
+        "ratio": "1/1",
+        "verticalAlign": "center",
+        "gap": "md",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    },
+    {
+      "id": "stack-4",
+      "type": "stack",
+      "visible": true,
+      "style": {
+        "tone": "deep",
+        "size": "md",
+        "width": "default",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "items": [
+          {
+            "kind": "prose",
+            "eyebrow": "Resources",
+            "title": "Get new resources as they are released.",
+            "titleType": {
+              "min": 1.75,
+              "vw": 4.5,
+              "max": 3,
+              "leading": 1.15,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "ledeSize": "md",
+            "ledeMaxWidth": "none",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "align": "center",
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "newsletter",
+            "tone": "deep",
+            "maxWidth": "md"
+          }
+        ],
+        "maxWidth": "2xl",
+        "centered": true,
+        "gap": "md"
+      }
+    },
+    {
+      "id": "engageBanner-5",
+      "type": "engageBanner",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "md",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Stocking or reviewing",
+        "title": "Bulk orders, reviews and interview requests are welcome.",
+        "actions": [
+          {
+            "label": "Get in touch",
+            "href": "/contact"
+          },
+          {
+            "label": "Invite Ebahi",
+            "href": "/work-with-me"
+          }
+        ],
+        "titleType": {
+          "min": 1.875,
+          "vw": 4.5,
+          "max": 3.25,
+          "leading": 1.05,
+          "tracking": "",
+          "case": "normal",
+          "italic": false
+        }
+      }
+    }
+  ],
+  "inSitemap": true,
+  "system": false,
+  "updatedAt": "2026-10-28T00:00:00.000Z"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "blog",
+  "slug": "blog",
+  "title": "Blog",
+  "status": "published",
+  "order": 5,
+  "seo": {
+    "description": "Short reads from the work — worship, formation, leadership and the things I keep learning.",
+    "keywords": [],
+    "noIndex": false
+  },
+  "blocks": [
+    {
+      "id": "pageHero-5",
+      "type": "pageHero",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Read",
+        "title": "Blog",
+        "lede": "Short reads from the work — worship, formation, leadership and the things I keep learning.",
+        "media": {
+          "src": "writing",
+          "alt": "Ebahi writing in a journal at her desk",
+          "focus": "50% 25%"
+        },
+        "tone": "canvas",
+        "actions": [],
+        "titleType": {
+          "min": 2.5,
+          "vw": 7,
+          "max": 5.5,
+          "leading": 0.92,
+          "tracking": "-0.03em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "postGrid-1",
+      "type": "postGrid",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "collection": "posts",
+        "columns": 3,
+        "limit": 0,
+        "emptyHeadline": "The first posts are being written. Join the letter below and you will not miss them.",
+        "emptyNote": "New writing lands here first. Join the letter and it reaches you the morning it goes up.",
+        "emptyCategoriesCollection": "blog-categories",
+        "emptyNewsletter": true
+      }
+    }
+  ],
+  "inSitemap": true,
+  "system": true,
+  "updatedAt": "2026-10-28T00:00:00.000Z"
+}

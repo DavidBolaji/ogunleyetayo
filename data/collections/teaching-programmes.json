@@ -1,0 +1,71 @@
+{
+  "name": "teaching-programmes",
+  "label": "Teaching programmes",
+  "kind": "programme",
+  "system": false,
+  "items": [
+    {
+      "id": "visioncraft-academy",
+      "name": "VisionCraft Academy",
+      "promise": "A structured learning environment",
+      "description": "For people who want a place to learn intentional growth and execution properly — with curriculum, cohorts and follow-through rather than one-off inspiration.",
+      "detail": [
+        "Structured curriculum",
+        "Cohort learning",
+        "Execution accountability",
+        "Live sessions"
+      ],
+      "action": {
+        "label": "Join the waitlist",
+        "href": "/contact"
+      },
+      "media": {
+        "src": "portrait-burgundy-hands",
+        "alt": "Ebahi teaching",
+        "focus": "50% 20%"
+      }
+    },
+    {
+      "id": "ebahi-tayo-coaching-hub",
+      "name": "Ebahi Tayo Coaching Hub",
+      "promise": "Coaching, mentoring & personal development",
+      "description": "One-to-one and small-group work for people carrying something specific — a calling, a business, a team or a transition they need help navigating.",
+      "detail": [
+        "1:1 coaching",
+        "Small-group mentoring",
+        "Leadership development",
+        "Career & calling clarity"
+      ],
+      "action": {
+        "label": "Enquire about coaching",
+        "href": "/contact"
+      },
+      "media": {
+        "src": "portrait-joyful-white",
+        "alt": "Ebahi in conversation",
+        "focus": "50% 20%"
+      }
+    },
+    {
+      "id": "workshops-masterclasses",
+      "name": "Workshops & masterclasses",
+      "promise": "Brought to your room",
+      "description": "Sessions for organisations, churches, schools and creative communities on leadership, creativity, purpose and personal development.",
+      "detail": [
+        "Organisations",
+        "Churches",
+        "Schools",
+        "Creative communities"
+      ],
+      "action": {
+        "label": "Invite Ebahi",
+        "href": "/work-with-me"
+      },
+      "media": {
+        "src": "editorial-stance",
+        "alt": "Ebahi standing",
+        "focus": "50% 20%"
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "blog-categories",
+  "label": "Blog categories",
+  "kind": "tag",
+  "system": false,
+  "items": [
+    {
+      "id": "faith",
+      "value": "Faith"
+    },
+    {
+      "id": "music-ministry",
+      "value": "Music Ministry"
+    },
+    {
+      "id": "leadership",
+      "value": "Leadership"
+    },
+    {
+      "id": "creativity",
+      "value": "Creativity"
+    },
+    {
+      "id": "purpose",
+      "value": "Purpose"
+    },
+    {
+      "id": "life",
+      "value": "Life"
+    },
+    {
+      "id": "entrepreneurship",
+      "value": "Entrepreneurship"
+    }
+  ]
+}

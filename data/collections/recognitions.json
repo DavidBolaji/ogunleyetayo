@@ -1,0 +1,26 @@
+{
+  "name": "recognitions",
+  "label": "Recognition",
+  "kind": "recognition",
+  "system": false,
+  "items": [
+    {
+      "id": "legendary-mums-award",
+      "title": "Legendary Mums Award",
+      "source": "Mothers Haven Network",
+      "year": "2025"
+    },
+    {
+      "id": "standard-bearer-award",
+      "title": "Standard Bearer Award",
+      "source": "Recognition of ministry leadership",
+      "year": "2026"
+    },
+    {
+      "id": "best-worker-award",
+      "title": "Best Worker Award",
+      "source": "HCC Nation",
+      "year": "—"
+    }
+  ]
+}

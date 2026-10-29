@@ -1,0 +1,30 @@
+{
+  "name": "enquiry-routes",
+  "label": "Enquiry routes",
+  "kind": "enquiryRoute",
+  "description": "Separate inboxes keep three very different conversations from colliding. Shown on the contact page and in the footer.",
+  "system": true,
+  "items": [
+    {
+      "id": "music-silentshout",
+      "label": "Music & SilentShout",
+      "description": "Ministrations, worship sessions, training, the Summit and school enquiries.",
+      "email": "music@ebahitayo.com",
+      "palette": "silentshout"
+    },
+    {
+      "id": "speaking-teaching",
+      "label": "Speaking & Teaching",
+      "description": "Conferences, masterclasses, coaching, VisionCraft Academy and mentoring.",
+      "email": "speaking@ebahitayo.com",
+      "palette": "ebahi"
+    },
+    {
+      "id": "edwoltz",
+      "label": "Edwoltz Hair City",
+      "description": "Wig revamping, hair services, hair education and business enquiries.",
+      "email": "hello@edwoltzhaircity.com",
+      "palette": "edwoltz"
+    }
+  ]
+}

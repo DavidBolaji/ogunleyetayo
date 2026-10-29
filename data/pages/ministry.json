@@ -1,0 +1,853 @@
+{
+  "id": "ministry",
+  "slug": "ministry",
+  "title": "SilentShout Global Network",
+  "status": "published",
+  "order": 8,
+  "seo": {
+    "description": "SilentShout is the name over everything done ministerially — worship, formation, training and outreach, held together by one conviction about what God does with a surrendered life.",
+    "keywords": [],
+    "noIndex": false
+  },
+  "palette": "silentshout",
+  "blocks": [
+    {
+      "id": "pageHero-8",
+      "type": "pageHero",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "SilentShout Global Network",
+        "title": "One network. Four ways of raising people.",
+        "lede": "SilentShout is the name over everything done ministerially — worship, formation, training and outreach, held together by one conviction about what God does with a surrendered life.",
+        "media": {
+          "src": "portrait-white-standing",
+          "alt": "Ebahi standing in white",
+          "focus": "50% 22%"
+        },
+        "tone": "deep",
+        "actions": [
+          {
+            "label": "The network",
+            "href": "#network",
+            "variant": "accent",
+            "size": "lg"
+          },
+          {
+            "label": "WUSH",
+            "href": "#wush",
+            "variant": "outlineLight",
+            "size": "lg"
+          },
+          {
+            "label": "The 5AM Tribe",
+            "href": "#tribe",
+            "variant": "outlineLight",
+            "size": "lg"
+          }
+        ],
+        "titleType": {
+          "min": 2.5,
+          "vw": 7,
+          "max": 5.5,
+          "leading": 0.92,
+          "tracking": "-0.03em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "stack-8",
+      "type": "stack",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "md",
+        "paddingTop": "sm",
+        "paddingBottom": "sm",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": true
+      },
+      "data": {
+        "items": [
+          {
+            "kind": "prose",
+            "title": "From spiritual formation_ → _/to earthly relevance./",
+            "titleType": {
+              "min": 1.5,
+              "vw": 4.5,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "-0.02em",
+              "case": "upper",
+              "italic": false
+            },
+            "titleTag": "p",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          }
+        ],
+        "maxWidth": "none",
+        "centered": false,
+        "gap": "none"
+      }
+    },
+    {
+      "id": "split-9",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "anchor": "about",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "prose",
+            "eyebrow": "About SilentShout",
+            "title": "The gap nobody plans for.",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [
+              "Talent arrives early. Formation does not. Most young music ministers are handed a microphone long before anyone hands them a framework for character, responsibility or spiritual depth.",
+              "SilentShout grew to close that gap — and then kept growing. What began around worship now carries a school, a prayer community and an outreach arm, because formation that never leaves the room was never formation."
+            ],
+            "bodySize": "lg",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "media",
+            "items": [
+              {
+                "src": "portrait-prayer",
+                "alt": "Ebahi in prayer",
+                "focus": "50% 25%"
+              }
+            ],
+            "layout": "single",
+            "ratio": "portrait",
+            "parallax": false,
+            "scrim": "none",
+            "reveal": "left",
+            "sizes": "(max-width: 1024px) 100vw, 38vw",
+            "priority": false,
+            "hideOnMobile": false,
+            "gapTop": "none"
+          }
+        ],
+        "ratio": "1.1/0.9",
+        "verticalAlign": "start",
+        "gap": "lg",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    },
+    {
+      "id": "programmeList-2",
+      "type": "programmeList",
+      "visible": true,
+      "style": {
+        "tone": "surface",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "anchor": "network",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "heading": {
+          "eyebrow": "The network",
+          "title": "One network. Four ways of raising people.",
+          "lede": "SilentShout is the name over everything done ministerially — worship, formation, training and outreach, held together by one conviction about what God does with a surrendered life.",
+          "align": "left",
+          "size": "md",
+          "gap": "xl"
+        },
+        "collection": "silentshout-arms"
+      }
+    },
+    {
+      "id": "stack-9",
+      "type": "stack",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "items": [
+          {
+            "kind": "prose",
+            "eyebrow": "What we cultivate",
+            "title": "Four things we refuse to teach separately.",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "pillars",
+            "items": [
+              {
+                "title": "Spiritual depth",
+                "body": "A private life with God that can carry the weight of a public gift."
+              },
+              {
+                "title": "Character & responsibility",
+                "body": "Ministry habits, integrity, team conduct and the discipline of being trusted."
+              },
+              {
+                "title": "Craft & creativity",
+                "body": "Musicianship, arrangement, leading a room and writing what has not been written yet."
+              },
+              {
+                "title": "Relevance & impact",
+                "body": "Serving a real congregation, a real industry and a real generation — usefully."
+              }
+            ],
+            "columns": 4,
+            "numbered": true,
+            "cellTone": "canvas",
+            "intro": [],
+            "selfStart": false
+          }
+        ],
+        "maxWidth": "none",
+        "centered": false,
+        "gap": "lg"
+      }
+    },
+    {
+      "id": "programmeList-3",
+      "type": "programmeList",
+      "visible": true,
+      "style": {
+        "tone": "surface",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "anchor": "school",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "heading": {
+          "eyebrow": "Training & resources",
+          "title": "How SilentShout works",
+          "align": "left",
+          "size": "md",
+          "gap": "xl"
+        },
+        "collection": "silentshout-programmes"
+      }
+    },
+    {
+      "id": "stack-10",
+      "type": "stack",
+      "visible": true,
+      "style": {
+        "tone": "deep",
+        "size": "lg",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "anchor": "wush",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "items": [
+          {
+            "kind": "group",
+            "layout": "split",
+            "items": [
+              {
+                "kind": "prose",
+                "eyebrow": "Worship Until Something Happens",
+                "title": "WUSH",
+                "titleType": {
+                  "min": 3,
+                  "vw": 9,
+                  "max": 7,
+                  "leading": 0.85,
+                  "tracking": "-0.04em",
+                  "case": "upper",
+                  "italic": false
+                },
+                "titleTag": "h2",
+                "noteType": {
+                  "min": 1.25,
+                  "vw": 1.6,
+                  "max": 1.5,
+                  "leading": 1.375,
+                  "tracking": "",
+                  "case": "normal",
+                  "italic": true
+                },
+                "noteMaxWidth": "none",
+                "lede": "The gathering SilentShout is built around — and the umbrella the school's programmes run inside.",
+                "ledeSize": "xl",
+                "ledeMaxWidth": "xl",
+                "paragraphs": [],
+                "bodySize": "md",
+                "bodyTone": "body",
+                "actions": [],
+                "chips": [],
+                "maxWidth": "none",
+                "offsetTop": "none"
+              },
+              {
+                "kind": "prose",
+                "titleType": {
+                  "min": 1.875,
+                  "vw": 4.2,
+                  "max": 3.25,
+                  "leading": 1.05,
+                  "tracking": "",
+                  "case": "normal",
+                  "italic": false
+                },
+                "titleTag": "h2",
+                "noteType": {
+                  "min": 1.25,
+                  "vw": 1.6,
+                  "max": 1.5,
+                  "leading": 1.375,
+                  "tracking": "",
+                  "case": "normal",
+                  "italic": true
+                },
+                "noteMaxWidth": "none",
+                "ledeMaxWidth": "2xl",
+                "paragraphs": [
+                  "Worship Until Something Happens is not a line about volume or length. It is a posture: you stay in the room until something shifts, and you let it shift you.",
+                  "Everything SilentShout teaches — formation, character, craft, relevance — is taught so it can show up here, among people who came to worship. The Young Music Ministers Summit runs inside WUSH."
+                ],
+                "bodySize": "md",
+                "bodyTone": "body",
+                "actions": [],
+                "chips": [],
+                "maxWidth": "none",
+                "offsetTop": "sm"
+              }
+            ],
+            "ratio": "1/1",
+            "gap": "lg",
+            "verticalAlign": "start",
+            "breakpoint": "lg"
+          },
+          {
+            "kind": "years",
+            "label": "Editions",
+            "items": [
+              "2014",
+              "2019",
+              "2022",
+              "2024"
+            ],
+            "type": {
+              "min": 2.25,
+              "vw": 7,
+              "max": 5,
+              "leading": 1,
+              "tracking": "-0.03em",
+              "case": "normal",
+              "italic": false
+            },
+            "dividerTop": true
+          },
+          {
+            "kind": "gallery",
+            "items": [
+              {
+                "src": "wush-podium-group",
+                "alt": "Young ministers gathered at the podium during a WUSH session",
+                "focus": "50% 35%"
+              },
+              {
+                "src": "wush-certificates",
+                "alt": "Participants holding up their certificates at a WUSH closing ceremony",
+                "focus": "50% 40%"
+              },
+              {
+                "src": "wush-team-banner",
+                "alt": "The SilentShout team in front of the School of Music Ministry banner",
+                "focus": "50% 35%"
+              },
+              {
+                "src": "wush-delegates-banner",
+                "alt": "Delegates in front of the Young Ministers Programme banner",
+                "focus": "50% 30%"
+              }
+            ],
+            "ratio": "wide"
+          }
+        ],
+        "maxWidth": "none",
+        "centered": false,
+        "gap": "xl"
+      }
+    },
+    {
+      "id": "split-10",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "deep",
+        "size": "lg",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "prose",
+            "eyebrow": "Inside WUSH",
+            "title": "The Young Music Ministers Summit",
+            "titleType": {
+              "min": 2,
+              "vw": 5.5,
+              "max": 4,
+              "leading": 0.95,
+              "tracking": "",
+              "case": "upper",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "note": "Theme: Stewarding the Call",
+            "noteType": {
+              "min": 1.25,
+              "vw": 0,
+              "max": 1.25,
+              "leading": 1.4,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "lede": "A gathering designed for young music ministers who are sensing and responding to God's call.",
+            "ledeSize": "md",
+            "ledeMaxWidth": "xl",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [
+              {
+                "label": "Learn about the Summit",
+                "href": "/ministry/summit",
+                "variant": "accent",
+                "size": "lg"
+              }
+            ],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "media",
+            "items": [
+              {
+                "src": "editorial-raised-hand",
+                "alt": "Ebahi with a raised hand",
+                "focus": "50% 18%"
+              }
+            ],
+            "layout": "single",
+            "ratio": "wide",
+            "parallax": false,
+            "scrim": "none",
+            "reveal": "left",
+            "sizes": "(max-width: 1024px) 100vw, 40vw",
+            "priority": false,
+            "hideOnMobile": false,
+            "gapTop": "none"
+          }
+        ],
+        "ratio": "1.1/0.9",
+        "verticalAlign": "center",
+        "gap": "md",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    },
+    {
+      "id": "split-11",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "anchor": "tribe",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "prose",
+            "eyebrow": "Founded 2023",
+            "title": "The 5AM Tribe",
+            "titleType": {
+              "min": 2.25,
+              "vw": 6,
+              "max": 4.5,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "note": "A community of saints committed to praying daily at 5am for at least one hour.",
+            "noteType": {
+              "min": 1.25,
+              "vw": 2.4,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "md",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [
+              {
+                "label": "Join the Tribe",
+                "href": "/contact",
+                "variant": "solid",
+                "size": "lg"
+              }
+            ],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "group",
+            "layout": "stack",
+            "items": [
+              {
+                "kind": "prose",
+                "titleType": {
+                  "min": 1.875,
+                  "vw": 4.2,
+                  "max": 3.25,
+                  "leading": 1.05,
+                  "tracking": "",
+                  "case": "normal",
+                  "italic": false
+                },
+                "titleTag": "h2",
+                "noteType": {
+                  "min": 1.25,
+                  "vw": 1.6,
+                  "max": 1.5,
+                  "leading": 1.375,
+                  "tracking": "",
+                  "case": "normal",
+                  "italic": true
+                },
+                "noteMaxWidth": "none",
+                "ledeMaxWidth": "2xl",
+                "paragraphs": [
+                  "Inspired by the life of Jesus, who consistently sought His Father in the early morning, the Tribe gathers every morning to invest an intentional hour in prayer.",
+                  "What started as a simple commitment to prayer has grown into a thriving community where men and women find refuge, strength and intimacy with God."
+                ],
+                "bodySize": "lg",
+                "bodyTone": "body",
+                "actions": [],
+                "chips": [],
+                "maxWidth": "none",
+                "offsetTop": "none"
+              },
+              {
+                "kind": "pillars",
+                "items": [
+                  {
+                    "title": "Every morning",
+                    "body": "Daily, at 5am — the hour before the day asks anything of you."
+                  },
+                  {
+                    "title": "At least an hour",
+                    "body": "Long enough to stop performing and start praying."
+                  },
+                  {
+                    "title": "Together",
+                    "body": "A tribe, not an app streak. People who show up for each other."
+                  },
+                  {
+                    "title": "Open",
+                    "body": "No qualification required beyond the willingness to be there."
+                  }
+                ],
+                "columns": 2,
+                "numbered": true,
+                "cellTone": "canvas",
+                "intro": [],
+                "selfStart": false
+              }
+            ],
+            "ratio": "1/1",
+            "gap": "md",
+            "verticalAlign": "start",
+            "breakpoint": "lg"
+          }
+        ],
+        "ratio": "0.9/1.1",
+        "verticalAlign": "start",
+        "gap": "lg",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    },
+    {
+      "id": "split-12",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "lg",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "prose",
+            "eyebrow": "Outreach",
+            "title": "We Evangelise Project",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "note": "Reaching the unreached, in partnership.",
+            "noteType": {
+              "min": 1.25,
+              "vw": 0,
+              "max": 1.25,
+              "leading": 1.4,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [
+              "Working with non-profit and faith-based mission organisations, SilentShout has been reaching the unreached since 2020.",
+              "The team has brought the Gospel, relief and practical skill acquisition programmes to seven rural communities across Ibadan, with plans underway to serve two more this year."
+            ],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [
+              {
+                "label": "Partner with the project",
+                "href": "/contact",
+                "variant": "outline",
+                "size": "lg"
+              }
+            ],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "stats",
+            "items": [
+              {
+                "value": "7",
+                "label": "Rural communities reached"
+              },
+              {
+                "value": "2020",
+                "label": "Outreach began"
+              },
+              {
+                "value": "+2",
+                "label": "Communities planned this year"
+              }
+            ],
+            "columns": 3,
+            "valueType": {
+              "min": 2.5,
+              "vw": 6,
+              "max": 4,
+              "leading": 1,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "framed": true,
+            "selfStart": true
+          }
+        ],
+        "ratio": "1/1",
+        "verticalAlign": "start",
+        "gap": "lg",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    },
+    {
+      "id": "engageBanner-6",
+      "type": "engageBanner",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "md",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Get involved",
+        "title": "Bring SilentShout to your music team.",
+        "body": "Workshops, training and school enquiries for churches, worship departments and creative collectives.",
+        "actions": [
+          {
+            "label": "Request a workshop",
+            "href": "/work-with-me"
+          },
+          {
+            "label": "Contact SilentShout",
+            "href": "/contact"
+          }
+        ],
+        "titleType": {
+          "min": 1.875,
+          "vw": 4.5,
+          "max": 3.25,
+          "leading": 1.05,
+          "tracking": "",
+          "case": "normal",
+          "italic": false
+        }
+      }
+    }
+  ],
+  "inSitemap": true,
+  "system": false,
+  "updatedAt": "2026-10-28T00:00:00.000Z"
+}

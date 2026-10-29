@@ -1,0 +1,530 @@
+{
+  "id": "home",
+  "slug": "",
+  "title": "Home",
+  "status": "published",
+  "order": 0,
+  "seo": {
+    "description": "Ebahi Tayo-Ogunleye is a gospel music minister, worship leader, author, entrepreneur and leadership mentor who believes deeply in the power of God to transform ordinary lives into remarkable stories of purpose.",
+    "keywords": [],
+    "noIndex": false
+  },
+  "blocks": [
+    {
+      "id": "hero-1",
+      "type": "hero",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Gospel Music Minister · Worship Leader · Author · Entrepreneur · Leadership Mentor",
+        "headlineWords": [
+          "Faith.",
+          "Creativity.",
+          "Impact."
+        ],
+        "headlineLabel": "Ebahi Tayo-Ogunleye — Faith. Creativity. Impact.",
+        "accentWordIndex": 1,
+        "support": "I am passionate about helping people grow deeply, create boldly and live purposefully.",
+        "actions": [
+          {
+            "label": "Explore my work",
+            "href": "#expressions",
+            "variant": "solid",
+            "size": "lg"
+          },
+          {
+            "label": "Work with me",
+            "href": "/work-with-me",
+            "variant": "outline",
+            "size": "lg"
+          }
+        ],
+        "media": {
+          "src": "portrait-open-hands",
+          "alt": "Ebahi Tayo-Ogunleye smiling, hands open",
+          "focus": "50% 20%"
+        },
+        "badge": {
+          "label": "Since 2004",
+          "text": "Music Director, {site.church}"
+        },
+        "titleType": {
+          "min": 2.75,
+          "vw": 7.6,
+          "max": 6.5,
+          "leading": 0.86,
+          "tracking": "-0.03em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "marquee-1",
+      "type": "marquee",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "md",
+        "paddingTop": "xs",
+        "paddingBottom": "xs",
+        "width": "full",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": true,
+        "borderBottom": true
+      },
+      "data": {
+        "items": [
+          "Faith",
+          "Formation",
+          "Creativity",
+          "Impact"
+        ],
+        "separator": "→",
+        "duration": 32,
+        "type": {
+          "min": 1.75,
+          "vw": 4.5,
+          "max": 3.25,
+          "leading": 1,
+          "tracking": "-0.01em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "split-1",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "anchor": "meet-ebahi",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "media",
+            "items": [
+              {
+                "src": "portrait-burgundy-close",
+                "alt": "Ebahi in a burgundy waistcoat, hand resting under her chin",
+                "focus": "50% 20%"
+              },
+              {
+                "src": "portrait-prayer",
+                "alt": "Ebahi with hands clasped in prayer"
+              }
+            ],
+            "layout": "offsetPair",
+            "ratio": "portrait",
+            "aspect": "4/5",
+            "parallax": false,
+            "scrim": "none",
+            "reveal": "right",
+            "sizes": "(max-width: 1024px) 100vw, 40vw",
+            "priority": false,
+            "hideOnMobile": false,
+            "gapTop": "none"
+          },
+          {
+            "kind": "prose",
+            "eyebrow": "Meet Ebahi",
+            "title": "A life of music, ministry, teaching & impact",
+            "titleType": {
+              "min": 2,
+              "vw": 4.6,
+              "max": 3.5,
+              "leading": 1.02,
+              "tracking": "",
+              "case": "upper",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [
+              "Ebahi Tayo-Ogunleye is a gospel music minister, worship leader, author, entrepreneur and leadership mentor who believes deeply in the power of God to transform ordinary lives into remarkable stories of purpose.",
+              "Aware of her own insignificance without Him, her life and work are built on a simple, heart-warming truth: that when we fix our eyes on God, He enables us to do far more than we could ever accomplish on our own.",
+              "With over two decades of ministry experience, she serves as Music Director of Harvesthouse Christian Center, the Life Center Campus, and is the visionary behind the SilentShout Movement, WUSH, the SilentShout School of Music Ministry and VisionCraft Academy."
+            ],
+            "bodySize": "lg",
+            "bodyTone": "body",
+            "quote": {
+              "text": "From spiritual formation to earthly relevance.",
+              "caption": "The thread through everything",
+              "style": "rule",
+              "type": {
+                "min": 1.25,
+                "vw": 2.4,
+                "max": 1.5,
+                "leading": 1.375,
+                "tracking": "",
+                "case": "normal",
+                "italic": true
+              },
+              "face": "display",
+              "tone": "heading",
+              "quoted": true
+            },
+            "actions": [
+              {
+                "label": "Read my story",
+                "href": "/about",
+                "variant": "link"
+              }
+            ],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "md"
+          }
+        ],
+        "ratio": "0.9/1.1",
+        "verticalAlign": "start",
+        "gap": "lg",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    },
+    {
+      "id": "expressionIndex-1",
+      "type": "expressionIndex",
+      "visible": true,
+      "style": {
+        "tone": "surface",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "anchor": "expressions",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "heading": {
+          "eyebrow": "My world / my work",
+          "title": "Different expressions.\n*One calling.*",
+          "lede": "Six rooms in one house. Every one of them is fed by the same conviction — that what God entrusts to a person is meant to be discovered, stewarded and spent.",
+          "align": "left",
+          "size": "lg",
+          "gap": "xl"
+        },
+        "collection": "expressions"
+      }
+    },
+    {
+      "id": "stack-1",
+      "type": "stack",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "lg",
+        "width": "default",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "items": [
+          {
+            "kind": "prose",
+            "eyebrow": "Why",
+            "title": "Because gifted people are being handed platforms before they are handed *formation* — and what is not formed privately cannot be carried publicly.",
+            "titleType": {
+              "min": 1.5,
+              "vw": 3.6,
+              "max": 2.6,
+              "leading": 1.25,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "p",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [
+              "From spiritual formation to earthly relevance. That sentence governs the music, the school, the classroom, the books and the business."
+            ],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "align": "center",
+            "maxWidth": "none",
+            "offsetTop": "none"
+          }
+        ],
+        "maxWidth": "3xl",
+        "centered": true,
+        "gap": "md"
+      }
+    },
+    {
+      "id": "featuredRelease-1",
+      "type": "featuredRelease",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Featured project",
+        "title": "Emi O ri",
+        "meaning": "Still in Wonder",
+        "quote": "I have not seen this kind of God before.",
+        "description": "A live recording born out of a season of seeing God do what only God does. Emi O ri is testimony before it is music — a room full of people who ran out of adequate words and sang anyway.",
+        "showDescription": false,
+        "facts": [
+          {
+            "label": "Recorded",
+            "value": "Live recorded in Lagos, 2024.",
+            "accent": false
+          },
+          {
+            "label": "Releasing",
+            "value": "November 2, 2026",
+            "accent": true
+          }
+        ],
+        "actions": [
+          {
+            "label": "Listen now",
+            "href": "#listen",
+            "variant": "accent",
+            "size": "lg"
+          },
+          {
+            "label": "Watch",
+            "href": "#watch",
+            "variant": "outlineLight",
+            "size": "lg"
+          },
+          {
+            "label": "Follow the journey",
+            "href": "/contact#newsletter",
+            "variant": "ghost",
+            "size": "lg"
+          }
+        ],
+        "media": {
+          "src": "music-1",
+          "alt": "Ebahi in the studio, keyboards and a microphone behind her",
+          "focus": "50% 30%"
+        },
+        "titleType": {
+          "min": 3.5,
+          "vw": 12,
+          "max": 9,
+          "leading": 0.82,
+          "tracking": "-0.04em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "split-2",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "lg",
+        "width": "wide",
+        "palette": "edwoltz",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "media",
+            "items": [
+              {
+                "src": "garden-forest-wide",
+                "alt": "Ebahi walking through a forest",
+                "focus": "50% 45%"
+              }
+            ],
+            "layout": "single",
+            "ratio": "cinema",
+            "parallax": false,
+            "scrim": "none",
+            "reveal": "right",
+            "sizes": "(max-width: 1024px) 100vw, 45vw",
+            "priority": false,
+            "hideOnMobile": false,
+            "gapTop": "none"
+          },
+          {
+            "kind": "prose",
+            "eyebrow": "Beauty, business & the environment",
+            "title": "What our industry leaves behind.",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "lede": "Ebahi brings together her experience as a hair professional and her environmental science background to explore conversations around hair waste, sustainability and responsible beauty practices.",
+            "ledeSize": "lg",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [
+              {
+                "label": "Explore the hair & environment project",
+                "href": "/edwoltz/environment",
+                "variant": "outline"
+              }
+            ],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          }
+        ],
+        "ratio": "1/1",
+        "verticalAlign": "center",
+        "gap": "md",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    },
+    {
+      "id": "recognitionStrip-1",
+      "type": "recognitionStrip",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "heading": {
+          "eyebrow": "Selected recognition",
+          "align": "left",
+          "size": "md",
+          "gap": "lg"
+        },
+        "note": "Noted briefly, because the work matters more than the shelf it sits on.",
+        "collection": "recognitions",
+        "credentialsCollection": "credentials"
+      }
+    },
+    {
+      "id": "engageBanner-1",
+      "type": "engageBanner",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "md",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "How can I engage?",
+        "title": "Come and build something with me.",
+        "body": "Invite Ebahi to your gathering, join a programme, bring SilentShout to your music team, or simply stay close to the work.",
+        "actions": [
+          {
+            "label": "Invite Ebahi to speak",
+            "href": "/work-with-me"
+          },
+          {
+            "label": "Learn with me",
+            "href": "/teaching"
+          },
+          {
+            "label": "Contact",
+            "href": "/contact"
+          }
+        ],
+        "titleType": {
+          "min": 1.875,
+          "vw": 4.5,
+          "max": 3.25,
+          "leading": 1.05,
+          "tracking": "",
+          "case": "normal",
+          "italic": false
+        }
+      }
+    }
+  ],
+  "inSitemap": true,
+  "system": true,
+  "updatedAt": "2026-10-28T00:00:00.000Z"
+}

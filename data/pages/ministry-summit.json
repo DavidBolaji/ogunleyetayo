@@ -1,0 +1,338 @@
+{
+  "id": "ministry-summit",
+  "slug": "ministry/summit",
+  "title": "The Young Music Ministers Summit",
+  "status": "published",
+  "order": 9,
+  "seo": {
+    "description": "A gathering designed for young music ministers who are sensing and responding to God's call.",
+    "keywords": [],
+    "noIndex": false
+  },
+  "palette": "silentshout",
+  "blocks": [
+    {
+      "id": "pageHero-9",
+      "type": "pageHero",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "SilentShout presents",
+        "title": "The Young Music Ministers Summit",
+        "lede": "A gathering designed for young music ministers who are sensing and responding to God's call.",
+        "tone": "deep",
+        "actions": [],
+        "note": "Theme: Stewarding the Call",
+        "titleType": {
+          "min": 2.5,
+          "vw": 7,
+          "max": 5.5,
+          "leading": 0.92,
+          "tracking": "-0.03em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "split-13",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "group",
+            "layout": "stack",
+            "items": [
+              {
+                "kind": "prose",
+                "eyebrow": "Why the Summit",
+                "title": "A calling you did not ask for and cannot shake.",
+                "titleType": {
+                  "min": 1.875,
+                  "vw": 4.2,
+                  "max": 3.25,
+                  "leading": 1.05,
+                  "tracking": "",
+                  "case": "normal",
+                  "italic": false
+                },
+                "titleTag": "h2",
+                "noteType": {
+                  "min": 1.25,
+                  "vw": 1.6,
+                  "max": 1.5,
+                  "leading": 1.375,
+                  "tracking": "",
+                  "case": "normal",
+                  "italic": true
+                },
+                "noteMaxWidth": "none",
+                "ledeMaxWidth": "2xl",
+                "paragraphs": [
+                  "It is one thing to be gifted. It is another to know what to do with a calling you did not ask for and cannot shake.",
+                  "The Summit brings young music ministers into a room where that question is taken seriously — with teaching, worship, honest conversation and people further along the road."
+                ],
+                "bodySize": "lg",
+                "bodyTone": "body",
+                "actions": [],
+                "chips": [],
+                "maxWidth": "none",
+                "offsetTop": "none"
+              },
+              {
+                "kind": "chips",
+                "label": "Who it is for",
+                "items": [
+                  "Young worship leaders",
+                  "Church music team members",
+                  "Instrumentalists & vocalists",
+                  "Songwriters",
+                  "Music department leaders"
+                ],
+                "size": "sm",
+                "variant": "outline",
+                "interactive": false
+              }
+            ],
+            "ratio": "1/1",
+            "gap": "md",
+            "verticalAlign": "start",
+            "breakpoint": "lg"
+          },
+          {
+            "kind": "media",
+            "items": [
+              {
+                "src": "garden-swing-reach",
+                "alt": "Ebahi reaching upward",
+                "focus": "50% 30%"
+              }
+            ],
+            "layout": "single",
+            "ratio": "portrait",
+            "aspect": "4/5",
+            "parallax": true,
+            "scrim": "none",
+            "reveal": "left",
+            "sizes": "(max-width: 1024px) 100vw, 40vw",
+            "priority": false,
+            "hideOnMobile": false,
+            "gapTop": "none"
+          }
+        ],
+        "ratio": "1.05/0.95",
+        "verticalAlign": "start",
+        "gap": "lg",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    },
+    {
+      "id": "stack-11",
+      "type": "stack",
+      "visible": true,
+      "style": {
+        "tone": "surface",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "items": [
+          {
+            "kind": "prose",
+            "eyebrow": "Sessions",
+            "title": "Stewarding the Call",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "lede": "Four conversations, taught honestly, for ministers at the beginning of a long road.",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "pillars",
+            "items": [
+              {
+                "title": "The call before the platform",
+                "body": "What God asks of a minister nobody is watching yet."
+              },
+              {
+                "title": "Stewarding the gift",
+                "body": "Practice, preparation and the discipline of craft."
+              },
+              {
+                "title": "Character in the music room",
+                "body": "Teams, authority, correction and staying trustworthy."
+              },
+              {
+                "title": "Sent, not stuck",
+                "body": "Carrying ministry into an industry and a generation."
+              }
+            ],
+            "columns": 4,
+            "numbered": true,
+            "cellTone": "surface",
+            "intro": [],
+            "selfStart": false
+          }
+        ],
+        "maxWidth": "none",
+        "centered": false,
+        "gap": "lg"
+      }
+    },
+    {
+      "id": "stack-12",
+      "type": "stack",
+      "visible": true,
+      "style": {
+        "tone": "deep",
+        "size": "md",
+        "width": "default",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "items": [
+          {
+            "kind": "prose",
+            "eyebrow": "Registration",
+            "title": "Dates for the next Summit are being confirmed.",
+            "titleType": {
+              "min": 1.75,
+              "vw": 4.5,
+              "max": 3,
+              "leading": 1.15,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "lede": "Join the list and you will be the first to know when registration opens.",
+            "ledeSize": "md",
+            "ledeMaxWidth": "none",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "align": "center",
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "newsletter",
+            "tone": "deep",
+            "maxWidth": "md"
+          }
+        ],
+        "maxWidth": "2xl",
+        "centered": true,
+        "gap": "md"
+      }
+    },
+    {
+      "id": "engageBanner-7",
+      "type": "engageBanner",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "md",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Partner with the Summit",
+        "title": "Bring your music team, or host the Summit in your city.",
+        "actions": [
+          {
+            "label": "Talk to the team",
+            "href": "/contact"
+          },
+          {
+            "label": "Back to SilentShout",
+            "href": "/ministry"
+          }
+        ],
+        "titleType": {
+          "min": 1.875,
+          "vw": 4.5,
+          "max": 3.25,
+          "leading": 1.05,
+          "tracking": "",
+          "case": "normal",
+          "italic": false
+        }
+      }
+    }
+  ],
+  "inSitemap": true,
+  "system": false,
+  "updatedAt": "2026-10-28T00:00:00.000Z"
+}

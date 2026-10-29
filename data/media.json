@@ -1,0 +1,589 @@
+{
+  "items": [
+    {
+      "id": "editorial-monochrome",
+      "title": "Editorial Monochrome",
+      "alt": "Monochrome studio portrait",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIF/8QAHRAAAgEFAQEAAAAAAAAAAAAAAQMCAAQREkExYf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDGMVwmFkEyPBRsTrMjz4eVVo1iXhisb8J5S3Ae98my02kcnFB//9k=",
+      "bytes": 213128,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "editorial"
+      ]
+    },
+    {
+      "id": "editorial-raised-hand",
+      "title": "Editorial Raised Hand",
+      "alt": "Ebahi speaking with a raised hand",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAHBAAAgIDAQEAAAAAAAAAAAAAAQIDEQAEEiFB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAwDAQACEQMRAD8Az1kCBVCFixrzIzPUhFVjNN9jW6ZEjZiPCfmEnh2JZmkYJ0xs1koT/9k=",
+      "bytes": 78068,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "editorial"
+      ]
+    },
+    {
+      "id": "editorial-stance",
+      "title": "Editorial Stance",
+      "alt": "Ebahi standing",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAL/xAAcEAADAAIDAQAAAAAAAAAAAAABAgMABBEhMVH/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABURAQEAAAAAAAAAAAAAAAAAAAAS/9oADAMBAAIRAxEAPwAaOwCJKRozHwYe78VII4I9HzK19jYgGM2UFuuSMPVa1ozu4LN2clJf/9k=",
+      "bytes": 78400,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "editorial"
+      ]
+    },
+    {
+      "id": "editorial-veil-chest",
+      "title": "Editorial Veil Chest",
+      "alt": "Editorial portrait, hand at her chest",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAID/8QAHhABAAICAQUAAAAAAAAAAAAAAQIRAAMSBBNBUWH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAQADAAAAAAAAAAAAAAAAAAAREiH/2gAMAwEAAhEDEQA/ACIOtDYRkF1dXkatr2zmk32YLqNkubGwE8GaaGUdQMX5VZOuFL//2Q==",
+      "bytes": 259910,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "editorial"
+      ]
+    },
+    {
+      "id": "editorial-veil-close",
+      "title": "Editorial Veil Close",
+      "alt": "Editorial portrait with veiled hat and pearls",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIRABAAICAgAHAAAAAAAAAAAAAQIDACEREgQTIzEyUdH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABYRAAMAAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEQMRAD8AMUltxYdZEDgHYv7mXM9SYktSTXtl4WeT4JmXS7WHxOTeELZfbglFKZ//2Q==",
+      "bytes": 267626,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "editorial"
+      ]
+    },
+    {
+      "id": "editorial-veil-leaning",
+      "title": "Editorial Veil Leaning",
+      "alt": "",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAgEAACAQMEAwAAAAAAAAAAAAABAgMABBESEyFxMUGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIRIf/aAAwDAQACEQMRAD8AKR0XQhkCFz5Jxx36o7a4jEZDSsxyeWqK8ZJEG5JmQAYVBwPtRiRxnSSB3U1DBt0f/9k=",
+      "bytes": 236020,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "editorial"
+      ]
+    },
+    {
+      "id": "editorial-veil-motion",
+      "title": "Editorial Veil Motion",
+      "alt": "",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EAB0QAAICAgMBAAAAAAAAAAAAAAECAwQAERIhUTH/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AM6IKIy2t+dbwdRy6x1OzZqxsqorA+n5ks0lh5WcooLHehki/9k=",
+      "bytes": 66140,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "editorial"
+      ]
+    },
+    {
+      "id": "editorial-veil-seated",
+      "title": "Editorial Veil Seated",
+      "alt": "",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAID/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIDEQAEEgUTITFB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQEAAwAAAAAAAAAAAAAAAAAAERIi/9oADAMBAAIRAxEAPwDPZeJVCGbgWB8jJ1iHgQh+dCiT9ODl1ZtuQGMBvSgXWP1ukbcEXHuRKSbo2ayVcnL/2Q==",
+      "bytes": 267982,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "editorial"
+      ]
+    },
+    {
+      "id": "editorial-veil-twirl",
+      "title": "Editorial Veil Twirl",
+      "alt": "Ebahi turning, tulle skirt in motion",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAID/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIDEQAEEzEiQVH/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABURAQEAAAAAAAAAAAAAAAAAAAAS/9oADAMBAAIRAxEAPwAmuDxeCF2PSqLJ+5jK45DXWRq7+zqgiJlo+iMNJJJJIzsRbGzWTkv/2Q==",
+      "bytes": 69592,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "editorial"
+      ]
+    },
+    {
+      "id": "garden-forest-wide",
+      "title": "Garden Forest Wide",
+      "alt": "Ebahi walking through a forest",
+      "focus": "50% 35%",
+      "width": 1333,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAASAAwDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUBAgP/xAAgEAACAgIBBQEAAAAAAAAAAAABAgADETEhBBIiNEGh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwBJatgcqajWQASvMwceRj1qb7irEICu+5hk/sT9Z7VmMb+HiCU8Xq53IYDOoQk1/9k=",
+      "bytes": 257618,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "garden"
+      ]
+    },
+    {
+      "id": "garden-leaning-log",
+      "title": "Garden Leaning Log",
+      "alt": "Ebahi outdoors, leaning on a log",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEC/8QAIBAAAgAGAgMAAAAAAAAAAAAAAQIAAwQRITEFEiJCgf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECERL/2gAMAwEAAhEDEQA/ADrRTqhOqrcDZ1n7FFCVAVJLuB7W3CU5VTN8gWZyF0AAIwvIqBZuwIxgmIuLoWT/2Q==",
+      "bytes": 308182,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "garden"
+      ]
+    },
+    {
+      "id": "garden-path",
+      "title": "Garden Path",
+      "alt": "",
+      "focus": "50% 35%",
+      "width": 1333,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAASAAwDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAhEAEBAAEDAwUAAAAAAAAAAAABAgADESEEEhMiI0Fh0f/EABYBAQEBAAAAAAAAAAAAAAAAAAIAA//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwDl6mjqeE1q7SbNpfh5xBFVySbfWO8HUTEezRCPA8OajRog3uh259J+5kcVF2dIUVQ9xyOUaYOnKhumGGRv/9k=",
+      "bytes": 358994,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "garden"
+      ]
+    },
+    {
+      "id": "garden-portrait-hat",
+      "title": "Garden Portrait Hat",
+      "alt": "Ebahi smiling in a wide-brimmed hat",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIE/8QAHhAAAgEFAAMAAAAAAAAAAAAAAQIDAAQREiEUMUH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEQMRAD8AOSOGNXSSB5G+MDjFa4NGjGloXxwk590vcWfkSo5k1APcDpFUJEhGiKQBReVMTqT/2Q==",
+      "bytes": 176278,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "garden"
+      ]
+    },
+    {
+      "id": "garden-seated-log",
+      "title": "Garden Seated Log",
+      "alt": "Ebahi seated outdoors",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIE/8QAIBAAAgEEAQUAAAAAAAAAAAAAAQIDABESIQQTQWGB0f/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAECEf/aAAwDAQACEQMRAD8AODgHjnoyFFa2WQ2RSxQwSxq+MTX7uCG91hHIeUbRiwOSHKxB+VLST32Yx43UnIsR/9k=",
+      "bytes": 451278,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "garden"
+      ]
+    },
+    {
+      "id": "garden-swing-laugh",
+      "title": "Garden Swing Laugh",
+      "alt": "Ebahi laughing on a garden swing",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAL/xAAgEAACAQMEAwAAAAAAAAAAAAABAgMABBEFEiFRIkFC/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIRIv/aAAwDAQACEQMRAD8AJbWUrxoTCzhhjK/JqZ7OdZSIlyo6I4PVM0q8jhibxZi7d8Uk6iq8KMj0doqV8yngmf/Z",
+      "bytes": 228658,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "garden"
+      ]
+    },
+    {
+      "id": "garden-swing-reach",
+      "title": "Garden Swing Reach",
+      "alt": "",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgQF/8QAHhAAAgICAwEBAAAAAAAAAAAAAQIDEQASBCExIkH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABkRAAIDAQAAAAAAAAAAAAAAAAACAREhMf/aAAwDAQACEQMRAD8AgiidpGkSM67ag17X4MMmodgvl5q8aV4eCsZLUw+SK6v3E8vHUKoG2q1bL3kWmuCbMP/Z",
+      "bytes": 282828,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "garden"
+      ]
+    },
+    {
+      "id": "garden-trees",
+      "title": "Garden Trees",
+      "alt": "Ebahi among the trees",
+      "focus": "50% 35%",
+      "width": 1333,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAASAAwDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAgADBP/EAB0QAAICAwEBAQAAAAAAAAAAAAECAAMEESESIpH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAMAwEAAhEDEQA/AAfNWEhZ1UAAjvfyDK9LYoJL/I7qZ5VuNZilRSa3AGiW9Q4mQldWrMi5WJ3pNETHLKUcg6vYSZSjT//Z",
+      "bytes": 428444,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "garden"
+      ]
+    },
+    {
+      "id": "garden-twirl",
+      "title": "Garden Twirl",
+      "alt": "Ebahi turning in a garden",
+      "focus": "50% 35%",
+      "width": 1333,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAASAAwDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAhEAACAgEDBQEAAAAAAAAAAAABAgADEQQhMRMjQVGBsf/EABYBAQEBAAAAAAAAAAAAAAAAAAMAAv/EABgRAQEBAQEAAAAAAAAAAAAAAAEAAjER/9oADAMBAAIRAxEAPwDO0mlawlXBU+BjmOrRlQdtvhxIi406tTUT0ztiwg/kvVJlcsXG/B2haUPa1yTSo9DmNYnMIQ2y9v/Z",
+      "bytes": 398392,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "garden"
+      ]
+    },
+    {
+      "id": "hair-city",
+      "title": "Hair City",
+      "alt": "Ebahi laughing, natural hair worn out, in a pink jacket",
+      "focus": "50% 35%",
+      "width": 1333,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAASAAwDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAiEAABBAICAQUAAAAAAAAAAAABAAIDBBEhBTETFDNBcYH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/8QAGREAAwADAAAAAAAAAAAAAAAAAAERAhIx/9oADAMBAAIRAxEAPwBcvy8tawa8UbNNBLnb7Smh9X45sbLBn7VWq0E11zpWB7nYA30AFcLWxRhsYOMn5SMto5TmtkiawQSCGaP4t6vsNQhE0Y8R/9k=",
+      "bytes": 83162,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "hair"
+      ]
+    },
+    {
+      "id": "hair-curls-overhead",
+      "title": "Hair Curls Overhead",
+      "alt": "Natural curls photographed from above",
+      "focus": "50% 35%",
+      "width": 1333,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAASAAwDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQADBP/EACAQAAICAgICAwAAAAAAAAAAAAECAAMEESFRBTESImH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAwT/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQIRMUFC/9oADAMBAAIRAxEAPwAd7rHucKxUL6AnXjDIevZRm0db1N/HVVbtJHxsI+rDvqM02Kal9DiTpM0qOwjCJGZoHgrz+xChEIbaLw3UpQ5F4P/Z",
+      "bytes": 129584,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "hair"
+      ]
+    },
+    {
+      "id": "hair-pink-cape",
+      "title": "Hair Pink Cape",
+      "alt": "Ebahi in a pink patchwork cape, natural hair worn out",
+      "focus": "50% 35%",
+      "width": 1333,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAASAAwDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGAv/EACIQAAEEAgEEAwAAAAAAAAAAAAEAAhEhAwUSBhMUYRUxgf/EABUBAQEAAAAAAAAAAAAAAAAAAAIA/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERAkL/2gAMAwEAAhEDEQA/ANdQ4g/YskWcVR9mykOVnF8QR6IghVO2B8vFl5EcWVBi5U5tHD5DMW2C6VCeYqO9+T3cImuLj+pDkt5Js+0IRY+T/9k=",
+      "bytes": 132454,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "hair"
+      ]
+    },
+    {
+      "id": "hair-profile-laughing",
+      "title": "Hair Profile Laughing",
+      "alt": "Ebahi laughing in profile, hair worn loose",
+      "focus": "50% 35%",
+      "width": 1333,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAASAAwDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAiEAABBAICAQUAAAAAAAAAAAABAAIDBBEhBTETFDNBcYH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/8QAGREAAwADAAAAAAAAAAAAAAAAAAERAhIx/9oADAMBAAIRAxEAPwBcvy8tawa8UbNNBLnb7Smh9X45sbLBn7VWq0E11zpWB7nYA30AFcLWxRhsYOMn5SMto5TmtkiawQSCGaP4t6vsNQhE0Y8R/9k=",
+      "bytes": 83162,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "hair"
+      ]
+    },
+    {
+      "id": "hair-wig-stand",
+      "title": "Hair Wig Stand",
+      "alt": "Ebahi beside a finished wig on a stand in the Edwoltz studio",
+      "focus": "50% 35%",
+      "width": 1333,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAASAAwDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAv/EACEQAAIBBAICAwAAAAAAAAAAAAECAwAEERIhURMVIjGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQEBAQEAAAAAAAAAAAAAAAAAASEx/9oADAMBAAIRAxEAPwCwXi2ZNxsoyw6pF7m2JDeUAMMjIxkd1FvZnleRzcKxY8hQRxTE9lBKsJ9jgCMAcZ7qWLcS2J1+zWgzYHyP7RRSoR//2Q==",
+      "bytes": 96906,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "hair"
+      ]
+    },
+    {
+      "id": "music-1",
+      "title": "Music 1",
+      "alt": "Ebahi in the studio, keyboards and a microphone behind her",
+      "focus": "50% 35%",
+      "width": 922,
+      "height": 1152,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEF/8QAHBAAAgIDAQEAAAAAAAAAAAAAAQIDEQAEIUGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAXEQEAAwAAAAAAAAAAAAAAAAAAARES/9oADAMBAAIRAxEAPwDGRAEsg/BeRlAasVo702nG6KFYN3vmFnaSaZpCFUsbpeDJsYl//9k=",
+      "bytes": 56130,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "music"
+      ]
+    },
+    {
+      "id": "music-2",
+      "title": "Music 2",
+      "alt": "",
+      "focus": "50% 35%",
+      "width": 922,
+      "height": 1152,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIBAAAQMEAgMAAAAAAAAAAAAAAQIDEQAEEjEhIiORwf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEhMf/aAAwDAQACEQMRAD8Ay3Gn0qBUlAkEyiOfVRuFEOQoQQBumNv25Jzccg89Ex9od55blS0zidZbqesah//Z",
+      "bytes": 149876,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "music"
+      ]
+    },
+    {
+      "id": "portrait-burgundy-close",
+      "title": "Portrait Burgundy Close",
+      "alt": "Portrait of Ebahi in a burgundy jacket",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBf/EAB8QAQABBAEFAAAAAAAAAAAAAAERAAIDEiEEEzFRgf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oADAMBAAIRAxEAPwDM1i2/a14x7D9oWjqbEMU3UZi7EWN+gAIEyFT75k5mIA8eijmCNKH/2Q==",
+      "bytes": 183046,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "portrait"
+      ]
+    },
+    {
+      "id": "portrait-burgundy-full",
+      "title": "Portrait Burgundy Full",
+      "alt": "Ebahi in a burgundy jacket, full length",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAHhAAAgEEAwEAAAAAAAAAAAAAAQIAAwQRIRIxMpL/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMwhUQHGd4kqjAOQI9Laui7C7HWYSpY3PLwPoSRv/9k=",
+      "bytes": 136198,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "portrait"
+      ]
+    },
+    {
+      "id": "portrait-burgundy-hands",
+      "title": "Portrait Burgundy Hands",
+      "alt": "Ebahi teaching",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBf/EAB0QAQABBAMBAAAAAAAAAAAAAAECABESUQMhMXH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAMAwEAAhEDEQA/AM1iQ48pWBEPtD0HZT4znxuM8TxN3qbePWuqm1lG5D//2Q==",
+      "bytes": 184168,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "portrait"
+      ]
+    },
+    {
+      "id": "portrait-joyful-white",
+      "title": "Portrait Joyful White",
+      "alt": "Ebahi in conversation",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAC/8QAIBAAAgIBAwUAAAAAAAAAAAAAAQIDBAAREiEFIzEyof/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/AK5ZsJJMVszKRIQoDfMf0aeWaoXkdyd59jyOBmkoSidpGUHuFgNR4JxNeu6qxcbWZtTphBk5f//Z",
+      "bytes": 184764,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "portrait"
+      ]
+    },
+    {
+      "id": "portrait-open-hands",
+      "title": "Portrait Open Hands",
+      "alt": "Ebahi Tayo-Ogunleye smiling, hands open",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAED/8QAIBABAAIBBAIDAAAAAAAAAAAAAQIDEQAEEiEFIjFBUf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAWEQEBAQAAAAAAAAAAAAAAAAARAAH/2gAMAwEAAhEDEQA/AM7LLM3ybrck0MWIHek+Musnt5SbJvv1mS/Rp7t6YTkFByFewcv7q07flDnKHGUsKCfODQNnoX//2Q==",
+      "bytes": 145234,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "portrait"
+      ]
+    },
+    {
+      "id": "portrait-prayer",
+      "title": "Portrait Prayer",
+      "alt": "Ebahi with hands clasped in prayer",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIF/8QAIhAAAgICAQMFAAAAAAAAAAAAAQIDBAAhEQUSEyIxUWGh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAwDAQACEQMRAD8AOWxaNydRYn4DsFVXPvzoZo9HlsNWfzvIXEhHrOxoZcdCWOaVhEpLOWDFvk/mNXrzL5C6gdzcjf0MIScv/9k=",
+      "bytes": 109392,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "portrait"
+      ]
+    },
+    {
+      "id": "portrait-seated-profile",
+      "title": "Portrait Seated Profile",
+      "alt": "Ebahi seated in white, in profile",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIBAAAgICAQUBAAAAAAAAAAAAAQMCBAARMQUUISJBUf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAMAwEAAhEDEQA/AMqjX7hwXsDYJJPzJ2FlDpLkfMTz+47p5lTg0yGzMARIHGDcuxYYWN9pH7vIhf/Z",
+      "bytes": 93970,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "portrait"
+      ]
+    },
+    {
+      "id": "portrait-white-standing",
+      "title": "Portrait White Standing",
+      "alt": "Ebahi standing in white",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQT/xAAhEAACAQQABwAAAAAAAAAAAAABAgADBBEhBRITIkFRcf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhEDEQA/ADLGxa8FQgheRc5Pk+pGy4YiI8ONW16jMvayEaMPdHDbG/sgSX//2Q==",
+      "bytes": 81908,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "portrait"
+      ]
+    },
+    {
+      "id": "worship-painterly",
+      "title": "Worship Painterly",
+      "alt": "Ebahi worshipping",
+      "focus": "50% 35%",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEC/8QAHhAAAgEEAwEAAAAAAAAAAAAAAQIEAAMRISIxQZL/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABkRAAIDAQAAAAAAAAAAAAAAAAABAhEhMf/aAAwDAQACEQMRAD8A1AmcCpxo9VHmMHOF1mix4EhEcFhnzdDvW763CCx+qnGnxjLMZ//Z",
+      "bytes": 93238,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "worship"
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing",
+      "alt": "Ebahi writing in a journal at her desk",
+      "focus": "50% 35%",
+      "width": 923,
+      "height": 1152,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAIF/8QAHhAAAgIDAAMBAAAAAAAAAAAAAQIDEQAEIRMxQZH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIRAxEAPwA+pqySa7TeNigvo53IeN0oOhUkXRzS1N6KCGNAQsaoB6JN/f3DPuxTsXeNz2gbA5gmHH//2Q==",
+      "bytes": 59554,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "writing"
+      ]
+    },
+    {
+      "id": "wush-certificates",
+      "title": "Wush Certificates",
+      "alt": "Participants holding up their certificates at a WUSH closing ceremony",
+      "focus": "50% 35%",
+      "width": 1080,
+      "height": 720,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAIAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAfEAACAgEEAwAAAAAAAAAAAAABAgADEQQSExQhYdH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABcRAQEBAQAAAAAAAAAAAAAAAAEAAhH/2gAMAwEAAhEDEQA/AJa9IrsK08kKGbc2BmKuNqwemreyG+xERrMC8v/Z",
+      "bytes": 101510,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "wush"
+      ]
+    },
+    {
+      "id": "wush-delegates-banner",
+      "title": "Wush Delegates Banner",
+      "alt": "Delegates in front of the Young Ministers Programme banner",
+      "focus": "50% 35%",
+      "width": 1080,
+      "height": 864,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAKAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgME/8QAIxABAAECBAcBAAAAAAAAAAAAAREAAgMEEjEFISIyUXGRsf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAERITH/2gAMAwEAAhEDEQA/ADms4YS6MsTqmU38/avjBa26NknpCKycR7bfR+UsRRIY5Uii3p//2Q==",
+      "bytes": 127916,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "wush"
+      ]
+    },
+    {
+      "id": "wush-podium-group",
+      "title": "Wush Podium Group",
+      "alt": "Young ministers gathered at the podium during a WUSH session",
+      "focus": "50% 35%",
+      "width": 1080,
+      "height": 720,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAIAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAfEAABBAICAwAAAAAAAAAAAAABAAMREgIEBSEiMVH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABcRAQEBAQAAAAAAAAAAAAAAAAEAITH/2gAMAwEAAhEDEQA/AJTWvk54gG5IAH2VU415rU18m3qWtPceoCIh2qYN/9k=",
+      "bytes": 64032,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "wush"
+      ]
+    },
+    {
+      "id": "wush-team-banner",
+      "title": "Wush Team Banner",
+      "alt": "The SilentShout team in front of the School of Music Ministry banner",
+      "focus": "50% 35%",
+      "width": 1080,
+      "height": 864,
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAKAAwDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBP/EACIQAAEDAwMFAAAAAAAAAAAAAAEAAgMEEUESITMxcqHh8P/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAESEUH/2gAMAwEAAhEDEQA/AIRTCWSQaG6Rvub59+EXMjLr364GFmoeWo+ykPLJ3lDuF2lNH//Z",
+      "bytes": 138420,
+      "storage": "static",
+      "createdAt": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "wush"
+      ]
+    }
+  ]
+}

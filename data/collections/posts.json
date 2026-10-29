@@ -1,0 +1,45 @@
+{
+  "name": "posts",
+  "label": "Blog posts",
+  "kind": "post",
+  "description": "Published posts appear at /blog and get their own page.",
+  "system": true,
+  "items": [
+    {
+      "id": "why-we-pray-at-5am",
+      "slug": "why-we-pray-at-5am",
+      "title": "Why We Pray at 5AM",
+      "excerpt": "Prayer had become a guilty subject for too many of us — something we survived rather than something we sustained. So in 2023 we started showing up at 5am instead of talking about it.",
+      "date": "2026-10-21",
+      "category": "Faith",
+      "readingTime": "5 min read",
+      "status": "published",
+      "media": {
+        "src": "portrait-prayer",
+        "alt": "Ebahi with hands clasped in prayer",
+        "focus": "50% 25%"
+      },
+      "body": [
+        "For a lot of believers, prayer has quietly become a guilty subject. Not a disputed one — nobody argues that prayer matters. A guilty one. It sits on the list of things we know we should be doing, we intend to do, and we keep not doing. And because we feel guilty about it, we avoid thinking about it, which makes us pray less, which makes us feel guiltier.",
+        "I have watched that cycle in gifted people. I have lived in it myself. You can lead worship on Sunday out of last month's prayer life for longer than you would like to admit. It works, for a while. Then it stops working, and you find out what you have actually been running on.",
+        "## What I kept noticing about Jesus",
+        "Read the Gospels looking for the ordinary habits rather than the miracles, and one keeps surfacing: He went to His Father early. Before the crowds. Before the demands. Before the day had a chance to tell Him what it needed from Him.",
+        "That detail used to read to me like biography. At some point it started reading like instruction. If the Son of God structured His mornings around seeking His Father, the question is not whether I have time. The question is what I have decided the first hour of my day is for.",
+        "Because the first hour always goes somewhere. It goes to the phone, to the inbox, to other people's urgencies. It is never unspent. It is only ever unchosen.",
+        "## So we stopped discussing it and started showing up",
+        "In 2023 we began The 5AM Tribe. The commitment is deliberately unglamorous: gather every morning at 5am and invest at least one intentional hour in prayer. That is the whole structure.",
+        "No qualification is required to join beyond a willingness to be there. We are not assembled around a technique or a teacher. We are a community of saints who decided that praying daily is worth building a life around, and who would rather do that together than keep failing at it alone.",
+        "An hour is not an arbitrary number. An hour is long enough that you run out of the things you came to say. The first ten minutes are often performance — the language we think prayer is supposed to sound like. Somewhere after that, the performing gets tired, and what is actually in you starts to come up. You cannot schedule that moment. You can only stay in the room long enough for it to arrive.",
+        "## What it became",
+        "What started as a simple commitment to prayer has grown into something I did not plan for. It became a thriving community where men and women find refuge, strength and intimacy with God.",
+        "Refuge is the word I did not expect. I thought we were building discipline. We were, but discipline turned out to be the door rather than the room. What people actually found on the other side of showing up at 5am was somewhere to be honest, somewhere to be carried on the mornings they could not carry themselves, and a growing familiarity with the voice of God that no amount of teaching about prayer had produced in them.",
+        "That is the part I most want you to hear. The Tribe did not make anyone a better pray-er in the sense of better phrasing. It made people closer. Those are not the same achievement, and only one of them lasts.",
+        "## If you are the person who keeps meaning to start",
+        "You do not need a better prayer life before you can begin. That is the trap — treating prayer as a reward for already being spiritually together, when it is the means by which anyone gets there at all.",
+        "You need an hour, a time you will actually keep, and ideally some people who will notice if you disappear.",
+        "I am deeply aware of my own insignificance without God. Everything I have been able to build — the music, the school, the business, the books — rests on that one admission, and on the truth underneath it: when we fix our eyes on God, He enables us to do far more than we could ever accomplish on our own. The 5am hour is simply where I go to fix my eyes.",
+        "The door is open. We are there tomorrow morning."
+      ]
+    }
+  ]
+}

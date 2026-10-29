@@ -1,0 +1,268 @@
+{
+  "id": "music",
+  "slug": "music",
+  "title": "Music",
+  "status": "published",
+  "order": 2,
+  "seo": {
+    "description": "Music by Ebahi Tayo-Ogunleye — worship leadership, original songs, live recordings and the Emi O ri project.",
+    "keywords": [],
+    "noIndex": false
+  },
+  "blocks": [
+    {
+      "id": "pageHero-2",
+      "type": "pageHero",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Music by Ebahi",
+        "title": "Music has been part of my story for more than two decades.",
+        "lede": "It started as something I could do and became something I was asked to carry. Somewhere between the two, it stopped being about ability.",
+        "media": {
+          "src": "music-2",
+          "alt": "An outdoor worship session set up among the trees — keyboard, microphone and open air",
+          "focus": "50% 45%"
+        },
+        "tone": "canvas",
+        "actions": [
+          {
+            "label": "Hear the featured project",
+            "href": "#featured",
+            "variant": "solid",
+            "size": "lg"
+          }
+        ],
+        "titleType": {
+          "min": 2.5,
+          "vw": 7,
+          "max": 5.5,
+          "leading": 0.92,
+          "tracking": "-0.03em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "featuredRelease-2",
+      "type": "featuredRelease",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "anchor": "featured",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Featured project",
+        "title": "Emi O ri",
+        "meaning": "Still in Wonder",
+        "quote": "I have not seen this kind of God before.",
+        "description": "A live recording born out of a season of seeing God do what only God does. Emi O ri is testimony before it is music — a room full of people who ran out of adequate words and sang anyway.",
+        "showDescription": true,
+        "facts": [
+          {
+            "label": "Recorded",
+            "value": "Live recorded in Lagos, 2024.",
+            "accent": false
+          },
+          {
+            "label": "Releasing",
+            "value": "November 2, 2026",
+            "accent": true
+          }
+        ],
+        "actions": [
+          {
+            "label": "Listen now",
+            "href": "#listen",
+            "variant": "accent",
+            "size": "lg"
+          },
+          {
+            "label": "Watch",
+            "href": "#watch",
+            "variant": "outlineLight",
+            "size": "lg"
+          },
+          {
+            "label": "Follow the journey",
+            "href": "/contact#newsletter",
+            "variant": "ghost",
+            "size": "lg"
+          }
+        ],
+        "media": {
+          "src": "music-1",
+          "alt": "Ebahi in the studio, keyboards and a microphone behind her",
+          "focus": "50% 30%"
+        },
+        "titleType": {
+          "min": 3.5,
+          "vw": 12,
+          "max": 9,
+          "leading": 0.82,
+          "tracking": "-0.04em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "releaseGrid-1",
+      "type": "releaseGrid",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "heading": {
+          "eyebrow": "The archive",
+          "title": "Selected songs, sessions & projects",
+          "lede": "This section will grow into a permanent archive of Ebahi's music journey — every release, video and live recording in one place.",
+          "align": "left",
+          "size": "md",
+          "gap": "lg"
+        },
+        "collection": "releases",
+        "columns": 4
+      }
+    },
+    {
+      "id": "split-4",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "md",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "prose",
+            "eyebrow": "Watch & listen",
+            "title": "Videos and live recordings",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "lede": "Music videos, live worship sessions and recordings will be embedded here as each project is released.",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "embeds",
+            "items": [
+              {
+                "label": "Emi O ri — live",
+                "url": ""
+              },
+              {
+                "label": "Worship session",
+                "url": ""
+              }
+            ],
+            "columns": 2
+          }
+        ],
+        "ratio": "1/1",
+        "verticalAlign": "start",
+        "gap": "md",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    },
+    {
+      "id": "engageBanner-3",
+      "type": "engageBanner",
+      "visible": true,
+      "style": {
+        "tone": "sand",
+        "size": "md",
+        "width": "wide",
+        "grain": true,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Music ministry",
+        "title": "Invite Ebahi to minister, or bring SilentShout to your music team.",
+        "actions": [
+          {
+            "label": "Invite Ebahi",
+            "href": "/work-with-me"
+          },
+          {
+            "label": "Visit SilentShout",
+            "href": "/ministry"
+          }
+        ],
+        "titleType": {
+          "min": 1.875,
+          "vw": 4.5,
+          "max": 3.25,
+          "leading": 1.05,
+          "tracking": "",
+          "case": "normal",
+          "italic": false
+        }
+      }
+    }
+  ],
+  "inSitemap": true,
+  "system": false,
+  "updatedAt": "2026-10-28T00:00:00.000Z"
+}

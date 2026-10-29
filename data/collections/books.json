@@ -1,0 +1,81 @@
+{
+  "name": "books",
+  "label": "Books & resources",
+  "kind": "book",
+  "description": "Each title gets a typographic cover until artwork is uploaded.",
+  "system": false,
+  "items": [
+    {
+      "id": "dear-worship-leader",
+      "slug": "dear-worship-leader",
+      "title": "Dear Worship Leader",
+      "kind": "Book",
+      "description": "Letters to the person holding the microphone — on calling, preparation, correction, team life and the private work that makes public worship honest.",
+      "themes": [
+        "Worship",
+        "Ministry",
+        "Formation"
+      ],
+      "action": {
+        "label": "Get the book",
+        "href": "https://selar.com/m/ebahitayo",
+        "external": true
+      },
+      "accentIndex": 0
+    },
+    {
+      "id": "prayed-up",
+      "slug": "prayed-up",
+      "title": "Prayed Up",
+      "kind": "Book",
+      "description": "For anyone whose prayer life has become a guilty subject. A return to prayer as something sustained rather than something survived.",
+      "themes": [
+        "Prayer",
+        "Devotion",
+        "Discipline"
+      ],
+      "action": {
+        "label": "Get the book",
+        "href": "https://selar.com/m/ebahitayo",
+        "external": true
+      },
+      "accentIndex": 1
+    },
+    {
+      "id": "simple-praying-systems",
+      "slug": "simple-praying-systems",
+      "title": "Simple Praying Systems",
+      "kind": "Resource",
+      "description": "Practical structures for consistent prayer — frameworks, rhythms and prompts for individuals, families and ministry teams.",
+      "themes": [
+        "Prayer",
+        "Systems",
+        "Practice"
+      ],
+      "action": {
+        "label": "Get the resource",
+        "href": "https://selar.com/m/ebahitayo",
+        "external": true
+      },
+      "accentIndex": 2
+    },
+    {
+      "id": "psalms-of-ebahi",
+      "slug": "psalms-of-ebahi",
+      "title": "Psalms of Ebahi",
+      "kind": "Collection",
+      "description": "A collection of psalms written in real seasons — praise, lament, waiting and thanksgiving, kept in the language they arrived in.",
+      "themes": [
+        "Psalms",
+        "Worship",
+        "Writing"
+      ],
+      "action": {
+        "label": "Get the book",
+        "href": "https://selar.com/m/ebahitayo",
+        "external": true
+      },
+      "accentIndex": 3
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "name": "silentshout-arms",
+  "label": "SilentShout — the four arms",
+  "kind": "programme",
+  "system": false,
+  "items": [
+    {
+      "id": "silentshout-music-impact",
+      "name": "SilentShout Music Impact",
+      "promise": "WUSH — Worship Until Something Happens",
+      "description": "The worship arm, and the gathering the network is built around. Worship held long enough for something to shift, across editions since 2014.",
+      "detail": [
+        "2014",
+        "2019",
+        "2022",
+        "2024"
+      ],
+      "action": {
+        "label": "See WUSH",
+        "href": "#wush"
+      }
+    },
+    {
+      "id": "silentshout-school-of-music-ministry",
+      "name": "SilentShout School of Music Ministry",
+      "promise": "The formation track",
+      "description": "Where musical competence and spiritual formation are taught as one subject — cohorts, live teaching, mentoring and the Young Music Ministers Summit.",
+      "detail": [
+        "Cohort-based",
+        "Live teaching",
+        "Mentoring",
+        "The Summit"
+      ],
+      "action": {
+        "label": "About the school",
+        "href": "#school"
+      }
+    },
+    {
+      "id": "we-evangelise-project",
+      "name": "We Evangelise Project",
+      "promise": "Reaching the unreached",
+      "description": "The outreach arm, run with non-profit and faith-based mission partners — the Gospel, relief and practical skill acquisition carried into rural communities.",
+      "detail": [
+        "Seven communities since 2020",
+        "Across Ibadan",
+        "Gospel & relief",
+        "Skill acquisition"
+      ],
+      "action": {
+        "label": "Partner with us",
+        "href": "/contact"
+      }
+    },
+    {
+      "id": "the-5am-tribe",
+      "name": "The 5AM Tribe",
+      "promise": "One intentional hour, every morning",
+      "description": "A community of saints committed to praying daily at 5am for at least an hour — one of the network's spiritual formation pillars.",
+      "detail": [
+        "Founded 2023",
+        "Daily at 5am",
+        "At least one hour",
+        "Open to join"
+      ],
+      "action": {
+        "label": "Join the Tribe",
+        "href": "/contact"
+      }
+    }
+  ]
+}

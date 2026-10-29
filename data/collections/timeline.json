@@ -1,0 +1,68 @@
+{
+  "name": "timeline",
+  "label": "Story timeline",
+  "kind": "timeline",
+  "system": false,
+  "items": [
+    {
+      "id": "a-house-where-sound-mattered",
+      "year": "Beginnings",
+      "title": "A house where sound mattered",
+      "body": "Long before music became ministry, it was language. Childhood was where the ear was trained and where the first sense of something larger than talent began to settle."
+    },
+    {
+      "id": "music-ministry-begins",
+      "year": "2004",
+      "title": "Music ministry begins",
+      "body": "The year the calling stopped being a feeling and started being a commitment. Serving on a music team turned gift into discipline and discipline into ministry."
+    },
+    {
+      "id": "learning-to-lead-worship-not-perform-it",
+      "year": "The ministry years",
+      "title": "Learning to lead worship, not perform it",
+      "body": "Years of rehearsals, services, corrections and quiet growth — learning that the health of a worship leader off the platform determines what happens on it."
+    },
+    {
+      "id": "music-director-harvesthouse-christian-center",
+      "year": "Today",
+      "title": "Music Director, Harvesthouse Christian Center",
+      "body": "Serving as Music Director of Harvesthouse Christian Center, the Life Center Campus — carrying responsibility for sound, for people and for the spiritual culture a music team creates."
+    },
+    {
+      "id": "we-evangelise-reaching-the-unreached",
+      "year": "2020",
+      "title": "We Evangelise — reaching the unreached",
+      "body": "Outreach began in partnership with non-profit and faith-based mission organisations. Seven rural communities across Ibadan have since received the Gospel, relief and practical skill acquisition programmes."
+    },
+    {
+      "id": "the-5am-tribe",
+      "year": "2023",
+      "title": "The 5AM Tribe",
+      "body": "A community of saints committed to praying daily at 5am for at least an hour. What began as a simple commitment has grown into a place where men and women find refuge, strength and intimacy with God."
+    },
+    {
+      "id": "raising-ministers-not-just-musicians",
+      "year": "SilentShout",
+      "title": "Raising ministers, not just musicians",
+      "body": "SilentShout School of Music Ministry was born out of a gap: gifted young creatives with no framework for formation, character or responsibility."
+    },
+    {
+      "id": "edwoltz-hair-city",
+      "year": "Enterprise",
+      "title": "Edwoltz Hair City",
+      "body": "A hair business built with the same instinct — serve people well, teach what you know, and take responsibility for what your industry leaves behind."
+    },
+    {
+      "id": "turning-experience-into-frameworks",
+      "year": "Teaching & writing",
+      "title": "Turning experience into frameworks",
+      "body": "VisionCraft Academy, the Coaching Hub, The Power of 90 Days and four books — practical structures for people who want to move from intention to execution."
+    },
+    {
+      "id": "gathering-the-threads",
+      "year": "This season",
+      "title": "Gathering the threads",
+      "body": "Music, ministry, teaching, writing and enterprise are no longer separate rooms. They are one house, and this season is about opening the doors."
+    }
+  ]
+}

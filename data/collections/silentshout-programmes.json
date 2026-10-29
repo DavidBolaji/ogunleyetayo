@@ -1,0 +1,54 @@
+{
+  "name": "silentshout-programmes",
+  "label": "SilentShout — training & resources",
+  "kind": "programme",
+  "system": false,
+  "items": [
+    {
+      "id": "school-of-music-ministry",
+      "name": "School of Music Ministry",
+      "promise": "The core formation track",
+      "description": "A structured programme covering spiritual formation, ministry character, musicianship and the practical work of leading worship.",
+      "detail": [
+        "Cohort-based",
+        "Live teaching",
+        "Mentoring",
+        "Practical assignments"
+      ],
+      "action": {
+        "label": "Join the waitlist",
+        "href": "/contact"
+      }
+    },
+    {
+      "id": "workshops-masterclasses",
+      "name": "Workshops & masterclasses",
+      "promise": "Focused, intensive, practical",
+      "description": "Short-format sessions for music teams, church departments and creative collectives on specific areas of ministry and craft.",
+      "detail": [
+        "Church music teams",
+        "Worship departments",
+        "Creative collectives"
+      ],
+      "action": {
+        "label": "Request a workshop",
+        "href": "/work-with-me"
+      }
+    },
+    {
+      "id": "resources-for-music-ministers",
+      "name": "Resources for music ministers",
+      "promise": "Tools you can use this Sunday",
+      "description": "Guides, prayer systems and writing from years of leading worship and raising worship leaders.",
+      "detail": [
+        "Dear Worship Leader",
+        "Prayer systems",
+        "Team guides"
+      ],
+      "action": {
+        "label": "Explore resources",
+        "href": "/books"
+      }
+    }
+  ]
+}

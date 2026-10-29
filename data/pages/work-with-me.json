@@ -1,0 +1,313 @@
+{
+  "id": "work-with-me",
+  "slug": "work-with-me",
+  "title": "Work With Me",
+  "status": "published",
+  "order": 6,
+  "seo": {
+    "description": "Invite Ebahi Tayo-Ogunleye to speak, teach or minister at your church, conference, school, organisation or creative community.",
+    "keywords": [],
+    "noIndex": false
+  },
+  "blocks": [
+    {
+      "id": "pageHero-6",
+      "type": "pageHero",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Speaking & collaboration",
+        "title": "Let's create something meaningful.",
+        "lede": "Ebahi speaks to rooms that are trying to grow — churches finding their sound, teams finding their standard, young people finding their calling and organisations finding their next ninety days.",
+        "media": {
+          "src": "editorial-stance",
+          "alt": "Ebahi standing, editorial portrait",
+          "focus": "50% 18%"
+        },
+        "tone": "canvas",
+        "actions": [],
+        "titleType": {
+          "min": 2.5,
+          "vw": 7,
+          "max": 5.5,
+          "leading": 0.92,
+          "tracking": "-0.03em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
+      "id": "stack-5",
+      "type": "stack",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "items": [
+          {
+            "kind": "prose",
+            "eyebrow": "Who I speak to",
+            "title": "Rooms that are trying to grow.",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "chips",
+            "items": [
+              "Churches",
+              "Conferences",
+              "Schools",
+              "Creative communities",
+              "Music teams",
+              "Young ministers",
+              "Women's gatherings",
+              "Organisations"
+            ],
+            "size": "md",
+            "variant": "outline",
+            "interactive": true
+          }
+        ],
+        "maxWidth": "none",
+        "centered": false,
+        "gap": "md"
+      }
+    },
+    {
+      "id": "stack-6",
+      "type": "stack",
+      "visible": true,
+      "style": {
+        "tone": "surface",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "items": [
+          {
+            "kind": "prose",
+            "eyebrow": "Speaking areas",
+            "title": "What I am usually asked to bring.",
+            "titleType": {
+              "min": 1.875,
+              "vw": 4.2,
+              "max": 3.25,
+              "leading": 1.05,
+              "tracking": "",
+              "case": "normal",
+              "italic": false
+            },
+            "titleTag": "h2",
+            "noteType": {
+              "min": 1.25,
+              "vw": 1.6,
+              "max": 1.5,
+              "leading": 1.375,
+              "tracking": "",
+              "case": "normal",
+              "italic": true
+            },
+            "noteMaxWidth": "none",
+            "ledeMaxWidth": "2xl",
+            "paragraphs": [],
+            "bodySize": "md",
+            "bodyTone": "body",
+            "actions": [],
+            "chips": [],
+            "maxWidth": "none",
+            "offsetTop": "none"
+          },
+          {
+            "kind": "pillars",
+            "items": [
+              {
+                "title": "Music Ministry",
+                "body": "Building a music team that is spiritually healthy and musically excellent."
+              },
+              {
+                "title": "Worship & Spiritual Formation",
+                "body": "The private life that makes public worship credible."
+              },
+              {
+                "title": "Purpose & Calling",
+                "body": "Discovering, stewarding and expressing what God has entrusted to you."
+              },
+              {
+                "title": "Leadership",
+                "body": "Leading people, standards and culture without losing your own centre."
+              },
+              {
+                "title": "Creativity",
+                "body": "Making original work from a formed interior life."
+              },
+              {
+                "title": "Personal Growth",
+                "body": "Intentional living, execution and the power of ninety days."
+              },
+              {
+                "title": "Entrepreneurship",
+                "body": "Building a business with conviction, service and staying power."
+              }
+            ],
+            "columns": 3,
+            "numbered": true,
+            "cellTone": "surface",
+            "intro": [],
+            "selfStart": false
+          }
+        ],
+        "maxWidth": "none",
+        "centered": false,
+        "gap": "lg"
+      }
+    },
+    {
+      "id": "split-7",
+      "type": "split",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "lg",
+        "width": "wide",
+        "grain": false,
+        "align": "left",
+        "anchor": "invite",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "columns": [
+          {
+            "kind": "group",
+            "layout": "stack",
+            "items": [
+              {
+                "kind": "prose",
+                "eyebrow": "Invite Ebahi",
+                "title": "Tell me about your gathering.",
+                "titleType": {
+                  "min": 1.875,
+                  "vw": 4.2,
+                  "max": 3.25,
+                  "leading": 1.05,
+                  "tracking": "",
+                  "case": "normal",
+                  "italic": false
+                },
+                "titleTag": "h2",
+                "noteType": {
+                  "min": 1.25,
+                  "vw": 1.6,
+                  "max": 1.5,
+                  "leading": 1.375,
+                  "tracking": "",
+                  "case": "normal",
+                  "italic": true
+                },
+                "noteMaxWidth": "none",
+                "lede": "The more you can share about the room, the better the session can be shaped for it.",
+                "ledeMaxWidth": "2xl",
+                "paragraphs": [],
+                "bodySize": "md",
+                "bodyTone": "body",
+                "actions": [],
+                "chips": [],
+                "maxWidth": "none",
+                "offsetTop": "none"
+              },
+              {
+                "kind": "media",
+                "items": [
+                  {
+                    "src": "portrait-white-standing",
+                    "alt": "Ebahi standing in white",
+                    "focus": "50% 25%"
+                  }
+                ],
+                "layout": "single",
+                "ratio": "portrait",
+                "parallax": false,
+                "scrim": "none",
+                "reveal": "right",
+                "sizes": "(max-width: 1024px) 100vw, 30vw",
+                "priority": false,
+                "hideOnMobile": true,
+                "gapTop": "md"
+              }
+            ],
+            "ratio": "1/1",
+            "gap": "none",
+            "verticalAlign": "start",
+            "breakpoint": "lg"
+          },
+          {
+            "kind": "enquiryForm",
+            "intent": "speaking",
+            "eventTypesCollection": "event-types",
+            "framed": true,
+            "frameTone": "surface"
+          }
+        ],
+        "ratio": "0.75/1.25",
+        "verticalAlign": "start",
+        "gap": "lg",
+        "reverseOnMobile": false,
+        "reverseOnDesktop": false,
+        "breakpoint": "lg"
+      }
+    }
+  ],
+  "inSitemap": true,
+  "system": false,
+  "updatedAt": "2026-10-28T00:00:00.000Z"
+}
