@@ -3,100 +3,48 @@
 @source "../../src";
 
 /* ------------------------------------------------------------------
-   Brand token layer.
+   Brand token layer — structure only.
 
-   Every colour a component uses is semantic (`surface`, `accent`,
-   `ink`...) and resolved at runtime from CSS variables. A section can
-   therefore adopt a different brand identity simply by carrying a
-   `data-brand` attribute — no component needs to know which brands
-   exist. New brands are added here alone.
+   The token *values* are generated from the theme document in the
+   database and emitted into the document head by `themeCss()`
+   (src/lib/theme.ts), so palettes, the active palette mode and the
+   type scale are all editable from the dashboard.
+
+   What stays here is the architecture that is not content: which token
+   resolves on which surface, and how the semantic names map into
+   Tailwind. Every colour a component uses is still semantic
+   (`surface`, `accent`, `ink`...) and still resolved at runtime from a
+   `data-brand` attribute, so no component knows which palettes exist.
 ------------------------------------------------------------------ */
 
-:root,
-[data-brand="ebahi"] {
-  --c-canvas: #fbf7f3;
-  --c-surface: #ffffff;
-  --c-sand: #f1e7dc;
-  --c-deep: #2a1030;
-  --c-deep-soft: #43204c;
-  --c-ink: #191217;
-  --c-muted: #6f6169;
-  --c-line: #e3d8cd;
-  --c-accent: #c98f1e;
-  --c-accent-soft: #f6e9cf;
-  --c-accent-ink: #7a5407;
-  --c-on-deep: #f6ecdb;
-  --c-on-deep-muted: #c3aec6;
-  /* Display type is purple everywhere — the one constant of the brand. */
-  --c-heading-light: #43204c;
+/* Headings carry the brand — gold stays the accent, so buttons and
+   links keep the contrast they were designed with. The colour follows
+   the ground a heading sits on, including light cells nested inside
+   dark sections, so it is resolved per surface rather than once at the
+   root. */
+:root {
   --c-heading: var(--c-heading-light);
+  /* Inline emphasis inside body copy. Gold reads as ink on a light
+     ground and as light gold on a dark one, so it is resolved per
+     surface for the same reason headings are. */
+  --c-emphasis: var(--c-accent-ink);
+  --c-subtle: var(--c-muted);
 }
 
-/* ------------------------------------------------------------------
-   UNIFIED MODE (current).
-
-   One palette across the whole site, so the personal brand stays
-   consistent. A sub-brand is no longer painted onto the page — it is
-   spoken in purple type. Blocks still carry `data-brand`, so switching
-   back is one attribute away.
------------------------------------------------------------------- */
-
-/* Headings carry the brand now — gold stays the accent, so buttons and
-   links keep the contrast they were designed with. The colour follows the
-   ground a heading sits on, including light cells nested inside dark
-   sections, so it is resolved per surface rather than once at the root. */
 .bg-deep,
 .bg-deep-soft,
 .text-on-deep {
   --c-heading: var(--c-on-deep);
+  --c-emphasis: var(--c-accent);
+  --c-subtle: var(--c-on-deep-muted);
 }
 
 .bg-canvas,
 .bg-surface,
 .bg-sand {
   --c-heading: var(--c-heading-light);
-}
-
-/* ------------------------------------------------------------------
-   BACKUP: the original per-brand palettes.
-
-   Kept verbatim and currently inert. To restore the old look — blue
-   SilentShout, black-and-brown Edwoltz — set SITE_PALETTE to "brands"
-   in src/app/layout.tsx. Nothing else changes.
------------------------------------------------------------------- */
-
-[data-palette="brands"] [data-brand="silentshout"] {
-  --c-heading-light: #10152a;
-  --c-canvas: #f6f7fb;
-  --c-surface: #ffffff;
-  --c-sand: #e7ecf8;
-  --c-deep: #11265f;
-  --c-deep-soft: #1c3b8c;
-  --c-ink: #10152a;
-  --c-muted: #5c6580;
-  --c-line: #d3dbee;
-  --c-accent: #c4551f;
-  --c-accent-soft: #fbe6da;
-  --c-accent-ink: #8f3a12;
-  --c-on-deep: #eef2fd;
-  --c-on-deep-muted: #a9b8dd;
-}
-
-[data-palette="brands"] [data-brand="edwoltz"] {
-  --c-heading-light: #14100e;
-  --c-canvas: #faf7f4;
-  --c-surface: #ffffff;
-  --c-sand: #efe6dc;
-  --c-deep: #14100e;
-  --c-deep-soft: #3b2a20;
-  --c-ink: #14100e;
-  --c-muted: #6d5f54;
-  --c-line: #e0d5c9;
-  --c-accent: #d98324;
-  --c-accent-soft: #fbead6;
-  --c-accent-ink: #92530d;
-  --c-on-deep: #f7f0e8;
-  --c-on-deep-muted: #b6a696;
+  --c-emphasis: var(--c-accent-ink);
+  --c-subtle: var(--c-muted);
 }
 
 @theme inline {
@@ -114,8 +62,23 @@
   --color-on-deep: var(--c-on-deep);
   --color-on-deep-muted: var(--c-on-deep-muted);
 
-  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
-  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  /* Indirection, so the theme document can swap the typeface without
+     fighting the cascade inside @theme. */
+  --font-display: var(--font-display-family);
+  --font-sans: var(--font-sans-family);
+
+  /* The display type scale. Blocks pick a step rather than a literal
+     clamp, so `typography.scale` in the theme resizes the whole site
+     proportionally and nothing drifts off the ramp. */
+  --text-d-xs: calc(clamp(1.05rem, 1.6vw, 1.25rem) * var(--type-scale, 1));
+  --text-d-sm: calc(clamp(1.25rem, 2.4vw, 1.75rem) * var(--type-scale, 1));
+  --text-d-md: calc(clamp(1.35rem, 2.6vw, 2rem) * var(--type-scale, 1));
+  --text-d-row: calc(clamp(1.75rem, 3.5vw, 2.75rem) * var(--type-scale, 1));
+  --text-d-lg: calc(clamp(1.5rem, 3.5vw, 2.25rem) * var(--type-scale, 1));
+  --text-d-xl: calc(clamp(1.875rem, 4.2vw, 3.25rem) * var(--type-scale, 1));
+  --text-d-2xl: calc(clamp(2.25rem, 6vw, 4.5rem) * var(--type-scale, 1));
+  --text-d-3xl: calc(clamp(2.5rem, 7vw, 5.5rem) * var(--type-scale, 1));
+  --text-d-display: calc(clamp(2.75rem, 7.6vw, 6.5rem) * var(--type-scale, 1));
 
   --spacing-gutter: clamp(1.25rem, 5vw, 4rem);
 
@@ -136,6 +99,7 @@
     background-color: var(--c-canvas);
     color: var(--c-ink);
     font-family: var(--font-sans);
+    font-size: var(--body-size, 1rem);
     font-feature-settings: "ss01", "cv05";
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -156,8 +120,8 @@
   h1, h2, h3, h4 {
     color: var(--c-heading);
     font-family: var(--font-display);
-    font-weight: 400;
-    letter-spacing: -0.02em;
+    font-weight: var(--heading-weight, 400);
+    letter-spacing: var(--heading-tracking, -0.02em);
     text-wrap: balance;
   }
 
@@ -190,10 +154,38 @@
     height: 1px;
     background: linear-gradient(90deg, var(--c-line), transparent);
   }
+
+  /* ----------------------------------------------------------------
+     Editable grid ratios.
+
+     A block's column ratio is a stored value, so it cannot be a
+     Tailwind arbitrary class — those must exist at build time. The
+     ratio arrives as the `--split-cols` custom property instead, and
+     these two classes decide which breakpoint it starts applying at.
+  ---------------------------------------------------------------- */
+  .split {
+    display: grid;
+  }
+
+  @media (min-width: 640px) {
+    .split-sm {
+      grid-template-columns: var(--split-cols, 1fr 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .split-lg {
+      grid-template-columns: var(--split-cols, 1fr 1fr);
+    }
+  }
 }
 
 @layer utilities {
   .text-balance { text-wrap: balance; }
+
+  /* Targets of the inline `*…*` and `~…~` markup. */
+  .text-emphasis { color: var(--c-emphasis); }
+  .text-subtle { color: var(--c-subtle); }
 
   .hanging-quote {
     text-indent: -0.4em;
@@ -265,5 +257,207 @@
     opacity: 1;
     animation: none;
     transform: none;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Dashboard.
+
+   The admin runs on its own token set, scoped to `[data-admin]`, so
+   editing the site's palette can never make the tool that edits it
+   unreadable. It deliberately does not share the editorial type scale
+   either: this is an instrument, not a page.
+------------------------------------------------------------------ */
+
+[data-admin] {
+  --a-bg: #f6f6f8;
+  --a-panel: #ffffff;
+  --a-sunken: #f0f0f4;
+  --a-line: #e2e2e9;
+  --a-line-strong: #cfcfda;
+  --a-ink: #16161d;
+  --a-muted: #63636f;
+  --a-accent: #5b2a68;
+  --a-accent-soft: #f2e9f5;
+  --a-accent-ink: #4a1f56;
+  --a-danger: #a3281f;
+  --a-danger-soft: #fbeceb;
+  --a-ok: #1f6b45;
+  --a-ok-soft: #e8f5ee;
+  --a-radius: 10px;
+
+  background-color: var(--a-bg);
+  color: var(--a-ink);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.875rem;
+}
+
+@layer components {
+  [data-admin] h1,
+  [data-admin] h2,
+  [data-admin] h3,
+  [data-admin] h4 {
+    color: var(--a-ink);
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .adm-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--a-muted);
+  }
+
+  .adm-help {
+    margin-top: 0.3rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--a-muted);
+  }
+
+  .adm-input {
+    width: 100%;
+    border: 1px solid var(--a-line-strong);
+    border-radius: var(--a-radius);
+    background: var(--a-panel);
+    padding: 0.55rem 0.7rem;
+    font: inherit;
+    color: var(--a-ink);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .adm-input:focus {
+    outline: none;
+    border-color: var(--a-accent);
+    box-shadow: 0 0 0 3px var(--a-accent-soft);
+  }
+
+  .adm-input::placeholder {
+    color: color-mix(in srgb, var(--a-muted) 70%, transparent);
+  }
+
+  textarea.adm-input {
+    line-height: 1.6;
+    resize: vertical;
+  }
+
+  .adm-panel {
+    border: 1px solid var(--a-line);
+    border-radius: var(--a-radius);
+    background: var(--a-panel);
+  }
+
+  .adm-sunken {
+    border: 1px solid var(--a-line);
+    border-radius: var(--a-radius);
+    background: var(--a-sunken);
+  }
+
+  .adm-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .adm-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+  }
+
+  .adm-btn-primary {
+    background: var(--a-accent);
+    color: #fff;
+  }
+
+  .adm-btn-primary:hover:not(:disabled) {
+    background: var(--a-accent-ink);
+  }
+
+  .adm-btn-ghost {
+    border-color: var(--a-line-strong);
+    background: var(--a-panel);
+    color: var(--a-ink);
+  }
+
+  .adm-btn-ghost:hover:not(:disabled) {
+    border-color: var(--a-accent);
+    color: var(--a-accent);
+  }
+
+  .adm-btn-quiet {
+    background: transparent;
+    color: var(--a-muted);
+    padding: 0.35rem 0.6rem;
+  }
+
+  .adm-btn-quiet:hover:not(:disabled) {
+    background: var(--a-sunken);
+    color: var(--a-ink);
+  }
+
+  .adm-btn-danger {
+    border-color: var(--a-line-strong);
+    background: var(--a-panel);
+    color: var(--a-danger);
+  }
+
+  .adm-btn-danger:hover:not(:disabled) {
+    background: var(--a-danger-soft);
+    border-color: var(--a-danger);
+  }
+
+  .adm-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    border-radius: 999px;
+    padding: 0.2rem 0.55rem;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* The rich-text editor mirrors how the site renders the same markup,
+     so what an editor sees in the field is what the page will say. */
+  .adm-rich {
+    min-height: 3.5rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .adm-rich em.adm-accent,
+  .adm-rich span.adm-accent {
+    color: var(--a-accent);
+    font-weight: 500;
+  }
+
+  .adm-rich span.adm-muted {
+    color: var(--a-muted);
+  }
+
+  .adm-rich a {
+    color: var(--a-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .adm-rich:empty::before {
+    content: attr(data-placeholder);
+    color: color-mix(in srgb, var(--a-muted) 70%, transparent);
   }
 }

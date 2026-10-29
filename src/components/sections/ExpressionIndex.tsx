@@ -36,7 +36,7 @@ export function ExpressionIndex({ expressions }: ExpressionIndexProps) {
                   href={expression.action.href}
                   onMouseEnter={() => setActiveId(expression.id)}
                   onFocus={() => setActiveId(expression.id)}
-                  data-brand={expression.brand}
+                  data-brand={expression.palette}
                   className="group block py-7 transition-colors"
                 >
                   <Reveal delay={index * 0.04} from="none">
@@ -95,7 +95,7 @@ export function ExpressionIndex({ expressions }: ExpressionIndexProps) {
           })}
         </ul>
 
-        <div className="relative" data-brand={active?.brand}>
+        <div className="relative" data-brand={active?.palette}>
           <div className="sticky top-32">
             <div className="relative aspect-[4/5] overflow-hidden bg-sand">
               <AnimatePresence mode="wait">
@@ -142,7 +142,7 @@ export function ExpressionIndex({ expressions }: ExpressionIndexProps) {
                     ))}
                   </ul>
                   <div className="mt-7">
-                    <ActionLink {...active.action} variant="link" />
+                    <ActionLink {...active.action} variant={active.action.variant ?? "link"} />
                   </div>
                 </motion.div>
               ) : null}
@@ -154,7 +154,7 @@ export function ExpressionIndex({ expressions }: ExpressionIndexProps) {
       {/* Mobile cards */}
       <ul className="grid gap-8 sm:grid-cols-2 lg:hidden">
         {expressions.map((expression, index) => (
-          <li key={expression.id} data-brand={expression.brand}>
+          <li key={expression.id} data-brand={expression.palette}>
             <Reveal delay={index * 0.05}>
               <Link href={expression.action.href} className="group block">
                 <Figure

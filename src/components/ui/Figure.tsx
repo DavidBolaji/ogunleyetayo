@@ -1,6 +1,7 @@
+import type { CSSProperties } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/cn";
-import { imageBlur, imageUrl } from "@/lib/images";
+import { resolveImageBlur, resolveImageUrl } from "@/lib/images";
 import type { Media } from "@/content/types";
 
 const ratios = {
@@ -20,6 +21,8 @@ interface FigureProps {
   sizes?: string;
   priority?: boolean;
   className?: string;
+  /** Inline styles on the frame — used for editable aspect ratios. */
+  style?: CSSProperties;
   imageClassName?: string;
   /** Warm overlay used when type sits on top of the photo. */
   scrim?: "none" | "soft" | "strong";
@@ -40,16 +43,20 @@ export function Figure({
   sizes = "(max-width: 768px) 100vw, 45vw",
   priority = false,
   className,
+  style,
   imageClassName,
   scrim = "none",
   caption,
 }: FigureProps) {
-  const blurDataURL = imageBlur(media.src);
+  const blurDataURL = resolveImageBlur(media);
 
   return (
-    <figure className={cn("relative overflow-hidden bg-sand", ratios[ratio], scrims[scrim], className)}>
+    <figure
+      style={style}
+      className={cn("relative overflow-hidden bg-sand", ratios[ratio], scrims[scrim], className)}
+    >
       <Image
-        src={imageUrl(media.src)}
+        src={resolveImageUrl(media)}
         alt={media.alt}
         fill
         sizes={sizes}

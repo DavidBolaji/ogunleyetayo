@@ -13,7 +13,7 @@ const variants = {
   accent:
     "bg-accent text-white hover:brightness-95 border border-transparent",
   ghost:
-    "border border-transparent text-current hover:bg-black/5",
+    "border border-transparent text-current hover:bg-current/10",
   link: "",
 } as const;
 
@@ -30,21 +30,31 @@ interface ActionLinkProps
     Action {
   variant?: ActionVariant;
   size?: keyof typeof sizes;
+  /** Shows the trailing arrow. Off for bare links in dense lists. */
+  arrow?: boolean;
 }
 
 /**
  * Every call to action on the site renders through here, so an `Action`
  * from the content layer can be dropped into any surface unchanged.
+ *
+ * An action can carry its own `variant` and `size`, which is how the
+ * dashboard styles a button. An explicit prop still wins, so a block
+ * that must control the treatment — the first button in a banner, say —
+ * can.
  */
 export function ActionLink({
   label,
   href,
   external,
-  variant = "solid",
-  size = "md",
+  variant: variantProp,
+  size: sizeProp,
+  arrow = true,
   className,
   ...rest
 }: ActionLinkProps) {
+  const variant = variantProp ?? "solid";
+  const size = sizeProp ?? "md";
   const isExternal = external ?? /^https?:\/\//.test(href);
 
   const classes =
@@ -63,12 +73,14 @@ export function ActionLink({
   const content = (
     <>
       <span>{label}</span>
-      <span
-        aria-hidden
-        className="transition-transform duration-300 ease-[var(--ease-out-soft)] group-hover:translate-x-1"
-      >
-        →
-      </span>
+      {arrow ? (
+        <span
+          aria-hidden
+          className="transition-transform duration-300 ease-[var(--ease-out-soft)] group-hover:translate-x-1"
+        >
+          →
+        </span>
+      ) : null}
     </>
   );
 

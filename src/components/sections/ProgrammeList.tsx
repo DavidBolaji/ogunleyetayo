@@ -16,7 +16,7 @@ export function ProgrammeList({ programmes }: ProgrammeListProps) {
 
         return (
           <article
-            key={programme.name}
+            key={programme.id}
             className="grid items-center gap-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-16"
           >
             {programme.media ? (
@@ -64,7 +64,10 @@ export function ProgrammeList({ programmes }: ProgrammeListProps) {
 
               <Reveal delay={0.18}>
                 <div className="mt-8">
-                  <ActionLink {...programme.action} variant="outline" />
+                  <ActionLink
+                    {...programme.action}
+                    variant={programme.action.variant ?? "outline"}
+                  />
                 </div>
               </Reveal>
             </div>

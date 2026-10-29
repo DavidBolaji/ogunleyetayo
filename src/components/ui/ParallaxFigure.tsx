@@ -1,10 +1,10 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "motion/react";
-import { useRef } from "react";
+import { useRef, type CSSProperties } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/cn";
-import { imageBlur, imageUrl } from "@/lib/images";
+import { resolveImageBlur, resolveImageUrl } from "@/lib/images";
 import type { Media } from "@/content/types";
 
 interface ParallaxFigureProps {
@@ -14,6 +14,8 @@ interface ParallaxFigureProps {
   sizes?: string;
   priority?: boolean;
   className?: string;
+  /** Inline styles on the frame — used for editable aspect ratios. */
+  style?: CSSProperties;
 }
 
 /**
@@ -26,6 +28,7 @@ export function ParallaxFigure({
   sizes = "(max-width: 768px) 100vw, 50vw",
   priority = false,
   className,
+  style,
 }: ParallaxFigureProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -33,16 +36,16 @@ export function ParallaxFigure({
     offset: ["start end", "end start"],
   });
   const y = useTransform(scrollYProgress, [0, 1], [`-${strength}%`, `${strength}%`]);
-  const blurDataURL = imageBlur(media.src);
+  const blurDataURL = resolveImageBlur(media);
 
   return (
-    <div ref={ref} className={cn("relative overflow-hidden bg-sand", className)}>
+    <div ref={ref} style={style} className={cn("relative overflow-hidden bg-sand", className)}>
       <motion.div
         style={{ y }}
         className="absolute inset-x-0 -top-[15%] h-[130%]"
       >
         <Image
-          src={imageUrl(media.src)}
+          src={resolveImageUrl(media)}
           alt={media.alt}
           fill
           sizes={sizes}

@@ -9,7 +9,7 @@ export function Timeline({ entries }: TimelineProps) {
   return (
     <ol className="relative border-l border-line pl-8 sm:pl-12">
       {entries.map((entry, index) => (
-        <li key={entry.title} className="relative pb-12 last:pb-0">
+        <li key={entry.id} className="relative pb-12 last:pb-0">
           <Reveal delay={index * 0.04} from="right">
             <span
               aria-hidden
