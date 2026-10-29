@@ -1,4 +1,7 @@
-import type { Programme } from "./types";
+/* Seed corpus — the site's original copy, read once by scripts/seed-db.ts
+ * to build data/. The database is the source of truth at runtime; nothing
+ * in the app imports this folder. Kept so a fresh environment can be
+ * re-seeded from a known-good baseline. */
 
 export const teachingIntro = {
   heading: "Learn with Ebahi",
@@ -24,7 +27,7 @@ export const powerOf90 = {
   ],
 } as const;
 
-export const teachingProgrammes: readonly Programme[] = [
+export const teachingProgrammes = [
   {
     name: "VisionCraft Academy",
     promise: "A structured learning environment",

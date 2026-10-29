@@ -1,3 +1,7 @@
+/* Seed corpus — the site's original copy, read once by scripts/seed-db.ts
+ * to build data/. The database is the source of truth at runtime; nothing
+ * in the app imports this folder. Kept so a fresh environment can be
+ * re-seeded from a known-good baseline. */
 export const speaking = {
   heading: "Let's create something meaningful.",
   intro:

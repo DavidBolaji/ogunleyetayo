@@ -1,4 +1,7 @@
-import type { Book } from "./types";
+/* Seed corpus — the site's original copy, read once by scripts/seed-db.ts
+ * to build data/. The database is the source of truth at runtime; nothing
+ * in the app imports this folder. Kept so a fresh environment can be
+ * re-seeded from a known-good baseline. */
 
 /** Every title is sold through one storefront. */
 const SELAR = "https://selar.com/m/ebahitayo";
@@ -9,7 +12,7 @@ export const booksIntro = {
     "Writing is where the things I teach get tested. If an idea cannot survive being written down plainly, it is not ready to be taught.",
 } as const;
 
-export const books: readonly Book[] = [
+export const books = [
   {
     slug: "dear-worship-leader",
     title: "Dear Worship Leader",

@@ -1,4 +1,7 @@
-import type { Media, Programme } from "./types";
+/* Seed corpus — the site's original copy, read once by scripts/seed-db.ts
+ * to build data/. The database is the source of truth at runtime; nothing
+ * in the app imports this folder. Kept so a fresh environment can be
+ * re-seeded from a known-good baseline. */
 
 /**
  * SilentShout is the broad ministerial name — a network, not a single
@@ -36,7 +39,7 @@ export const silentshout = {
 } as const;
 
 /** The four arms of the network. */
-export const silentshoutArms: readonly Programme[] = [
+export const silentshoutArms = [
   {
     name: "SilentShout Music Impact",
     promise: "WUSH — Worship Until Something Happens",
@@ -108,7 +111,7 @@ export const wush = {
       alt: "Delegates in front of the Young Ministers Programme banner",
       focus: "50% 30%",
     },
-  ] satisfies readonly Media[],
+  ],
 } as const;
 
 /** The 5AM Tribe, expanded — a formation pillar, not a side project. */
@@ -145,7 +148,7 @@ export const weEvangelise = {
   action: { label: "Partner with the project", href: "/contact" },
 } as const;
 
-export const silentshoutProgrammes: readonly Programme[] = [
+export const silentshoutProgrammes = [
   {
     name: "School of Music Ministry",
     promise: "The core formation track",

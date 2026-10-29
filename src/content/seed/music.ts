@@ -1,4 +1,7 @@
-import type { Action, Media, Release } from "./types";
+/* Seed corpus — the site's original copy, read once by scripts/seed-db.ts
+ * to build data/. The database is the source of truth at runtime; nothing
+ * in the app imports this folder. Kept so a fresh environment can be
+ * re-seeded from a known-good baseline. */
 
 export const musicIntro = {
   heading: "Music by Ebahi",
@@ -22,15 +25,15 @@ export const featuredProject = {
     src: "music-1",
     alt: "Ebahi in the studio, keyboards and a microphone behind her",
     focus: "50% 30%",
-  } satisfies Media,
+  },
   actions: [
     { label: "Listen now", href: "#listen" },
     { label: "Watch", href: "#watch" },
     { label: "Follow the journey", href: "/contact#newsletter" },
-  ] satisfies readonly Action[],
+  ],
 } as const;
 
-export const releases: readonly Release[] = [
+export const releases = [
   {
     title: "Emi O ri",
     subtitle: "Live in Lagos",

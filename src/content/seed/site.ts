@@ -1,4 +1,7 @@
-import type { EnquiryRoute, NavItem, SocialLink } from "./types";
+/* Seed corpus — the site's original copy, read once by scripts/seed-db.ts
+ * to build data/. The database is the source of truth at runtime; nothing
+ * in the app imports this folder. Kept so a fresh environment can be
+ * re-seeded from a known-good baseline. */
 
 export const site = {
   name: "Ebahi Tayo-Ogunleye",
@@ -16,7 +19,7 @@ export const site = {
   church: "Harvesthouse Christian Center, the Life Center Campus",
 } as const;
 
-export const navigation: readonly NavItem[] = [
+export const navigation = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Music", href: "/music" },
@@ -41,14 +44,14 @@ export const navigation: readonly NavItem[] = [
   { label: "Contact", href: "/contact" },
 ];
 
-export const socials: readonly SocialLink[] = [
+export const socials = [
   { platform: "Instagram", handle: "@ebahitayo", href: "https://instagram.com/ebahitayo" },
   { platform: "YouTube", handle: "Ebahi Tayo-Ogunleye", href: "https://youtube.com/@ebahitayo" },
   { platform: "TikTok", handle: "@ebahitayo", href: "https://tiktok.com/@ebahitayo" },
 ];
 
 /** Separate inboxes keep three very different conversations from colliding. */
-export const enquiryRoutes: readonly EnquiryRoute[] = [
+export const enquiryRoutes = [
   {
     label: "Music & SilentShout",
     description: "Ministrations, worship sessions, training, the Summit and school enquiries.",

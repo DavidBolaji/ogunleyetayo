@@ -1,4 +1,7 @@
-import type { Post } from "./types";
+/* Seed corpus — the site's original copy, read once by scripts/seed-db.ts
+ * to build data/. The database is the source of truth at runtime; nothing
+ * in the app imports this folder. Kept so a fresh environment can be
+ * re-seeded from a known-good baseline. */
 
 export const blogIntro = {
   heading: "Blog",
@@ -22,7 +25,7 @@ export const blogCategories = [
  * Posts, newest first — the page sorts by `date`, so order here is only
  * for readability. Adding a post is this file and nothing else.
  */
-export const posts: readonly Post[] = [
+export const posts = [
   {
     slug: "why-we-pray-at-5am",
     title: "Why We Pray at 5AM",

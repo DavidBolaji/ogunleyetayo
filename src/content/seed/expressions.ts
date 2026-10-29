@@ -1,10 +1,13 @@
-import type { Expression } from "./types";
+/* Seed corpus — the site's original copy, read once by scripts/seed-db.ts
+ * to build data/. The database is the source of truth at runtime; nothing
+ * in the app imports this folder. Kept so a fresh environment can be
+ * re-seeded from a known-good baseline. */
 
 /**
  * The six expressions of one calling. Ordering here is the ordering
  * everywhere the set is rendered — homepage index, footer, sitemap.
  */
-export const expressions: readonly Expression[] = [
+export const expressions = [
   {
     id: "music",
     index: "01",

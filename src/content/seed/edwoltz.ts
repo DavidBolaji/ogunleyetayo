@@ -1,4 +1,7 @@
-import type { Action, Media } from "./types";
+/* Seed corpus — the site's original copy, read once by scripts/seed-db.ts
+ * to build data/. The database is the source of truth at runtime; nothing
+ * in the app imports this folder. Kept so a fresh environment can be
+ * re-seeded from a known-good baseline. */
 
 export const edwoltz = {
   name: "Edwoltz Hair City",
@@ -18,23 +21,23 @@ export const edwoltz = {
     label: "Visit Edwoltz Hair City",
     href: "https://edwoltzhaircity.com/",
     external: true,
-  } satisfies Action,
+  },
   youtube: {
     label: "Watch on YouTube",
     href: "https://www.youtube.com/@edwoltzhaircity",
     external: true,
-  } satisfies Action,
+  },
   gallery: [
     { src: "hair-wig-stand", alt: "Ebahi beside a finished wig on a stand in the Edwoltz studio", focus: "50% 35%" },
     { src: "hair-curls-overhead", alt: "Natural curls photographed from above", focus: "50% 40%" },
     { src: "hair-pink-cape", alt: "Ebahi in a pink patchwork cape, natural hair worn out", focus: "50% 30%" },
     { src: "hair-profile-laughing", alt: "Ebahi laughing in profile, hair worn loose", focus: "50% 30%" },
-  ] satisfies readonly Media[],
+  ],
   media: {
     src: "hair-city",
     alt: "Ebahi laughing, natural hair worn out, in a pink jacket",
     focus: "50% 30%",
-  } satisfies Media,
+  },
 } as const;
 
 export const environment = {
@@ -56,6 +59,6 @@ export const environment = {
     label: "Explore the hair & environment project",
     href: "https://www.youtube.com/@edwoltzhaircity",
     external: true,
-  } satisfies Action,
-  media: { src: "garden-forest-wide", alt: "Ebahi walking through a forest", focus: "50% 45%" } satisfies Media,
+  },
+  media: { src: "garden-forest-wide", alt: "Ebahi walking through a forest", focus: "50% 45%" },
 } as const;

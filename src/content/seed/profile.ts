@@ -1,4 +1,7 @@
-import type { Credential, Media, Recognition, TimelineEntry } from "./types";
+/* Seed corpus — the site's original copy, read once by scripts/seed-db.ts
+ * to build data/. The database is the source of truth at runtime; nothing
+ * in the app imports this folder. Kept so a fresh environment can be
+ * re-seeded from a known-good baseline. */
 
 export const profile = {
   heroHeadline: ["Faith.", "Creativity.", "Impact."] as const,
@@ -15,7 +18,7 @@ export const profile = {
     src: "portrait-open-hands",
     alt: "Ebahi Tayo-Ogunleye smiling, hands open",
     focus: "50% 20%",
-  } satisfies Media,
+  },
 } as const;
 
 /** The official biography, in Ebahi's own words. */
@@ -39,7 +42,7 @@ export const storyIntro = [
   "I have spent more than two decades learning that in rooms with choirs, classrooms, salons, boardrooms and prayer closets — and the thread has never changed.",
 ];
 
-export const timeline: readonly TimelineEntry[] = [
+export const timeline = [
   {
     year: "Beginnings",
     title: "A house where sound mattered",
@@ -92,13 +95,13 @@ export const timeline: readonly TimelineEntry[] = [
   },
 ];
 
-export const recognitions: readonly Recognition[] = [
+export const recognitions = [
   { title: "Legendary Mums Award", source: "Mothers Haven Network", year: "2025" },
   { title: "Standard Bearer Award", source: "Recognition of ministry leadership", year: "2026" },
   { title: "Best Worker Award", source: "HCC Nation", year: "—" },
 ];
 
-export const credentials: readonly Credential[] = [
+export const credentials = [
   { qualification: "B.Sc. Chemistry", institution: "University of Ibadan" },
   {
     qualification: "M.Sc. Environmental Chemistry & Pollution Control",
@@ -107,7 +110,7 @@ export const credentials: readonly Credential[] = [
 ];
 
 /** Portrait gallery for the About page. */
-export const gallery: readonly Media[] = [
+export const gallery = [
   { src: "editorial-veil-close", alt: "Editorial portrait with veiled hat and pearls" },
   { src: "garden-swing-laugh", alt: "Ebahi laughing on a garden swing" },
   { src: "portrait-burgundy-full", alt: "Ebahi in a burgundy jacket, full length" },
