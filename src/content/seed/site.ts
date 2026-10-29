@@ -11,7 +11,7 @@ export const site = {
   tagline: "Faith. Creativity. Impact.",
   positioning:
     "Ebahi Tayo-Ogunleye is a gospel music minister, worship leader, author, entrepreneur and leadership mentor who believes deeply in the power of God to transform ordinary lives into remarkable stories of purpose.",
-  url: "https://ebahitayo.com",
+  url: "https://ebahitayoogunleye.com",
   email: "hello@ebahitayo.com",
   phone: "+234 000 000 0000",
   whatsapp: "https://wa.me/2340000000000",
