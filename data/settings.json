@@ -2,7 +2,7 @@
   "site": {
     "name": "Ebahi Tayo-Ogunleye",
     "shortName": "Ebahi Tayo",
-    "descriptor": "Gospel Music Minister \u00b7 Worship Leader \u00b7 Author \u00b7 Entrepreneur \u00b7 Leadership Mentor",
+    "descriptor": "Gospel Music Minister · Worship Leader · Author · Entrepreneur · Leadership Mentor",
     "tagline": "Faith. Creativity. Impact.",
     "positioning": "Ebahi Tayo-Ogunleye is a gospel music minister, worship leader, author, entrepreneur and leadership mentor who believes deeply in the power of God to transform ordinary lives into remarkable stories of purpose.",
     "url": "https://ebahitayoogunleye.com",
@@ -11,10 +11,10 @@
     "whatsapp": "https://wa.me/2340000000000",
     "location": "Lagos, Nigeria",
     "church": "Harvesthouse Christian Center, the Life Center Campus",
-    "wordmarkTagline": "Faith \u00b7 Creativity \u00b7 Impact"
+    "wordmarkTagline": "Faith · Creativity · Impact"
   },
   "seo": {
-    "titleTemplate": "%s \u2014 Ebahi Tayo-Ogunleye",
+    "titleTemplate": "%s — Ebahi Tayo-Ogunleye",
     "keywords": [
       "Ebahi Tayo-Ogunleye",
       "music minister",
@@ -52,7 +52,7 @@
   "footer": {
     "eyebrow": "Stay close to the work",
     "title": "A letter for people building something that outlives them.",
-    "body": "New music, teaching, resources and dates \u2014 sent occasionally, never carelessly.",
+    "body": "New music, teaching, resources and dates — sent occasionally, never carelessly.",
     "navLabel": "Navigate",
     "exploreLabel": "Explore my work",
     "exploreCollection": "expressions",
@@ -61,11 +61,11 @@
   },
   "enquiry": {
     "routesCollection": "enquiry-routes",
-    "successMessage": "Thank you \u2014 your message is in. You'll hear back shortly."
+    "successMessage": "Thank you — your message is in. You'll hear back shortly."
   },
   "blog": {
     "postsCollection": "posts",
     "postFooterNote": "If this was useful, the letter carries the next one straight to you.",
-    "backLabel": "\u2190 All posts"
+    "backLabel": "← All posts"
   }
 }

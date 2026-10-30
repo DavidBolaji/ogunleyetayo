@@ -105,6 +105,75 @@
       }
     },
     {
+      "id": "featuredRelease-1",
+      "type": "featuredRelease",
+      "visible": true,
+      "style": {
+        "tone": "canvas",
+        "size": "md",
+        "width": "default",
+        "grain": false,
+        "align": "left",
+        "colors": {},
+        "borderTop": false,
+        "borderBottom": false
+      },
+      "data": {
+        "eyebrow": "Featured project",
+        "title": "Emi O ri",
+        "meaning": "Still in Wonder",
+        "quote": "I have not seen this kind of God before.",
+        "description": "A live recording born out of a season of seeing God do what only God does. Emi O ri is testimony before it is music — a room full of people who ran out of adequate words and sang anyway.",
+        "showDescription": false,
+        "facts": [
+          {
+            "label": "Recorded",
+            "value": "Live recorded in Lagos, 2024.",
+            "accent": false
+          },
+          {
+            "label": "Releasing",
+            "value": "November 2, 2026",
+            "accent": true
+          }
+        ],
+        "actions": [
+          {
+            "label": "Listen now",
+            "href": "#listen",
+            "variant": "accent",
+            "size": "lg"
+          },
+          {
+            "label": "Watch",
+            "href": "#watch",
+            "variant": "outlineLight",
+            "size": "lg"
+          },
+          {
+            "label": "Follow the journey",
+            "href": "/contact#newsletter",
+            "variant": "ghost",
+            "size": "lg"
+          }
+        ],
+        "media": {
+          "src": "music-1",
+          "alt": "Ebahi in the studio, keyboards and a microphone behind her",
+          "focus": "50% 30%"
+        },
+        "titleType": {
+          "min": 3.5,
+          "vw": 12,
+          "max": 9,
+          "leading": 0.82,
+          "tracking": "-0.04em",
+          "case": "upper",
+          "italic": false
+        }
+      }
+    },
+    {
       "id": "split-1",
       "type": "split",
       "visible": true,
@@ -300,75 +369,6 @@
       }
     },
     {
-      "id": "featuredRelease-1",
-      "type": "featuredRelease",
-      "visible": true,
-      "style": {
-        "tone": "canvas",
-        "size": "md",
-        "width": "default",
-        "grain": false,
-        "align": "left",
-        "colors": {},
-        "borderTop": false,
-        "borderBottom": false
-      },
-      "data": {
-        "eyebrow": "Featured project",
-        "title": "Emi O ri",
-        "meaning": "Still in Wonder",
-        "quote": "I have not seen this kind of God before.",
-        "description": "A live recording born out of a season of seeing God do what only God does. Emi O ri is testimony before it is music — a room full of people who ran out of adequate words and sang anyway.",
-        "showDescription": false,
-        "facts": [
-          {
-            "label": "Recorded",
-            "value": "Live recorded in Lagos, 2024.",
-            "accent": false
-          },
-          {
-            "label": "Releasing",
-            "value": "November 2, 2026",
-            "accent": true
-          }
-        ],
-        "actions": [
-          {
-            "label": "Listen now",
-            "href": "#listen",
-            "variant": "accent",
-            "size": "lg"
-          },
-          {
-            "label": "Watch",
-            "href": "#watch",
-            "variant": "outlineLight",
-            "size": "lg"
-          },
-          {
-            "label": "Follow the journey",
-            "href": "/contact#newsletter",
-            "variant": "ghost",
-            "size": "lg"
-          }
-        ],
-        "media": {
-          "src": "music-1",
-          "alt": "Ebahi in the studio, keyboards and a microphone behind her",
-          "focus": "50% 30%"
-        },
-        "titleType": {
-          "min": 3.5,
-          "vw": 12,
-          "max": 9,
-          "leading": 0.82,
-          "tracking": "-0.04em",
-          "case": "upper",
-          "italic": false
-        }
-      }
-    },
-    {
       "id": "split-2",
       "type": "split",
       "visible": true,
@@ -526,5 +526,5 @@
   ],
   "inSitemap": true,
   "system": true,
-  "updatedAt": "2026-10-28T00:00:00.000Z"
+  "updatedAt": "2026-10-29T23:57:52.663Z"
 }
