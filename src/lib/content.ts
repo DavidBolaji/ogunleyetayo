@@ -90,16 +90,25 @@ export const getPages = cache(() => db.pages.list());
 export const getPublishedPages = cache(() => db.pages.published());
 
 /**
- * A page by slug ("" is the home page), ready to render: media
- * references resolved and `{site.*}` tokens substituted.
+ * Readies a page for rendering: media references resolved and
+ * `{site.*}` tokens substituted.
+ *
+ * Shared with the dashboard's preview, which renders an unsaved page
+ * that never came out of the store — the two must go through exactly
+ * the same preparation or the preview would not be a preview.
  */
+export async function hydrateDraft(page: Page): Promise<Page> {
+  const [index, settings] = await Promise.all([getMediaIndex(), getSettings()]);
+
+  return interpolateDeep(hydrateMedia(page, index), tokenTable(settings));
+}
+
+/** A page by slug ("" is the home page), ready to render. */
 export const getPage = cache(async (slug: string): Promise<Page | undefined> => {
   const page = await db.pages.findBySlug(slug);
   if (!page) return undefined;
 
-  const [index, settings] = await Promise.all([getMediaIndex(), getSettings()]);
-
-  return interpolateDeep(hydrateMedia(page, index), tokenTable(settings));
+  return hydrateDraft(page);
 });
 
 /* ------------------------------------------------------------------ *

@@ -8,6 +8,7 @@ import { savePageAction } from "@/app/admin/actions";
 import { AdminReferenceProvider, type AdminReference } from "./AdminContext";
 import { BlockEditor } from "./BlockEditor";
 import { PagePreview } from "./PagePreview";
+import { usePreviewDraft } from "./usePreviewDraft";
 import { Fields } from "./FieldRenderer";
 import { SaveBar, useEditor } from "./Editor";
 import { f } from "@/lib/admin/fields";
@@ -58,23 +59,22 @@ export function PageEditor({ page, reference }: { page: Page; reference: AdminRe
   const [adding, setAdding] = useState(false);
 
   /*
-   * The preview renders the saved page, so it follows the address the
-   * page was last saved at — not the one being typed into the settings
-   * panel — and reloads when a save lands.
+   * The preview renders what is being edited, not what is stored, so
+   * the draft is parked on the server as the editor changes and the
+   * frame reloads from it.
    */
-  const [saved, setSaved] = useState({ slug: page.slug, status: page.status, revision: 0 });
+  const draft = usePreviewDraft(editor.value);
+
+  // The full-size link follows the address the page was last saved at,
+  // not the one being typed into the settings panel.
+  const [saved, setSaved] = useState({ slug: page.slug, status: page.status });
   const status = editor.status;
   const savedRef = useRef(editor.value);
   savedRef.current = editor.value;
 
   useEffect(() => {
     if (status !== "saved") return;
-
-    setSaved((current) => ({
-      slug: savedRef.current.slug,
-      status: savedRef.current.status,
-      revision: current.revision + 1,
-    }));
+    setSaved({ slug: savedRef.current.slug, status: savedRef.current.status });
   }, [status]);
 
   const blocks = editor.value.blocks;
@@ -196,9 +196,9 @@ export function PageEditor({ page, reference }: { page: Page; reference: AdminRe
         <aside className="min-w-0">
           <div className="space-y-4 xl:sticky xl:top-28">
             <PagePreview
-              slug={saved.slug}
-              status={saved.status}
-              revision={saved.revision}
+              target={{ id: page.id, slug: saved.slug, status: saved.status }}
+              revision={draft.revision}
+              pending={draft.pending}
             />
 
             <div className="adm-panel p-4">

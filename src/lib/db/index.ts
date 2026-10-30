@@ -118,6 +118,42 @@ class PageStore {
 }
 
 /* ------------------------------------------------------------------ *
+ * Previews
+ * ------------------------------------------------------------------ */
+
+/**
+ * Unsaved work, parked where the server can render it.
+ *
+ * A block is a Server Component, so showing an editor their unsaved
+ * page means the server has to see it. The editor writes the document
+ * it is holding here as it goes, and the preview frame reads it back.
+ *
+ * Kept outside `pages/` deliberately: these are drafts of drafts, and
+ * nothing that lists pages should ever find one. They are keyed per
+ * page so two open editors cannot overwrite each other's preview.
+ */
+class PreviewStore {
+  constructor(private readonly driver: StorageDriver) {}
+
+  private document(id: string) {
+    return new Document({ driver: this.driver, key: `previews/${id}`, schema: pageSchema });
+  }
+
+  async get(id: string): Promise<Page | undefined> {
+    return this.document(id).tryRead();
+  }
+
+  async save(page: z.input<typeof pageSchema>): Promise<Page> {
+    const parsed = pageSchema.parse(page);
+    return this.document(parsed.id).write(parsed);
+  }
+
+  async remove(id: string): Promise<void> {
+    await this.document(id).remove();
+  }
+}
+
+/* ------------------------------------------------------------------ *
  * Collections
  * ------------------------------------------------------------------ */
 
@@ -212,6 +248,7 @@ export const db = {
     fallback: defaultMediaLibrary,
   }),
   pages: new PageStore(driver),
+  previews: new PreviewStore(driver),
   collections: new CollectionStore(driver),
 } as const;
 

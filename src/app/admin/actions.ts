@@ -156,6 +156,26 @@ export async function createPageAction(
   redirect("/admin/pages");
 }
 
+/**
+ * Parks the page an editor is holding so the preview frame can render
+ * it.
+ *
+ * Deliberately does not revalidate: this is unsaved work, and nothing
+ * public should be rebuilt because somebody is typing.
+ */
+export async function savePreviewAction(payload: string): Promise<ActionResult> {
+  try {
+    await assertSession();
+
+    const page = pageSchema.parse(parseJson(payload));
+    await db.previews.save(page);
+
+    return ok("Preview updated.");
+  } catch (error) {
+    return fail(describe(error));
+  }
+}
+
 export async function deletePageAction(id: string): Promise<ActionResult> {
   try {
     await assertSession();
@@ -165,6 +185,7 @@ export async function deletePageAction(id: string): Promise<ActionResult> {
     if (page.system) return fail(`“${page.title}” is a system page and cannot be deleted.`);
 
     await db.pages.remove(id);
+    await db.previews.remove(id);
     refreshSite();
 
     return ok(`Deleted “${page.title}”.`);
