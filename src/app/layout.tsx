@@ -1,11 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { SiteFooter } from "@/components/layout/SiteFooter";
-import { StructuredData } from "@/components/StructuredData";
-import { MotionProvider } from "@/components/MotionProvider";
-import { getNavigation, getSettings, getTheme } from "@/lib/content";
+import type { ReactNode } from "react";
+import { getSettings, getTheme } from "@/lib/content";
 import { themeCss, themeFontClassNames } from "@/lib/theme";
 import "@/styles/globals.css";
+
+/**
+ * The document shell.
+ *
+ * Only what every route needs: the html and body elements, the
+ * generated palette and the typefaces. The site's own chrome — header,
+ * footer, structured data — belongs to the `(site)` group, because the
+ * dashboard is not the site and must not inherit a fixed header that
+ * would sit on top of it.
+ */
 
 /**
  * Metadata defaults come from the settings document, so the site's
@@ -41,12 +48,8 @@ export async function generateViewport(): Promise<Viewport> {
   };
 }
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const [theme, settings, navigation] = await Promise.all([
-    getTheme(),
-    getSettings(),
-    getNavigation(),
-  ]);
+export default async function RootLayout({ children }: { children: ReactNode }) {
+  const theme = await getTheme();
 
   return (
     <html
@@ -68,20 +71,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <style>{".reveal{opacity:1!important;transform:none!important}"}</style>
         </noscript>
       </head>
-      <body>
-        <a
-          href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-deep focus:px-5 focus:py-3 focus:text-sm focus:text-on-deep"
-        >
-          Skip to content
-        </a>
-        <StructuredData />
-        <MotionProvider>
-          <SiteHeader navigation={navigation.header} settings={settings} />
-          <main id="main">{children}</main>
-          <SiteFooter />
-        </MotionProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
