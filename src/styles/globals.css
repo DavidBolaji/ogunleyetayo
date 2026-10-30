@@ -431,6 +431,16 @@
     text-transform: uppercase;
   }
 
+  /* The dashboard previews the site inside its own token scope, so the
+     preview has to be handed back the site's ground, ink and scale —
+     otherwise the page renders at the instrument's 14px. */
+  [data-admin] [data-preview] {
+    background-color: var(--c-canvas);
+    color: var(--c-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+  }
+
   /* The rich-text editor mirrors how the site renders the same markup,
      so what an editor sees in the field is what the page will say. */
   .adm-rich {

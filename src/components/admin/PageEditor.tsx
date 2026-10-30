@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { randomId } from "@/lib/admin/ids";
 import { blockDefinition, blockDefinitions, blockGroups } from "@/lib/admin/blocks";
 import { savePageAction } from "@/app/admin/actions";
 import { AdminReferenceProvider, type AdminReference } from "./AdminContext";
 import { BlockEditor } from "./BlockEditor";
+import { PagePreview } from "./PagePreview";
 import { Fields } from "./FieldRenderer";
 import { SaveBar, useEditor } from "./Editor";
 import { f } from "@/lib/admin/fields";
@@ -55,6 +56,26 @@ const settingsFields = [
 export function PageEditor({ page, reference }: { page: Page; reference: AdminReference }) {
   const editor = useEditor<Page>(page, savePageAction);
   const [adding, setAdding] = useState(false);
+
+  /*
+   * The preview renders the saved page, so it follows the address the
+   * page was last saved at — not the one being typed into the settings
+   * panel — and reloads when a save lands.
+   */
+  const [saved, setSaved] = useState({ slug: page.slug, status: page.status, revision: 0 });
+  const status = editor.status;
+  const savedRef = useRef(editor.value);
+  savedRef.current = editor.value;
+
+  useEffect(() => {
+    if (status !== "saved") return;
+
+    setSaved((current) => ({
+      slug: savedRef.current.slug,
+      status: savedRef.current.status,
+      revision: current.revision + 1,
+    }));
+  }, [status]);
 
   const blocks = editor.value.blocks;
 
@@ -173,13 +194,21 @@ export function PageEditor({ page, reference }: { page: Page; reference: AdminRe
         </div>
 
         <aside className="min-w-0">
-          <div className="adm-panel p-4 xl:sticky xl:top-28">
-            <h2 className="mb-3 text-sm">Page settings</h2>
-            <Fields
-              fields={settingsFields}
-              value={editor.value as unknown as Values}
-              onChange={(next) => editor.setValue(next as unknown as Page)}
+          <div className="space-y-4 xl:sticky xl:top-28">
+            <PagePreview
+              slug={saved.slug}
+              status={saved.status}
+              revision={saved.revision}
             />
+
+            <div className="adm-panel p-4">
+              <h2 className="mb-3 text-sm">Page settings</h2>
+              <Fields
+                fields={settingsFields}
+                value={editor.value as unknown as Values}
+                onChange={(next) => editor.setValue(next as unknown as Page)}
+              />
+            </div>
           </div>
         </aside>
       </div>
